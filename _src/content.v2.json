@@ -1,0 +1,1083 @@
+{
+ "meta.title": {
+  "zh": "Sycamore Agritech Limited | 马拉维小麦与制种玉米种植 · 农机租赁",
+  "en": "Sycamore Agritech Limited | Wheat and seed maize farming, machinery hire in Malawi",
+  "note": "HTML <title>; keep company name unchanged"
+ },
+ "meta.desc": {
+  "zh": "Sycamore Agritech Limited 总部位于马拉维利隆圭，规模化种植灌溉小麦和制种玉米，并提供拖拉机、圆盘犁、深松机、精量播种机、喷杆喷雾机、联合收割机等农业机械租赁服务。",
+  "en": "Sycamore Agritech Limited, Lilongwe, Malawi, grows seed maize and irrigated wheat and hires out tractors, a disc plough, subsoiler, planter, boom sprayers and a combine.",
+  "note": "meta description, max ~170 chars per language"
+ },
+ "nav.farming": {
+  "zh": "种植业务",
+  "en": "Farming",
+  "note": "short nav label"
+ },
+ "nav.hire": {
+  "zh": "农机租赁",
+  "en": "Machinery hire",
+  "note": "short nav label — keep as short as possible"
+ },
+ "nav.supply": {
+  "zh": "产品供应",
+  "en": "Supply",
+  "note": "short nav label — keep as short as possible"
+ },
+ "nav.about": {
+  "zh": "关于我们",
+  "en": "About",
+  "note": "short nav label"
+ },
+ "nav.contact": {
+  "zh": "联系我们",
+  "en": "Contact",
+  "note": "short nav label / button"
+ },
+ "hero.eyebrow": {
+  "zh": "马拉维 · 规模化种植 · 农机租赁",
+  "en": "Malawi · Large-scale farming · Machinery hire",
+  "note": "small uppercase line above the headline"
+ },
+ "hero.h1": {
+  "zh": "在马拉维，<br>种好小麦，制好种子",
+  "en": "Growing quality wheat and seed in Malawi",
+  "note": "main headline; zh contains a <br> line break — other languages: no <br>"
+ },
+ "hero.lead": {
+  "zh": "Sycamore Agritech 在马拉维经营规模化农场，采用中心支轴式喷灌种植小麦，并按种子生产标准开展玉米制种。我们拥有成套现代农业机械，既用于自有农场作业，也对外提供租赁服务。",
+  "en": "Sycamore Agritech runs large-scale farms in Malawi, growing wheat under centre-pivot irrigation and maize for seed production. We own a complete fleet of modern farm machinery, which we use on our own fields and also hire out."
+ },
+ "hero.cta1": {
+  "zh": "了解种植业务",
+  "en": "Explore our farms",
+  "note": "button"
+ },
+ "hero.cta2": {
+  "zh": "租用农机",
+  "en": "Hire machinery",
+  "note": "button"
+ },
+ "hero.tag.wheat": {
+  "zh": "小麦",
+  "en": "Wheat"
+ },
+ "hero.tag.seed": {
+  "zh": "制种玉米",
+  "en": "Seed maize",
+  "note": "maize grown to produce seed (hybrid seed production), NOT grain/commercial maize"
+ },
+ "hero.tag.pivot": {
+  "zh": "中心支轴式喷灌",
+  "en": "Centre-pivot irrigation"
+ },
+ "hero.tag.hire": {
+  "zh": "农机租赁",
+  "en": "Machinery hire"
+ },
+ "biz.farming.title": {
+  "zh": "种植业务",
+  "en": "Farming"
+ },
+ "biz.farming.text": {
+  "zh": "灌溉小麦与制种玉米，从整地到收储全程自主管理。",
+  "en": "Irrigated wheat and seed maize, managed in-house from land preparation to storage."
+ },
+ "biz.farming.more": {
+  "zh": "了解更多",
+  "en": "Learn more"
+ },
+ "biz.hire.title": {
+  "zh": "农机租赁",
+  "en": "Machinery hire"
+ },
+ "biz.hire.text": {
+  "zh": "拖拉机及整地、播种、植保、收获、灌溉机械，可安排机手作业。",
+  "en": "Tractors and machinery for land preparation, planting, spraying, harvesting and irrigation, with operators available."
+ },
+ "biz.hire.more": {
+  "zh": "查看机型",
+  "en": "See the fleet"
+ },
+ "biz.supply.title": {
+  "zh": "小麦与种子供应",
+  "en": "Wheat & seed supply"
+ },
+ "biz.supply.text": {
+  "zh": "为面粉厂、种子企业等客户稳定供应自产小麦和制种玉米。",
+  "en": "A steady supply of our own wheat and seed maize for flour mills, seed companies and other businesses."
+ },
+ "biz.supply.more": {
+  "zh": "了解更多",
+  "en": "Learn more"
+ },
+ "farming.eyebrow": {
+  "zh": "种植业务",
+  "en": "Farming"
+ },
+ "farming.h2": {
+  "zh": "我们的核心：规模化种植",
+  "en": "At our core: farming at scale"
+ },
+ "farming.p1": {
+  "zh": "种植是 Sycamore Agritech 的核心业务。我们在马拉维的农场主要种植两种作物：在凉爽旱季依靠灌溉种植的小麦，以及按种子生产要求管理的制种玉米。农田配备中心支轴式和卷盘式喷灌设备，按作物生长阶段供水。",
+  "en": "Farming is the heart of Sycamore Agritech. Our farms in Malawi grow two main crops: wheat, grown under irrigation through the cool dry season, and maize, grown for seed production. Our fields are equipped with centre-pivot and hose-reel irrigation, with water applied according to crop growth stage."
+ },
+ "farming.p2": {
+  "zh": "我们的团队全程管理田间作业，从整地、播种、灌溉、施肥、植保到适时收获。主要作业环节由自有机械完成，力求每一季的产量和品质稳定可靠。",
+  "en": "Our team manages the whole field cycle, from land preparation and planting to irrigation, fertilisation, crop protection and timely harvest. Key operations are done with our own machinery, helping to keep yield and quality consistent every season."
+ },
+ "practice.pivot.title": {
+  "zh": "中心支轴式喷灌",
+  "en": "Centre-pivot irrigation"
+ },
+ "practice.pivot.text": {
+  "zh": "大型喷灌机绕中心旋转，均匀覆盖整片农田，节水省工。",
+  "en": "Large pivots rotate around a central point, watering whole fields evenly while saving water and labour."
+ },
+ "practice.care.title": {
+  "zh": "精细田间管理",
+  "en": "Careful crop management"
+ },
+ "practice.care.text": {
+  "zh": "按生长阶段安排施肥与植保，定期巡田，及早发现并处理问题。",
+  "en": "Fertiliser and crop protection timed to each growth stage, with regular field checks to catch problems early."
+ },
+ "practice.mech.title": {
+  "zh": "机械化作业",
+  "en": "Mechanised field work"
+ },
+ "practice.mech.text": {
+  "zh": "从深松、翻耕、精量播种到喷药，主要田间作业均由我们自有的机械完成。",
+  "en": "From ripping and ploughing to precision planting and spraying, the key field operations are done with our own machinery."
+ },
+ "practice.store.title": {
+  "zh": "适时收获与仓储",
+  "en": "Timely harvest & storage"
+ },
+ "practice.store.text": {
+  "zh": "成熟后及时收获，清理、装袋后入库保存，保持干燥洁净。",
+  "en": "Crops are harvested at maturity, then cleaned, bagged and stored in dry, hygienic conditions."
+ },
+ "farming.caption": {
+  "zh": "清晨的小麦田，远处是中心支轴式喷灌机",
+  "en": "Wheat at first light, with a centre pivot on the horizon"
+ },
+ "season.title": {
+  "zh": "马拉维农时",
+  "en": "Malawi's farming calendar"
+ },
+ "season.text": {
+  "zh": "马拉维一年有两个主要种植季：雨季种植以玉米为主的雨养作物，凉爽旱季则依靠灌溉种植小麦等冬季作物。整地要赶在播种之前完成，这也是农机最紧张的时候。",
+  "en": "Malawi has two main cropping seasons: rain-fed crops, mainly maize, in the rainy season, and irrigated winter crops such as wheat in the cool dry season. Land must be prepared before each planting, so that is when demand for machinery peaks."
+ },
+ "season.row.rain": {
+  "zh": "雨季作物",
+  "en": "Rain-fed crops",
+  "note": "row label in a small chart, keep very short (max ~16 chars)"
+ },
+ "season.row.winter": {
+  "zh": "灌溉作物",
+  "en": "Irrigated crops",
+  "note": "row label in a small chart, keep very short"
+ },
+ "season.row.prep": {
+  "zh": "整地高峰",
+  "en": "Land-prep peak",
+  "note": "row label in a small chart, keep very short"
+ },
+ "season.bar.plant": {
+  "zh": "播种",
+  "en": "Planting",
+  "note": "label inside a 2-month-wide bar; very short"
+ },
+ "season.bar.harvest": {
+  "zh": "收获",
+  "en": "Harvest",
+  "note": "label inside a bar; very short"
+ },
+ "season.bar.prep": {
+  "zh": "整地",
+  "en": "Land prep",
+  "note": "label inside a bar; very short"
+ },
+ "season.note": {
+  "zh": "按马拉维一般农时整理，各地区、各年份会有差异。资料来源：FEWS NET、FAO GIEWS、马拉维气候变化与气象服务局。",
+  "en": "A general guide to Malawi's seasons; timing varies by region and year. Sources: FEWS NET, FAO GIEWS, Malawi Department of Climate Change and Meteorological Services.",
+  "note": "keep organisation names; translate the Malawian department name naturally or keep it in English"
+ },
+ "irri.eyebrow": {
+  "zh": "灌溉",
+  "en": "Irrigation"
+ },
+ "irri.h2": {
+  "zh": "有水，才有稳定的收成",
+  "en": "Water makes harvests reliable"
+ },
+ "irri.intro": {
+  "zh": "马拉维的降雨集中在雨季，旱季种植离不开灌溉。我们的农田配备两类喷灌设备。",
+  "en": "Malawi's rain falls mainly in one season, so dry-season farming depends on irrigation. Our fields use two types of sprinkler irrigation."
+ },
+ "irri.pivot.title": {
+  "zh": "中心支轴式喷灌",
+  "en": "Centre-pivot irrigation"
+ },
+ "irri.pivot.text": {
+  "zh": "多跨喷灌机以中心点为轴缓慢旋转，一台设备即可均匀覆盖一大片圆形农田，适合大面积连片种植的小麦。",
+  "en": "A multi-span machine turns slowly around a central point, watering a large circular area evenly. It is well suited to our broad wheat fields."
+ },
+ "irri.reel.title": {
+  "zh": "卷盘式喷灌机",
+  "en": "Hose-reel irrigator"
+ },
+ "irri.reel.text": {
+  "zh": "卷盘回收软管时牵引喷头车在田间行走，逐条完成喷灌；设备可在不同地块间转移，用于补充灌溉，也可对外租赁。",
+  "en": "As the hose winds back onto the reel, it pulls the sprinkler cart across the field, one strip at a time. The machine moves easily between fields for supplementary irrigation and is also available for hire."
+ },
+ "crops.eyebrow": {
+  "zh": "主要作物",
+  "en": "Our crops"
+ },
+ "crops.h2": {
+  "zh": "小麦与制种玉米",
+  "en": "Wheat and seed maize"
+ },
+ "crops.intro": {
+  "zh": "这两种作物是我们农场的主力。",
+  "en": "These two crops are the mainstay of our farms."
+ },
+ "crops.wheat.title": {
+  "zh": "小麦",
+  "en": "Wheat"
+ },
+ "crops.wheat.text": {
+  "zh": "在灌溉条件下种植，用于制粉和食品加工。马拉维所需小麦几乎全部依靠进口，发展本地种植有助于减少进口依赖。",
+  "en": "Grown under irrigation for flour milling and food processing. Malawi imports almost all of its wheat, so growing it locally helps reduce reliance on imports."
+ },
+ "crops.wheat.tag1": {
+  "zh": "灌溉种植",
+  "en": "Irrigated"
+ },
+ "crops.wheat.tag2": {
+  "zh": "面粉厂",
+  "en": "Flour mills"
+ },
+ "crops.wheat.tag3": {
+  "zh": "食品加工",
+  "en": "Food processing"
+ },
+ "crops.wheat.link": {
+  "zh": "小麦询价",
+  "en": "Get a wheat quote"
+ },
+ "crops.seed.title": {
+  "zh": "制种玉米",
+  "en": "Seed maize"
+ },
+ "crops.seed.text": {
+  "zh": "按制种要求种植和管理：隔离种植、及时去雄、田间去杂、单收单储，确保种子纯度和质量。",
+  "en": "Grown to seed-production standards to protect seed purity and quality: isolated fields, timely detasselling, removal of off-type plants (roguing), and separate harvesting and storage.",
+  "note": "technical seed-production terms: detasselling, roguing (removing off-type plants)"
+ },
+ "crops.seed.tag1": {
+  "zh": "杂交玉米制种",
+  "en": "Hybrid seed production"
+ },
+ "crops.seed.tag2": {
+  "zh": "种子企业",
+  "en": "Seed companies"
+ },
+ "crops.seed.tag3": {
+  "zh": "纯度管理",
+  "en": "Purity control"
+ },
+ "crops.seed.link": {
+  "zh": "制种合作咨询",
+  "en": "Discuss seed production"
+ },
+ "hire.eyebrow": {
+  "zh": "农机租赁",
+  "en": "Machinery hire"
+ },
+ "hire.h2": {
+  "zh": "专业农机，按需租用",
+  "en": "Professional farm machinery, when you need it"
+ },
+ "hire.lead": {
+  "zh": "我们自有的成套农业机械覆盖整地、播种、植保、收获和灌溉等环节，同时对外出租。设备保养良好，可配有经验的机手作业，帮助农场、庄园和合作社不误农时。",
+  "en": "Our own fleet of farm machinery is available for hire, covering land preparation, planting, spraying, harvesting and irrigation. The equipment is well maintained and can come with an experienced operator, so farms, estates and cooperatives can get the work done on time."
+ },
+ "hire.p2": {
+  "zh": "在马拉维，人工用锄头整地每公顷需要 23–31 个工日，而机械整地（含起垄）每公顷只需约 2–2.5 小时。整地推迟两周，玉米最多可减产 30%。提前预约，以便透雨一到就能及时播种。",
+  "en": "In Malawi, preparing one hectare with a hand hoe takes 23–31 person-days; with machinery, including ridging, it takes about 2–2.5 hours. A two-week delay in land preparation can cut maize yields by up to 30%. Book early so your land is ready when the planting rains arrive.",
+  "note": "keep the numbers exactly"
+ },
+ "hire.source": {
+  "zh": "数据来源：整地用时来自马拉维科技大学 / MwAPATA 研究所和 SIMLESA / 国际玉米小麦改良中心（CIMMYT）；减产幅度来自马拉维国家计划委员会与联合国开发计划署《马拉维 2063》政策简报（2022），该简报引用国际食物政策研究所（IFPRI）的研究。",
+  "en": "Sources: land-preparation times from Malawi University of Science and Technology / MwAPATA Institute and SIMLESA/CIMMYT; yield loss from Malawi National Planning Commission and UNDP, Malawi 2063 policy brief (2022), citing IFPRI."
+ },
+ "hire.cta1": {
+  "zh": "预约农机",
+  "en": "Book machinery",
+  "note": "button"
+ },
+ "hire.cta2": {
+  "zh": "电话咨询",
+  "en": "Call us",
+  "note": "button"
+ },
+ "hire.caption": {
+  "zh": "圆盘犁在田间作业，后方是其他农机",
+  "en": "A disc plough at work, with other machines behind"
+ },
+ "hire.svcTitle": {
+  "zh": "服务范围",
+  "en": "What we can do"
+ },
+ "svc.prep.title": {
+  "zh": "耕整地",
+  "en": "Land preparation"
+ },
+ "svc.prep.text": {
+  "zh": "圆盘犁翻耕，深松机打破压实的犁底层。",
+  "en": "Disc ploughing, plus subsoiling to break up compacted layers."
+ },
+ "svc.plant.title": {
+  "zh": "精量播种",
+  "en": "Precision planting"
+ },
+ "svc.plant.text": {
+  "zh": "多行精量播种机，株距均匀、行距一致。",
+  "en": "Multi-row precision planting for even seed and row spacing."
+ },
+ "svc.spray.title": {
+  "zh": "植保喷雾",
+  "en": "Crop spraying"
+ },
+ "svc.spray.text": {
+  "zh": "悬挂式喷杆喷雾机，用于大田除草和病虫害防治。",
+  "en": "Tractor-mounted boom sprayers for weed, pest and disease control."
+ },
+ "svc.harvest.title": {
+  "zh": "联合收获",
+  "en": "Combine harvesting"
+ },
+ "svc.harvest.text": {
+  "zh": "自走式联合收割机，一次完成收割和脱粒。",
+  "en": "A self-propelled combine that harvests and threshes in one pass."
+ },
+ "svc.irri.title": {
+  "zh": "移动喷灌",
+  "en": "Mobile irrigation"
+ },
+ "svc.irri.text": {
+  "zh": "卷盘式喷灌机，可在地块之间转移，进行补充灌溉。",
+  "en": "A hose-reel irrigator that moves between fields for supplementary watering."
+ },
+ "svc.earth.title": {
+  "zh": "开沟与土方",
+  "en": "Ditching & earthworks"
+ },
+ "svc.earth.text": {
+  "zh": "履带式挖掘机，用于开沟、清障和农田基础设施建设。",
+  "en": "A crawler excavator for digging ditches, clearing obstacles and other farm infrastructure work."
+ },
+ "hire.fleetTitle": {
+  "zh": "可租机型",
+  "en": "The fleet"
+ },
+ "fleet.lovol.model": {
+  "zh": "LOVOL 2204",
+  "en": "LOVOL 2204",
+  "note": "brand/model — do not translate"
+ },
+ "fleet.lovol.name": {
+  "zh": "大马力拖拉机",
+  "en": "High-horsepower tractor"
+ },
+ "fleet.lovol.text": {
+  "zh": "220 马力级四驱拖拉机，配驾驶室，适合牵引圆盘犁、深松机和大型播种机。",
+  "en": "A 220 hp-class 4WD cab tractor for pulling disc ploughs, subsoilers and large planters.",
+  "note": "fr: 'ch' for horsepower; pt: 'cv'"
+ },
+ "fleet.tk.model": {
+  "zh": "TK854",
+  "en": "TK854",
+  "note": "model — do not translate"
+ },
+ "fleet.tk.name": {
+  "zh": "多用途拖拉机",
+  "en": "Utility tractor"
+ },
+ "fleet.tk.text": {
+  "zh": "带遮阳顶棚的多用途拖拉机，适合播种、喷药、轻型耕作和田间运输。",
+  "en": "A versatile tractor with a sun canopy, for planting, spraying, light tillage and farm transport."
+ },
+ "fleet.plough.model": {
+  "zh": "7 片圆盘",
+  "en": "7-disc",
+  "note": "short spec line"
+ },
+ "fleet.plough.name": {
+  "zh": "重型圆盘犁",
+  "en": "Heavy disc plough"
+ },
+ "fleet.plough.text": {
+  "zh": "配 7 片圆盘，适用于板结、干硬及秸秆较多地块的翻耕。",
+  "en": "A heavy seven-disc plough for primary tillage in hard, dry ground or fields with heavy crop residue."
+ },
+ "fleet.sub.model": {
+  "zh": "多铲式",
+  "en": "Multi-shank",
+  "note": "short spec line"
+ },
+ "fleet.sub.name": {
+  "zh": "深松机",
+  "en": "Subsoiler (ripper)"
+ },
+ "fleet.sub.text": {
+  "zh": "打破耕层下压实的犁底层，改善土壤渗水，促进根系生长。",
+  "en": "Breaks up compacted layers below plough depth, improving water infiltration and root growth."
+ },
+ "fleet.planter.model": {
+  "zh": "MUKEN",
+  "en": "MUKEN",
+  "note": "brand — do not translate"
+ },
+ "fleet.planter.name": {
+  "zh": "精量播种机",
+  "en": "Precision planter"
+ },
+ "fleet.planter.text": {
+  "zh": "多行精量播种机，每个播种单体配独立种箱，适合玉米、大豆等中耕作物。",
+  "en": "A multi-row precision planter with a seed hopper on every row unit, for row crops such as maize and soya beans."
+ },
+ "fleet.sprayer.model": {
+  "zh": "3 台",
+  "en": "3 units",
+  "note": "short spec line"
+ },
+ "fleet.sprayer.name": {
+  "zh": "悬挂式喷杆喷雾机",
+  "en": "Mounted boom sprayers"
+ },
+ "fleet.sprayer.text": {
+  "zh": "液压折叠喷杆，用于喷施除草剂、杀虫剂、杀菌剂和叶面肥。",
+  "en": "Hydraulically folding booms for applying herbicides, insecticides, fungicides and foliar fertiliser."
+ },
+ "fleet.combine.model": {
+  "zh": "丰神 4LZ-13",
+  "en": "Fengshen 4LZ-13",
+  "note": "brand/model; fr/pt use 'Fengshen 4LZ-13'"
+ },
+ "fleet.combine.name": {
+  "zh": "联合收割机",
+  "en": "Combine harvester"
+ },
+ "fleet.combine.text": {
+  "zh": "自走式谷物联合收割机，图中为玉米割台；可收获的作物和割台配置请咨询。",
+  "en": "A self-propelled grain combine, shown here with a maize header. Ask us which crops it can harvest and which headers are available."
+ },
+ "fleet.reel.model": {
+  "zh": "VODAR",
+  "en": "VODAR",
+  "note": "brand — do not translate"
+ },
+ "fleet.reel.name": {
+  "zh": "卷盘式喷灌机",
+  "en": "Hose-reel irrigator"
+ },
+ "fleet.reel.text": {
+  "zh": "移动式喷灌设备，适合小麦、玉米、蔬菜和牧草的补充灌溉。",
+  "en": "A travelling sprinkler for supplementary irrigation of wheat, maize, vegetables and pasture."
+ },
+ "fleet.exc.model": {
+  "zh": "MAXPOWER ME80-9",
+  "en": "MAXPOWER ME80-9",
+  "note": "brand/model — do not translate"
+ },
+ "fleet.exc.name": {
+  "zh": "履带式挖掘机",
+  "en": "Crawler excavator"
+ },
+ "fleet.exc.text": {
+  "zh": "用于开挖灌溉沟渠、清理障碍、修建农场道路等土方工程。",
+  "en": "For digging irrigation channels, clearing obstacles, building farm roads and other earthworks."
+ },
+ "tag.power": {
+  "zh": "牵引动力",
+  "en": "Traction power",
+  "note": "small tag chip, 1–2 words"
+ },
+ "tag.prep": {
+  "zh": "整地",
+  "en": "Land prep",
+  "note": "small tag chip, 1–2 words"
+ },
+ "tag.plant": {
+  "zh": "播种",
+  "en": "Planting",
+  "note": "small tag chip, 1–2 words"
+ },
+ "tag.spray": {
+  "zh": "植保",
+  "en": "Spraying",
+  "note": "small tag chip, 1–2 words"
+ },
+ "tag.transport": {
+  "zh": "运输",
+  "en": "Transport",
+  "note": "small tag chip, 1–2 words"
+ },
+ "tag.plough": {
+  "zh": "翻耕",
+  "en": "Ploughing",
+  "note": "small tag chip, 1–2 words"
+ },
+ "tag.subsoil": {
+  "zh": "深松",
+  "en": "Subsoiling",
+  "note": "small tag chip, 1–2 words"
+ },
+ "tag.maize": {
+  "zh": "玉米",
+  "en": "Maize",
+  "note": "small tag chip, 1–2 words"
+ },
+ "tag.soy": {
+  "zh": "大豆",
+  "en": "Soya",
+  "note": "small tag chip, 1–2 words"
+ },
+ "tag.weed": {
+  "zh": "除草",
+  "en": "Weed control",
+  "note": "small tag chip, 1–2 words"
+ },
+ "tag.harvest": {
+  "zh": "收获",
+  "en": "Harvesting",
+  "note": "small tag chip, 1–2 words"
+ },
+ "tag.irri": {
+  "zh": "灌溉",
+  "en": "Irrigation",
+  "note": "small tag chip, 1–2 words"
+ },
+ "tag.earth": {
+  "zh": "土方",
+  "en": "Earthworks",
+  "note": "small tag chip, 1–2 words"
+ },
+ "tag.ditch": {
+  "zh": "开沟",
+  "en": "Ditching",
+  "note": "small tag chip, 1–2 words"
+ },
+ "hire.stepsTitle": {
+  "zh": "租用流程",
+  "en": "How hiring works"
+ },
+ "hstep1.title": {
+  "zh": "提出需求",
+  "en": "Tell us the job"
+ },
+ "hstep1.text": {
+  "zh": "说明作业类型、地块位置、面积和期望日期。",
+  "en": "The operation, field location, area and preferred dates."
+ },
+ "hstep2.title": {
+  "zh": "确认方案与报价",
+  "en": "Plan and quote"
+ },
+ "hstep2.text": {
+  "zh": "我们推荐合适的机型，确认排期，并给出报价。",
+  "en": "We recommend the right machines, confirm the schedule and send a quote."
+ },
+ "hstep3.title": {
+  "zh": "进场作业",
+  "en": "Work in the field"
+ },
+ "hstep3.text": {
+  "zh": "按约定时间进场，可配机手完成作业。",
+  "en": "Our machines arrive on the agreed date, with an operator if you need one."
+ },
+ "hstep4.title": {
+  "zh": "完工确认",
+  "en": "Final check"
+ },
+ "hstep4.text": {
+  "zh": "作业完成后与您一起验收。",
+  "en": "We check the finished work with you."
+ },
+ "hire.terms": {
+  "zh": "租期、计费方式（按面积、按小时或按天）、是否含燃油和运输、是否配机手，均可按需求商定，以报价为准。",
+  "en": "We agree the details case by case: the hire period, how charges are calculated (per hectare/acre, per hour or per day), whether fuel and transport are included, and whether an operator is provided. Everything is confirmed in our quote."
+ },
+ "band.title": {
+  "zh": "播种季前，尽早预约",
+  "en": "Book before the season starts"
+ },
+ "band.text": {
+  "zh": "整地和播种时节农机最紧张。告诉我们您的作业需求，我们会尽快确认排期。",
+  "en": "Machinery is busiest during land preparation and planting. Tell us what you need and we'll confirm a slot as soon as possible."
+ },
+ "band.btn1": {
+  "zh": "预约农机",
+  "en": "Book machinery",
+  "note": "button"
+ },
+ "band.btn2": {
+  "zh": "致电 +265 999 947 228",
+  "en": "Call +265 999 947 228",
+  "note": "button; keep the phone number exactly"
+ },
+ "process.eyebrow": {
+  "zh": "从田间到客户",
+  "en": "From field to customer"
+ },
+ "process.h2": {
+  "zh": "每一袋粮食和种子从哪里来",
+  "en": "Where every bag of grain and seed comes from"
+ },
+ "pstep1.title": {
+  "zh": "播种与管理",
+  "en": "Planting & care"
+ },
+ "pstep1.text": {
+  "zh": "整地播种，喷灌、施肥与植保全程管理。",
+  "en": "Land preparation and planting, then irrigation, fertilisation and crop protection."
+ },
+ "pstep2.title": {
+  "zh": "收获",
+  "en": "Harvest"
+ },
+ "pstep2.text": {
+  "zh": "作物成熟后适时收获；制种玉米单收单储。",
+  "en": "Harvested at maturity; seed maize is harvested and stored separately."
+ },
+ "pstep3.title": {
+  "zh": "清理装袋",
+  "en": "Cleaning & bagging"
+ },
+ "pstep3.text": {
+  "zh": "清除杂质，按规格称重装袋。",
+  "en": "Cleaned to remove impurities, then weighed and bagged to specification."
+ },
+ "pstep4.title": {
+  "zh": "仓储检验",
+  "en": "Storage & inspection"
+ },
+ "pstep4.text": {
+  "zh": "入库保存，出库前检验。",
+  "en": "Stored, then inspected before dispatch."
+ },
+ "pstep5.title": {
+  "zh": "交付客户",
+  "en": "Delivery"
+ },
+ "pstep5.text": {
+  "zh": "按约定的规格、数量和时间交付。",
+  "en": "Delivered to the agreed specification and volume, on the agreed date."
+ },
+ "supply.eyebrow": {
+  "zh": "小麦与种子供应",
+  "en": "Wheat & seed supply"
+ },
+ "supply.h2": {
+  "zh": "为企业客户稳定供货",
+  "en": "Dependable supply for businesses"
+ },
+ "supply.text": {
+  "zh": "我们直接向企业客户供应自产的小麦，并为种子企业生产制种玉米，均按客户要求的规格交付。欢迎询价。",
+  "en": "We supply our own wheat directly to business customers and grow seed maize for seed companies, in each case to the customer's specification. Ask us for a quote."
+ },
+ "supply.listTitle": {
+  "zh": "服务对象",
+  "en": "Who we serve"
+ },
+ "cust.mills": {
+  "zh": "面粉厂",
+  "en": "Flour mills"
+ },
+ "cust.seed": {
+  "zh": "种子企业",
+  "en": "Seed companies"
+ },
+ "cust.food": {
+  "zh": "食品加工企业",
+  "en": "Food processors"
+ },
+ "cust.trade": {
+  "zh": "批发商与贸易商",
+  "en": "Wholesalers & traders"
+ },
+ "cust.farms": {
+  "zh": "农场、庄园与合作社（农机租赁）",
+  "en": "Farms, estates & cooperatives (machinery hire)"
+ },
+ "supply.caption": {
+  "zh": "仓储与验货",
+  "en": "Storage and inspection"
+ },
+ "why.eyebrow": {
+  "zh": "为什么选择我们",
+  "en": "Why Sycamore"
+ },
+ "why.h2": {
+  "zh": "种植、农机、供应，尽在一家",
+  "en": "Farming, machinery and supply under one roof"
+ },
+ "why1.title": {
+  "zh": "自有农场",
+  "en": "Our own farms"
+ },
+ "why1.text": {
+  "zh": "我们供应的小麦和制种玉米出自自己经营的农场，来源清楚。",
+  "en": "The wheat and seed maize we supply are grown on farms we run ourselves, so you know where they come from."
+ },
+ "why2.title": {
+  "zh": "灌溉保障",
+  "en": "Reliable irrigation"
+ },
+ "why2.text": {
+  "zh": "中心支轴式和卷盘式喷灌按需供水，旱季也能稳定生产。",
+  "en": "Centre-pivot and hose-reel irrigation deliver water when crops need it, keeping production steady through the dry season."
+ },
+ "why3.title": {
+  "zh": "成套农机",
+  "en": "A complete fleet"
+ },
+ "why3.text": {
+  "zh": "从整地到收获的成套机械，既服务自有农场，也对外租赁。",
+  "en": "A full set of machines from land preparation to harvest, used on our farms and available for hire."
+ },
+ "why4.title": {
+  "zh": "按时履约",
+  "en": "On time, as agreed"
+ },
+ "why4.text": {
+  "zh": "产品按约定的规格、数量和时间交付，农机按约定日期进场。",
+  "en": "Products delivered to the agreed specification and volume, on the agreed date; machinery on site when promised."
+ },
+ "gallery.eyebrow": {
+  "zh": "现场实拍",
+  "en": "On the ground"
+ },
+ "gallery.h2": {
+  "zh": "农场与农机",
+  "en": "Our farms and machinery"
+ },
+ "gallery.intro": {
+  "zh": "均为我们农场、农机和日常运营的实拍照片，点击可放大查看。",
+  "en": "Real photos of our farms, machinery and operations. Click or tap any photo to enlarge it."
+ },
+ "cap.hero-pivot-wheat": {
+  "zh": "中心支轴式喷灌机下的成熟小麦",
+  "en": "Ripe wheat under a centre pivot",
+  "note": "photo caption and alt text; keep brand/model names"
+ },
+ "cap.wheat-field-sky": {
+  "zh": "等待收获的小麦田",
+  "en": "Wheat ready for harvest",
+  "note": "photo caption and alt text; keep brand/model names"
+ },
+ "cap.maize-field": {
+  "zh": "生长中的制种玉米",
+  "en": "Seed maize growing on our farm",
+  "note": "photo caption and alt text; keep brand/model names"
+ },
+ "cap.wheat-sunrise-pivot": {
+  "zh": "清晨的小麦田",
+  "en": "Wheat at first light",
+  "note": "photo caption and alt text; keep brand/model names"
+ },
+ "cap.warehouse-inspection": {
+  "zh": "仓储与验货",
+  "en": "Storage and inspection",
+  "note": "photo caption and alt text; keep brand/model names"
+ },
+ "cap.planter-muken": {
+  "zh": "MUKEN 精量播种机",
+  "en": "MUKEN precision planter",
+  "note": "photo caption and alt text; keep brand/model names"
+ },
+ "cap.combine-harvester": {
+  "zh": "丰神 4LZ-13 联合收割机",
+  "en": "Fengshen 4LZ-13 combine harvester",
+  "note": "photo caption and alt text; keep brand/model names"
+ },
+ "cap.boom-sprayers": {
+  "zh": "悬挂式喷杆喷雾机",
+  "en": "Mounted boom sprayers",
+  "note": "photo caption and alt text; keep brand/model names"
+ },
+ "cap.tractor-lovol-2204": {
+  "zh": "LOVOL 2204 拖拉机",
+  "en": "LOVOL 2204 tractor",
+  "note": "photo caption and alt text; keep brand/model names"
+ },
+ "cap.subsoiler": {
+  "zh": "深松机",
+  "en": "Subsoiler (ripper)",
+  "note": "photo caption and alt text; keep brand/model names"
+ },
+ "cap.tractor-tk854": {
+  "zh": "TK854 拖拉机",
+  "en": "TK854 tractor",
+  "note": "photo caption and alt text; keep brand/model names"
+ },
+ "cap.disc-plough-field": {
+  "zh": "圆盘犁田间作业",
+  "en": "Disc plough at work",
+  "note": "photo caption and alt text; keep brand/model names"
+ },
+ "cap.hose-reel-irrigator": {
+  "zh": "卷盘式喷灌机灌溉小麦",
+  "en": "Hose-reel irrigator watering young wheat",
+  "note": "photo caption and alt text; keep brand/model names"
+ },
+ "cap.excavator-maxpower": {
+  "zh": "MAXPOWER ME80-9 履带式挖掘机",
+  "en": "MAXPOWER ME80-9 crawler excavator",
+  "note": "photo caption and alt text; keep brand/model names"
+ },
+ "about.eyebrow": {
+  "zh": "关于我们",
+  "en": "About us"
+ },
+ "about.h2": {
+  "zh": "扎根马拉维，行稳致远",
+  "en": "Rooted in Malawi, built to last"
+ },
+ "about.p": {
+  "zh": "Sycamore Agritech Limited 总部位于马拉维首都利隆圭，业务涵盖规模化种植、农业机械租赁以及小麦与种子供应。Sycamore（梧桐）是一种根深叶茂的树，我们也希望像它一样扎根土地、稳健生长，与客户建立长期合作。",
+  "en": "Sycamore Agritech Limited is based in Lilongwe, Malawi's capital, and works across large-scale farming, agricultural machinery hire, and wheat and seed supply. The sycamore is a broad, deep-rooted tree, and that is how we want to grow: rooted in the land, steady, and building long-term partnerships with our customers."
+ },
+ "about.quote": {
+  "zh": "“栽下梧桐树，引得凤凰来。”",
+  "en": "“Plant a sycamore, and the phoenix will come.”",
+  "note": "Chinese proverb; fr use « », pt use « »"
+ },
+ "about.quoteFoot": {
+  "zh": "把事情做扎实，好的合作伙伴自然会来。",
+  "en": "An old Chinese saying: build something worthwhile, and good partners will follow."
+ },
+ "about.glance": {
+  "zh": "公司概况",
+  "en": "At a glance"
+ },
+ "fact.hq.dt": {
+  "zh": "总部",
+  "en": "Head office"
+ },
+ "fact.hq.dd": {
+  "zh": "马拉维利隆圭",
+  "en": "Lilongwe, Malawi"
+ },
+ "fact.core.dt": {
+  "zh": "核心业务",
+  "en": "Core business"
+ },
+ "fact.core.dd": {
+  "zh": "灌溉小麦与制种玉米种植",
+  "en": "Irrigated wheat and seed maize farming"
+ },
+ "fact.also.dt": {
+  "zh": "其他业务",
+  "en": "Other activities"
+ },
+ "fact.also.dd": {
+  "zh": "农机租赁、小麦与种子供应",
+  "en": "Machinery hire, wheat and seed supply"
+ },
+ "fact.lang.dt": {
+  "zh": "语言",
+  "en": "Languages"
+ },
+ "contact.eyebrow": {
+  "zh": "联系我们",
+  "en": "Contact"
+ },
+ "contact.h2": {
+  "zh": "告诉我们您的需求",
+  "en": "Tell us what you need"
+ },
+ "contact.text": {
+  "zh": "采购粮食、洽谈制种合作或预约农机，都可以留言或直接致电，我们会尽快回复。",
+  "en": "Whether you're buying grain, discussing seed production or booking machinery, send us a message or call us, and we'll get back to you quickly."
+ },
+ "contact.general": {
+  "zh": "综合咨询",
+  "en": "General enquiries"
+ },
+ "contact.sales": {
+  "zh": "产品销售",
+  "en": "Sales"
+ },
+ "contact.hire": {
+  "zh": "农机租赁",
+  "en": "Machinery hire"
+ },
+ "contact.phone": {
+  "zh": "电话",
+  "en": "Phone"
+ },
+ "contact.address": {
+  "zh": "地址",
+  "en": "Address"
+ },
+ "contact.addressValue": {
+  "zh": "马拉维利隆圭 Chitipi",
+  "en": "Chitipi, Lilongwe, Malawi",
+  "note": "fr/pt: 'Chitipi, Lilongwe, Malawi'"
+ },
+ "contact.map": {
+  "zh": "在地图上查看",
+  "en": "View on map"
+ },
+ "form.name": {
+  "zh": "姓名",
+  "en": "Name"
+ },
+ "form.company": {
+  "zh": "公司",
+  "en": "Company"
+ },
+ "form.email": {
+  "zh": "邮箱",
+  "en": "Email"
+ },
+ "form.phone": {
+  "zh": "电话（选填）",
+  "en": "Phone (optional)"
+ },
+ "form.interest": {
+  "zh": "咨询类型",
+  "en": "Enquiry about"
+ },
+ "opt.wheat": {
+  "zh": "小麦",
+  "en": "Wheat",
+  "note": "<option> text"
+ },
+ "opt.seed": {
+  "zh": "制种玉米",
+  "en": "Seed maize",
+  "note": "<option> text"
+ },
+ "opt.hire": {
+  "zh": "农机租赁",
+  "en": "Machinery hire",
+  "note": "<option> text"
+ },
+ "opt.products": {
+  "zh": "其他农产品",
+  "en": "Other farm products",
+  "note": "<option> text"
+ },
+ "opt.other": {
+  "zh": "其他",
+  "en": "Other",
+  "note": "<option> text"
+ },
+ "form.qty": {
+  "zh": "数量或面积",
+  "en": "Quantity or area"
+ },
+ "form.qtyPh": {
+  "zh": "例如：50 吨或 20 公顷",
+  "en": "e.g. 50 tonnes, or 20 hectares",
+  "note": "input placeholder"
+ },
+ "form.msg": {
+  "zh": "需求说明",
+  "en": "Details"
+ },
+ "form.msgPh": {
+  "zh": "品种/规格、作业类型、地点、期望日期等",
+  "en": "Variety or specification, type of work, location, preferred dates, etc.",
+  "note": "textarea placeholder"
+ },
+ "form.submit": {
+  "zh": "发送",
+  "en": "Send enquiry",
+  "note": "button"
+ },
+ "form.note": {
+  "zh": "点击后将打开您的邮件应用，邮件内容和对应团队的收件地址已自动填好，确认后点击发送即可。",
+  "en": "This opens your email app with your message filled in and addressed to the right team; just press Send."
+ },
+ "footer.tag": {
+  "zh": "马拉维 · 种植 · 农机租赁 · 小麦与种子供应",
+  "en": "Farming · Machinery hire · Wheat & seed supply · Malawi"
+ },
+ "footer.contact": {
+  "zh": "联系方式",
+  "en": "Contact"
+ },
+ "footer.rights": {
+  "zh": "保留所有权利。",
+  "en": "All rights reserved."
+ },
+ "ui.close": {
+  "zh": "关闭",
+  "en": "Close",
+  "note": "aria-label for lightbox button"
+ },
+ "ui.prev": {
+  "zh": "上一张",
+  "en": "Previous photo",
+  "note": "aria-label"
+ },
+ "ui.next": {
+  "zh": "下一张",
+  "en": "Next photo",
+  "note": "aria-label"
+ },
+ "ui.enlarge": {
+  "zh": "放大查看",
+  "en": "Enlarge photo",
+  "note": "aria-label prefix for gallery buttons"
+ },
+ "mail.subject": {
+  "zh": "业务咨询",
+  "en": "Enquiry",
+  "note": "label used in the generated email body/subject"
+ },
+ "mail.name": {
+  "zh": "姓名",
+  "en": "Name",
+  "note": "label used in the generated email body/subject"
+ },
+ "mail.company": {
+  "zh": "公司",
+  "en": "Company",
+  "note": "label used in the generated email body/subject"
+ },
+ "mail.email": {
+  "zh": "邮箱",
+  "en": "Email",
+  "note": "label used in the generated email body/subject"
+ },
+ "mail.phone": {
+  "zh": "电话",
+  "en": "Phone",
+  "note": "label used in the generated email body/subject"
+ },
+ "mail.interest": {
+  "zh": "咨询类型",
+  "en": "Enquiry about",
+  "note": "label used in the generated email body/subject"
+ },
+ "mail.qty": {
+  "zh": "数量或面积",
+  "en": "Quantity or area",
+  "note": "label used in the generated email body/subject"
+ },
+ "mail.msg": {
+  "zh": "需求说明",
+  "en": "Details",
+  "note": "label used in the generated email body/subject"
+ }
+}

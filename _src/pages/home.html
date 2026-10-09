@@ -1,0 +1,292 @@
+  <!-- Hero -->
+  <section class="hero">
+    <picture class="hero-media">
+      <source type="image/webp" media="(max-width: 700px)" srcset="/assets/img/hero-pivot-wheat-sm.webp">
+      <source type="image/webp" srcset="/assets/img/hero-pivot-wheat-lg.webp">
+      <img src="/assets/img/hero-pivot-wheat-lg.jpg" alt="{{attr:cap.hero-pivot-wheat}}" width="1600" height="1200" fetchpriority="high">
+    </picture>
+    <div class="wrap hero-inner">
+      <p class="eyebrow eyebrow-light">{{t:hero.eyebrow}}</p>
+      <h1>{{raw:hero.h1}}</h1>
+      <p class="lead">{{t:hero.lead}}</p>
+      <div class="hero-actions">
+        <a class="btn btn-gold" href="#farming">{{t:hero.cta1}}</a>
+        <a class="btn btn-outline-light" href="{{hirepage}}">{{t:hero.cta2}}</a>
+      </div>
+      <ul class="hero-tags">
+        <li>{{t:hero.tag.wheat}}</li>
+        <li>{{t:hero.tag.sorghum}}</li>
+        <li>{{t:hero.tag.seed}}</li>
+        <li>{{t:hero.tag.pivot}}</li>
+        <li>{{t:hero.tag.hire}}</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Business overview -->
+  <section class="biz" aria-label="{{attr:biz.label}}">
+    <div class="wrap biz-grid">
+      <a class="biz-card" href="#farming">
+        {{pic:wheat-growing|(max-width: 1000px) 40vw, 380px|50% 45%|decor}}
+        <div class="biz-body">
+          <h2 class="h3">{{t:biz.farming.title}}</h2>
+          <p>{{t:biz.farming.text}}</p>
+          <span class="biz-more">{{t:biz.farming.more}} →</span>
+        </div>
+      </a>
+      <a class="biz-card" href="{{hirepage}}">
+        {{pic:disc-plough-field|(max-width: 1000px) 40vw, 380px|55% 70%|decor}}
+        <div class="biz-body">
+          <h2 class="h3">{{t:biz.hire.title}}</h2>
+          <p>{{t:biz.hire.text}}</p>
+          <span class="biz-more">{{t:biz.hire.more}} →</span>
+        </div>
+      </a>
+      <a class="biz-card" href="#supply">
+        {{pic:sorghum-field|(max-width: 1000px) 40vw, 380px|50% 70%|decor}}
+        <div class="biz-body">
+          <h2 class="h3">{{t:biz.supply.title}}</h2>
+          <p>{{t:biz.supply.text}}</p>
+          <span class="biz-more">{{t:biz.supply.more}} →</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Farming (core business) -->
+  <section class="section" id="farming">
+    <div class="wrap">
+      <div class="farm-grid">
+        <div class="farm-copy">
+          <p class="eyebrow">{{t:farming.eyebrow}}</p>
+          <h2>{{t:farming.h2}}</h2>
+          <p>{{t:farming.p1}}</p>
+          <p>{{t:farming.p2}}</p>
+
+          <ul class="practice-list">
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 7h19"/><path d="M5 7l2.5 10L10 7M14 7l2.5 10L19 7"/><circle cx="7.5" cy="18.5" r="1.6"/><circle cx="16.5" cy="18.5" r="1.6"/><path d="M12 7v3"/></svg>
+              <div><h3>{{t:practice.pivot.title}}</h3><p>{{t:practice.pivot.text}}</p></div>
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21v-9"/><path d="M12 12c0-4 3-7 7-7 0 4-3 7-7 7zM12 14.5c0-3-2.5-5.5-6-5.5 0 3 2.5 5.5 6 5.5z"/></svg>
+              <div><h3>{{t:practice.care.title}}</h3><p>{{t:practice.care.text}}</p></div>
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 16V9h7l2 4h5a3 3 0 0 1 3 3"/><circle cx="7" cy="17" r="3"/><circle cx="18" cy="18" r="2"/><path d="M5 9V6h4"/></svg>
+              <div><h3>{{t:practice.mech.title}}</h3><p>{{t:practice.mech.text}}</p></div>
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V9l9-5 9 5v12"/><path d="M7 21v-7h10v7M7 17.5h10"/></svg>
+              <div><h3>{{t:practice.store.title}}</h3><p>{{t:practice.store.text}}</p></div>
+            </li>
+          </ul>
+        </div>
+
+        <figure class="farm-photo">
+          {{pic:wheat-sunrise-pivot|(max-width: 1000px) 100vw, 520px|30% 40%}}
+          <figcaption>{{t:farming.caption}}</figcaption>
+        </figure>
+      </div>
+{{include:season}}
+    </div>
+  </section>
+
+  <!-- Irrigation -->
+  <section class="section section-alt" id="irrigation">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">{{t:irri.eyebrow}}</p>
+        <h2>{{t:irri.h2}}</h2>
+        <p>{{t:irri.intro}}</p>
+      </div>
+      <div class="irri-grid">
+        <article class="irri-card">
+          {{pic:hero-pivot-wheat|(max-width: 760px) 100vw, 560px|45% 20%}}
+          <div class="irri-body"><h3>{{t:irri.pivot.title}}</h3><p>{{t:irri.pivot.text}}</p></div>
+        </article>
+        <article class="irri-card">
+          {{pic:hose-reel-irrigator|(max-width: 760px) 100vw, 560px|62% 58%}}
+          <div class="irri-body"><h3>{{t:irri.reel.title}}</h3><p>{{t:irri.reel.text}}</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Crops -->
+  <section class="section" id="crops">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">{{t:crops.eyebrow}}</p>
+        <h2>{{t:crops.h2}}</h2>
+        <p>{{t:crops.intro}}</p>
+      </div>
+      <div class="crop-grid">
+        <article class="crop">
+          {{pic:wheat-field-sky|(max-width: 900px) 100vw, 370px|50% 62%}}
+          <div class="crop-body">
+            <h3>{{t:crops.wheat.title}}</h3>
+            <p>{{t:crops.wheat.text}}</p>
+            <ul class="tags"><li>{{t:crops.wheat.tag1}}</li><li>{{t:crops.wheat.tag2}}</li><li>{{t:crops.wheat.tag3}}</li></ul>
+            <a class="crop-link" href="#contact" data-product="wheat">{{t:crops.wheat.link}} →</a>
+          </div>
+        </article>
+        <article class="crop">
+          {{pic:sorghum-field|(max-width: 900px) 100vw, 370px|50% 40%}}
+          <div class="crop-body">
+            <h3>{{t:crops.sorghum.title}}</h3>
+            <p>{{t:crops.sorghum.text}}</p>
+            <ul class="tags"><li>{{t:crops.sorghum.tag1}}</li><li>{{t:crops.sorghum.tag2}}</li><li>{{t:crops.sorghum.tag3}}</li></ul>
+            <a class="crop-link" href="#contact" data-product="sorghum">{{t:crops.sorghum.link}} →</a>
+          </div>
+        </article>
+        <article class="crop">
+          {{pic:maize-field|(max-width: 900px) 100vw, 370px|50% 40%}}
+          <div class="crop-body">
+            <h3>{{t:crops.seed.title}}</h3>
+            <p>{{t:crops.seed.text}}</p>
+            <ul class="tags"><li>{{t:crops.seed.tag1}}</li><li>{{t:crops.seed.tag2}}</li><li>{{t:crops.seed.tag3}}</li></ul>
+            <a class="crop-link" href="#contact" data-product="seed">{{t:crops.seed.link}} →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Machinery hire (summary; full details on the machinery-hire page) -->
+  <section class="section section-alt" id="hire">
+    <div class="wrap">
+      <div class="hire-intro">
+        <div class="section-head">
+          <p class="eyebrow">{{t:hire.eyebrow}}</p>
+          <h2>{{t:hire.h2}}</h2>
+          <p class="lead-dark">{{t:hire.lead}}</p>
+          <div class="hire-actions">
+            <a class="btn btn-primary" href="{{hirepage}}">{{t:hire.more}}</a>
+            <a class="btn btn-ghost" href="#contact" data-product="hire">{{t:hire.cta1}}</a>
+          </div>
+        </div>
+        <figure class="hire-photo">
+          {{pic:combine-harvester|(max-width: 1000px) 100vw, 560px|45% 45%}}
+          <figcaption>{{t:cap.combine-harvester}}</figcaption>
+        </figure>
+      </div>
+{{include:services}}
+      <div class="fleet-strip">
+        {{thumb:tractor-lovol-2204|lovol}}
+        {{thumb:planter-muken|planter}}
+        {{thumb:boom-sprayers|sprayer}}
+        {{thumb:excavator-maxpower|exc}}
+        <a class="fleet-more" href="{{hirepage}}#fleet"><strong>{{t:hire.fleetAll}}</strong><span>→</span></a>
+      </div>
+{{include:hireband}}
+    </div>
+  </section>
+
+  <!-- From field to customer -->
+  <section class="section section-dark" id="process">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">{{t:process.eyebrow}}</p>
+        <h2>{{t:process.h2}}</h2>
+      </div>
+      <ol class="steps">
+        <li><span class="step-num">01</span><h3>{{t:pstep1.title}}</h3><p>{{t:pstep1.text}}</p></li>
+        <li><span class="step-num">02</span><h3>{{t:pstep2.title}}</h3><p>{{t:pstep2.text}}</p></li>
+        <li><span class="step-num">03</span><h3>{{t:pstep3.title}}</h3><p>{{t:pstep3.text}}</p></li>
+        <li><span class="step-num">04</span><h3>{{t:pstep4.title}}</h3><p>{{t:pstep4.text}}</p></li>
+        <li><span class="step-num">05</span><h3>{{t:pstep5.title}}</h3><p>{{t:pstep5.text}}</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Wheat & sorghum supply -->
+  <section class="section" id="supply">
+    <div class="wrap supply-grid">
+      <div>
+        <p class="eyebrow">{{t:supply.eyebrow}}</p>
+        <h2>{{t:supply.h2}}</h2>
+        <p class="muted">{{t:supply.text}}</p>
+        <h3 class="list-title">{{t:supply.listTitle}}</h3>
+        <ul class="checks">
+          <li>{{t:cust.mills}}</li>
+          <li>{{t:cust.brew}}</li>
+          <li>{{t:cust.feed}}</li>
+          <li>{{t:cust.food}}</li>
+          <li>{{t:cust.seed}}</li>
+          <li>{{t:cust.trade}}</li>
+          <li>{{t:cust.farms}}</li>
+        </ul>
+      </div>
+      <figure class="supply-photo">
+        {{pic:warehouse-inspection|(max-width: 1000px) 100vw, 560px|55% 60%}}
+        <figcaption>{{t:supply.caption}}</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Why us -->
+  <section class="section section-alt" id="why">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">{{t:why.eyebrow}}</p>
+        <h2>{{t:why.h2}}</h2>
+      </div>
+      <div class="pillar-grid flat">
+        <div class="pillar">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21v-9"/><path d="M12 12c0-4 3-7 7-7 0 4-3 7-7 7zM12 14.5c0-3-2.5-5.5-6-5.5 0 3 2.5 5.5 6 5.5z"/><path d="M5 21h14"/></svg>
+          <h3>{{t:why1.title}}</h3><p>{{t:why1.text}}</p>
+        </div>
+        <div class="pillar">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c3 4 6 7.5 6 11a6 6 0 0 1-12 0c0-3.5 3-7 6-11z"/><path d="M9.5 14.5a2.5 2.5 0 0 0 2.5 2.5"/></svg>
+          <h3>{{t:why2.title}}</h3><p>{{t:why2.text}}</p>
+        </div>
+        <div class="pillar">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 16V9h7l2 4h5a3 3 0 0 1 3 3"/><circle cx="7" cy="17" r="3"/><circle cx="18" cy="18" r="2"/><path d="M5 9V6h4"/></svg>
+          <h3>{{t:why3.title}}</h3><p>{{t:why3.text}}</p>
+        </div>
+        <div class="pillar">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <h3>{{t:why4.title}}</h3><p>{{t:why4.text}}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="section" id="gallery">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">{{t:gallery.eyebrow}}</p>
+        <h2>{{t:gallery.h2}}</h2>
+        <p>{{t:gallery.intro}}</p>
+      </div>
+      <div class="gallery-grid">
+        {{gallery:hero-pivot-wheat|g-wide g-tall,wheat-growing|g-tall,combine-harvester|,sorghum-field|,disc-plough-field|g-wide,maize-field|,tractor-lovol-2204|,hose-reel-irrigator|,boom-sprayers|g-wide,wheat-field-sky|g-tall,planter-muken|,warehouse-inspection|,wheat-sunrise-pivot|g-tall,excavator-maxpower|,tractor-tk854|,subsoiler|}}
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section section-alt" id="about">
+    <div class="wrap about-grid">
+      <div>
+        <p class="eyebrow">{{t:about.eyebrow}}</p>
+        <h2>{{t:about.h2}}</h2>
+        <p>{{t:about.p}}</p>
+        <blockquote class="quote">
+          <p>{{t:about.quote}}</p>
+          <footer>{{t:about.quoteFoot}}</footer>
+        </blockquote>
+      </div>
+      <aside class="about-card">
+        <h3>{{t:about.glance}}</h3>
+        <dl class="facts">
+          <div><dt>{{t:fact.hq.dt}}</dt><dd>{{t:fact.hq.dd}}</dd></div>
+          <div><dt>{{t:fact.core.dt}}</dt><dd>{{t:fact.core.dd}}</dd></div>
+          <div><dt>{{t:fact.also.dt}}</dt><dd>{{t:fact.also.dd}}</dd></div>
+          <div><dt>{{t:fact.lang.dt}}</dt><dd>{{alllangs}}</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </section>

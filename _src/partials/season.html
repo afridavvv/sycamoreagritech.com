@@ -1,0 +1,30 @@
+      <!-- Malawi farming calendar -->
+      <div class="season">
+        <div class="season-head">
+          <h3>{{t:season.title}}</h3>
+          <p>{{t:season.text}}</p>
+        </div>
+        <div class="season-chart">
+          <span></span>
+          <div class="sc-months" id="scMonths" aria-hidden="true"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span></div>
+
+          <span class="sc-label">{{t:season.row.rain}}</span>
+          <div class="sc-track">
+            <i class="sc-bar maize" style="grid-column: 11 / 13">{{t:season.bar.plant}}</i>
+            <i class="sc-bar maize" style="grid-column: 4 / 7; grid-row: 1">{{t:season.bar.harvest}}</i>
+          </div>
+
+          <span class="sc-label">{{t:season.row.winter}}</span>
+          <div class="sc-track">
+            <i class="sc-bar wheat" style="grid-column: 4 / 7">{{t:season.bar.plant}}</i>
+            <i class="sc-bar wheat" style="grid-column: 9 / 11; grid-row: 1">{{t:season.bar.harvest}}</i>
+          </div>
+
+          <span class="sc-label">{{t:season.row.prep}}</span>
+          <div class="sc-track">
+            <i class="sc-bar rain" style="grid-column: 8 / 12">{{t:season.bar.prep}}</i>
+            <i class="sc-bar rain" style="grid-column: 3 / 5; grid-row: 1">{{t:season.bar.prep}}</i>
+          </div>
+        </div>
+        <p class="season-note">{{t:season.note}}</p>
+      </div>

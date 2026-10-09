@@ -1,60 +1,36 @@
 (function () {
   'use strict';
 
-  var EMAIL = 'info@sycamoreagritech.com';
   var root = document.documentElement;
   var header = document.querySelector('.site-header');
+  var I18N = window.I18N || {};
+  var lang = I18N.lang || 'en';
+  var LANG_TAGS = { zh: 'zh-CN', en: 'en-GB', fr: 'fr', pt: 'pt' };
 
-  var LANG_TAGS = { zh: 'zh-CN', en: 'en', fr: 'fr', pt: 'pt' };
+  // Old links used ?lang=xx on one page; each language now has its own URL.
+  var asked = new URLSearchParams(location.search).get('lang');
+  if (asked && asked !== lang && I18N.suggest && I18N.suggest[asked]) {
+    location.replace(I18N.suggest[asked].url + location.hash);
+    return;
+  }
 
-  var META = {
-    zh: {
-      title: 'Sycamore Agritech Limited | 马拉维小麦与玉米种植',
-      desc: 'Sycamore Agritech Limited 在马拉维规模化种植小麦和玉米，采用中心支轴式喷灌，并为面粉、饮料、饲料和食品企业稳定供应粮食。'
-    },
-    en: {
-      title: 'Sycamore Agritech Limited | Wheat & Maize Farming in Malawi',
-      desc: 'Sycamore Agritech Limited grows wheat and maize at scale in Malawi under centre-pivot irrigation, and supplies grain to millers, beverage, feed and food companies.'
-    },
-    fr: {
-      title: 'Sycamore Agritech Limited | Culture de blé et de maïs au Malawi',
-      desc: "Sycamore Agritech Limited cultive du blé et du maïs à grande échelle au Malawi sous irrigation à pivot central, et approvisionne meuniers, brasseurs, fabricants d'aliments pour animaux et industriels de l'agroalimentaire."
-    },
-    pt: {
-      title: 'Sycamore Agritech Limited | Cultivo de trigo e milho no Malawi',
-      desc: 'A Sycamore Agritech Limited cultiva trigo e milho em grande escala no Malawi com rega por pivô central e fornece cereais a moageiras, indústrias de bebidas, fábricas de rações e empresas alimentares.'
-    }
+  // Enquiries go to the team that handles them
+  var EMAILS = {
+    wheat: 'sales@sycamoreagritech.com',
+    sorghum: 'sales@sycamoreagritech.com',
+    seed: 'sales@sycamoreagritech.com',
+    hire: 'hire@sycamoreagritech.com',
+    other: 'info@sycamoreagritech.com'
   };
 
-  // ---- Language ----
-  function currentLang() {
-    var l = root.getAttribute('data-lang');
-    return LANG_TAGS[l] ? l : 'en';
+  function store(key, value) {
+    try { localStorage.setItem(key, value); } catch (e) {}
+  }
+  function stored(key) {
+    try { return localStorage.getItem(key); } catch (e) { return null; }
   }
 
-  function applyLang(lang, remember) {
-    root.setAttribute('data-lang', lang);
-    root.lang = LANG_TAGS[lang];
-    document.title = META[lang].title;
-    var desc = document.querySelector('meta[name="description"]');
-    if (desc) desc.setAttribute('content', META[lang].desc);
-
-    // Text that can't hold <span lang> children (e.g. <option>)
-    document.querySelectorAll('[data-en]').forEach(function (el) {
-      el.textContent = el.getAttribute('data-' + lang);
-    });
-    document.querySelectorAll('[data-ph-en]').forEach(function (el) {
-      el.placeholder = el.getAttribute('data-ph-' + lang);
-    });
-
-    if (remember) {
-      try { localStorage.setItem('lang', lang); } catch (e) {}
-    }
-  }
-
-  applyLang(currentLang(), false);
-
-  // Language menu in the header
+  // ---- Language menu (links to the same page in other languages) ----
   var langBtn = document.getElementById('langBtn');
   var langMenu = document.getElementById('langMenu');
 
@@ -62,7 +38,6 @@
     langMenu.hidden = !open;
     langBtn.setAttribute('aria-expanded', String(open));
   }
-
   langBtn.addEventListener('click', function (e) {
     e.stopPropagation();
     setLangMenu(langMenu.hidden);
@@ -70,15 +45,28 @@
   document.addEventListener('click', function (e) {
     if (!langMenu.hidden && !langMenu.contains(e.target)) setLangMenu(false);
   });
-
-  // Header menu items and footer links both switch language in place
-  document.querySelectorAll('[data-set-lang]').forEach(function (el) {
-    el.addEventListener('click', function (e) {
-      e.preventDefault();
-      applyLang(el.getAttribute('data-set-lang'), true);
-      setLangMenu(false);
-    });
+  document.querySelectorAll('a[hreflang]').forEach(function (a) {
+    a.addEventListener('click', function () { store('lang', a.getAttribute('hreflang').slice(0, 2)); });
   });
+
+  // ---- Suggest the visitor's own language (never redirects automatically) ----
+  var suggest = document.getElementById('langSuggest');
+  var preferred = stored('lang') || (navigator.language || '').slice(0, 2).toLowerCase();
+  if (suggest && preferred !== lang && I18N.suggest && I18N.suggest[preferred] && stored('langSuggestClosed') !== lang) {
+    var s = I18N.suggest[preferred];
+    var text = document.getElementById('langSuggestText');
+    var link = document.getElementById('langSuggestLink');
+    text.textContent = s.text;
+    text.lang = LANG_TAGS[preferred];
+    link.textContent = s.go;
+    link.lang = LANG_TAGS[preferred];
+    link.href = s.url + location.hash;
+    suggest.hidden = false;
+    document.getElementById('langSuggestClose').addEventListener('click', function () {
+      suggest.hidden = true;
+      store('langSuggestClosed', lang);
+    });
+  }
 
   // ---- Mobile menu ----
   var menuBtn = document.getElementById('menuToggle');
@@ -87,7 +75,6 @@
     header.classList.toggle('nav-open', open);
     menuBtn.setAttribute('aria-expanded', String(open));
   }
-
   menuBtn.addEventListener('click', function () {
     setMenu(!header.classList.contains('nav-open'));
   });
@@ -107,8 +94,62 @@
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
-  // ---- "Get a quote" links preselect the product ----
+  // ---- Month names on the farming calendar ----
+  var months = document.getElementById('scMonths');
+  if (months && window.Intl) {
+    var fmt = new Intl.DateTimeFormat(LANG_TAGS[lang], { month: lang === 'zh' ? 'numeric' : 'short' });
+    Array.prototype.forEach.call(months.children, function (el, i) {
+      el.textContent = fmt.format(new Date(2026, i, 15)).replace('.', '');
+    });
+  }
+
+  // ---- Gallery lightbox ----
+  var lb = document.getElementById('lightbox');
+  var lbImg = document.getElementById('lbImg');
+  var lbCap = document.getElementById('lbCap');
+  var items = Array.prototype.slice.call(document.querySelectorAll('.g-item'));
+  var current = 0;
+
+  function show(i) {
+    current = (i + items.length) % items.length;
+    var cap = items[current].querySelector('.g-cap');
+    lbImg.src = items[current].getAttribute('data-full');
+    lbImg.alt = cap ? cap.textContent : '';
+    lbCap.textContent = cap ? cap.textContent : '';
+  }
+
+  if (lb && lb.showModal && items.length) {
+    items.forEach(function (item, i) {
+      item.addEventListener('click', function () {
+        show(i);
+        lb.showModal();
+        document.body.classList.add('lb-lock');
+      });
+    });
+    lb.addEventListener('close', function () {
+      document.body.classList.remove('lb-lock');
+      items[current].focus();
+    });
+    lb.querySelector('.lb-close').addEventListener('click', function () { lb.close(); });
+    lb.querySelector('.lb-prev').addEventListener('click', function () { show(current - 1); });
+    lb.querySelector('.lb-next').addEventListener('click', function () { show(current + 1); });
+    lb.addEventListener('click', function (e) {
+      if (e.target === lb || e.target.classList.contains('lb-figure')) lb.close();
+    });
+    lb.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowLeft') show(current - 1);
+      if (e.key === 'ArrowRight') show(current + 1);
+    });
+  }
+
+  // ---- Footer year ----
+  document.querySelectorAll('[data-year]').forEach(function (el) {
+    el.textContent = new Date().getFullYear();
+  });
+
+  // ---- "Get a quote" / "Book" links preselect the enquiry type ----
   var form = document.getElementById('inquiry');
+  if (!form) return;
   var productSelect = form.elements.namedItem('product');
 
   document.querySelectorAll('[data-product]').forEach(function (a) {
@@ -118,34 +159,28 @@
   });
 
   // ---- Inquiry form → opens the visitor's email app ----
-  var LABELS = {
-    zh: { subject: '询价', name: '姓名', company: '公司', email: '邮箱', product: '产品', qty: '数量', msg: '需求说明' },
-    en: { subject: 'Inquiry', name: 'Name', company: 'Company', email: 'Email', product: 'Product', qty: 'Quantity', msg: 'Details' },
-    fr: { subject: 'Demande de devis', name: 'Nom', company: 'Entreprise', email: 'E-mail', product: 'Produit', qty: 'Quantité', msg: 'Détails' },
-    pt: { subject: 'Pedido de cotação', name: 'Nome', company: 'Empresa', email: 'E-mail', product: 'Produto', qty: 'Quantidade', msg: 'Detalhes' }
-  };
-
   form.addEventListener('submit', function (e) {
     e.preventDefault();
 
-    var required = form.querySelectorAll('[required]');
     var firstInvalid = null;
-    required.forEach(function (el) {
+    form.querySelectorAll('[required]').forEach(function (el) {
       var ok = el.checkValidity() && el.value.trim() !== '';
       el.classList.toggle('invalid', !ok);
       if (!ok && !firstInvalid) firstInvalid = el;
     });
     if (firstInvalid) { firstInvalid.focus(); return; }
 
-    var L = LABELS[currentLang()];
+    var L = I18N.mail || {};
     var v = function (name) { return form.elements.namedItem(name).value.trim(); };
     var product = productSelect.options[productSelect.selectedIndex].text;
+    var to = EMAILS[productSelect.value] || EMAILS.other;
 
     var lines = [
       L.name + ': ' + v('fullname'),
       L.company + ': ' + v('company'),
       L.email + ': ' + v('email'),
-      L.product + ': ' + product,
+      L.phone + ': ' + v('phone'),
+      L.interest + ': ' + product,
       L.qty + ': ' + v('quantity'),
       '',
       L.msg + ':',
@@ -153,17 +188,12 @@
     ];
     var subject = L.subject + ' - ' + product + ' - ' + v('fullname');
 
-    window.location.href = 'mailto:' + EMAIL +
+    window.location.href = 'mailto:' + to +
       '?subject=' + encodeURIComponent(subject) +
       '&body=' + encodeURIComponent(lines.join('\n'));
   });
 
   form.querySelectorAll('[required]').forEach(function (el) {
     el.addEventListener('input', function () { el.classList.remove('invalid'); });
-  });
-
-  // ---- Footer year ----
-  document.querySelectorAll('[data-year]').forEach(function (el) {
-    el.textContent = new Date().getFullYear();
   });
 })();
