@@ -17,7 +17,7 @@ CNAME               GitHub Pages 自定义域名
 
 - 每段文字都有中英两份，相邻放置，例如
   `<span lang="zh-CN">关于我们</span><span lang="en">About</span>`，两份都要改。
-- 联系方式在 `index.html` 里搜 `TODO`（电话/微信、地址）。
+- 联系方式（邮箱、电话、地址）在 `index.html` 的「联系我们」部分，搜 `contact-list`。
 - 询价表单会打开访客的邮件应用，收件人是 `info@sycamoreagritech.com`；如需更换，改 `assets/main.js` 顶部的 `EMAIL` 和 `index.html` 里的邮箱。
 - 本地预览：`python3 -m http.server 8737`，然后打开 http://localhost:8737
 
