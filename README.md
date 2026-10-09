@@ -1,11 +1,12 @@
 # sycamoreagritech.com
 
-Sycamore Agritech 官网：纯静态中英双语单页，没有构建步骤，托管在 GitHub Pages，域名解析在阿里云。
+Sycamore Agritech Limited 官网：纯静态单页，支持中文、English、Français、Português 四种语言，没有构建步骤，托管在 GitHub Pages，域名解析在阿里云。
 
 ```
-index.html          页面内容（中英文写在一起：lang="zh-CN" / lang="en"）
+index.html          页面内容（四种语言写在一起：lang="zh-CN" / "en" / "fr" / "pt"）
 assets/style.css    样式
 assets/main.js      语言切换、手机菜单、询价表单
+assets/photos/      农场与仓库照片（已压缩、去除元数据）
 assets/logo-*.png   从公司 logo 抠出的透明图（标志、SYCAMORE 字标，各有深色背景用的浅色版）
 assets/logo-original.webp  logo 原图
 assets/favicon.png, apple-touch-icon.png  浏览器 / 手机桌面图标
@@ -15,8 +16,10 @@ CNAME               GitHub Pages 自定义域名
 
 ## 修改内容
 
-- 每段文字都有中英两份，相邻放置，例如
-  `<span lang="zh-CN">关于我们</span><span lang="en">About</span>`，两份都要改。
+- 每段文字都有四种语言版本，相邻放置，例如
+  `<span lang="zh-CN">关于我们</span><span lang="en">About</span><span lang="fr">À propos</span><span lang="pt">Sobre nós</span>`，
+  修改时四份都要改。下拉选项和输入框提示文字写在 `data-zh` / `data-en` / `data-fr` / `data-pt`（或 `data-ph-*`）属性里。
+- 访客第一次打开时按浏览器语言自动选择，其他语言默认显示英文；也可以用 `?lang=zh|en|fr|pt` 指定。
 - 联系方式（邮箱、电话、地址）在 `index.html` 的「联系我们」部分，搜 `contact-list`。
 - 询价表单会打开访客的邮件应用，收件人是 `info@sycamoreagritech.com`；如需更换，改 `assets/main.js` 顶部的 `EMAIL` 和 `index.html` 里的邮箱。
 - 本地预览：`python3 -m http.server 8737`，然后打开 http://localhost:8737

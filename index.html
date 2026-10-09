@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="zh-CN" data-lang="zh">
+<html lang="en" data-lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sycamore Agritech Limited | 农产品采购与贸易</title>
-<meta name="description" content="Sycamore Agritech 专注农产品采购与贸易，提供从产地寻源、验货质检到物流交付的一站式服务。">
+<title>Sycamore Agritech Limited | Wheat &amp; Maize Farming in Malawi</title>
+<meta name="description" content="Sycamore Agritech Limited grows wheat and maize at scale in Malawi under centre-pivot irrigation, and supplies grain to millers, beverage, feed and food companies.">
 <meta name="theme-color" content="#083e1f">
 <link rel="canonical" href="https://sycamoreagritech.com/">
 <link rel="icon" href="assets/favicon.png" type="image/png">
@@ -12,16 +12,18 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://sycamoreagritech.com/">
 <meta property="og:title" content="Sycamore Agritech Limited">
-<meta property="og:description" content="农产品采购与贸易 · Agricultural sourcing &amp; trade">
+<meta property="og:description" content="Wheat &amp; maize farming in Malawi · 马拉维小麦与玉米种植 · Culture de blé et de maïs au Malawi · Cultivo de trigo e milho no Malawi">
 <meta property="og:image" content="https://sycamoreagritech.com/assets/og-image.jpg">
 <script>
-  // Pick the language before first paint: ?lang= → saved choice → browser language.
+  // Pick the language before first paint: ?lang= → saved choice → browser language → English.
   (function () {
+    var LANGS = ['zh', 'en', 'fr', 'pt'], TAGS = { zh: 'zh-CN', en: 'en', fr: 'fr', pt: 'pt' };
     var d = document.documentElement, l = new URLSearchParams(location.search).get('lang');
-    if (l !== 'zh' && l !== 'en') { try { l = localStorage.getItem('lang'); } catch (e) {} }
-    if (l !== 'zh' && l !== 'en') { l = /^zh/i.test(navigator.language || '') ? 'zh' : 'en'; }
+    if (LANGS.indexOf(l) < 0) { try { l = localStorage.getItem('lang'); } catch (e) {} }
+    if (LANGS.indexOf(l) < 0) { l = (navigator.language || '').slice(0, 2).toLowerCase(); }
+    if (LANGS.indexOf(l) < 0) { l = 'en'; }
     d.setAttribute('data-lang', l);
-    d.lang = l === 'zh' ? 'zh-CN' : 'en';
+    d.lang = TAGS[l];
   })();
 </script>
 <link rel="stylesheet" href="assets/style.css">
@@ -39,17 +41,28 @@
     </a>
 
     <nav class="nav" id="nav" aria-label="Main">
-      <a href="#about"><span lang="zh-CN">关于我们</span><span lang="en">About</span></a>
-      <a href="#products"><span lang="zh-CN">主营产品</span><span lang="en">Products</span></a>
-      <a href="#process"><span lang="zh-CN">合作流程</span><span lang="en">How we work</span></a>
-      <a href="#quality"><span lang="zh-CN">品质保障</span><span lang="en">Quality</span></a>
-      <a href="#contact" class="nav-cta"><span lang="zh-CN">联系我们</span><span lang="en">Contact</span></a>
+      <a href="#farming"><span lang="zh-CN">种植业务</span><span lang="en">Farming</span><span lang="fr">Agriculture</span><span lang="pt">Agricultura</span></a>
+      <a href="#crops"><span lang="zh-CN">主要作物</span><span lang="en">Crops</span><span lang="fr">Cultures</span><span lang="pt">Culturas</span></a>
+      <a href="#supply"><span lang="zh-CN">粮食供应</span><span lang="en">Grain supply</span><span lang="fr">Approvisionnement</span><span lang="pt">Fornecimento</span></a>
+      <a href="#about"><span lang="zh-CN">关于我们</span><span lang="en">About</span><span lang="fr">À propos</span><span lang="pt">Sobre nós</span></a>
+      <a href="#contact" class="nav-cta"><span lang="zh-CN">联系我们</span><span lang="en">Contact</span><span lang="fr">Contact</span><span lang="pt">Contacto</span></a>
     </nav>
 
-    <button class="lang-toggle" id="langToggle" type="button" aria-label="切换语言 / Switch language">
-      <span class="lt lt-zh">中</span><span class="lt lt-en">EN</span>
-    </button>
-    <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="菜单 / Menu">
+    <div class="lang" id="lang">
+      <button class="lang-btn" id="langBtn" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="langMenu" aria-label="Language · 语言 · Langue · Idioma">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg>
+        <span class="lc lc-zh">中文</span><span class="lc lc-en">EN</span><span class="lc lc-fr">FR</span><span class="lc lc-pt">PT</span>
+        <svg class="icon chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <ul class="lang-menu" id="langMenu" hidden>
+        <li><button type="button" data-set-lang="zh">中文</button></li>
+        <li><button type="button" data-set-lang="en">English</button></li>
+        <li><button type="button" data-set-lang="fr">Français</button></li>
+        <li><button type="button" data-set-lang="pt">Português</button></li>
+      </ul>
+    </div>
+
+    <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
   </div>
@@ -59,65 +72,33 @@
 
   <!-- Hero -->
   <section class="hero">
-    <div class="wrap hero-grid">
-      <div class="hero-copy">
-        <p class="eyebrow"><span lang="zh-CN">农产品采购与贸易</span><span lang="en">Agricultural sourcing &amp; trade</span></p>
-        <h1>
-          <span lang="zh-CN">从可靠产地，<br>到您的仓库</span>
-          <span lang="en">From trusted origins to your warehouse</span>
-        </h1>
-        <p class="lead">
-          <span lang="zh-CN">Sycamore Agritech 专注于农产品的采购与贸易。我们对接可靠的种植者与供应商，为采购方提供寻源、验货、物流与单证的一站式服务，让每一批货物都清楚可控。</span>
-          <span lang="en">Sycamore Agritech sources and trades agricultural products. We work with reliable growers and suppliers and handle sourcing, inspection, logistics and paperwork for our buyers, so every shipment stays clear and under control.</span>
-        </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#contact"><span lang="zh-CN">获取报价</span><span lang="en">Request a quote</span></a>
-          <a class="btn btn-ghost" href="#products"><span lang="zh-CN">查看产品</span><span lang="en">See our products</span></a>
-        </div>
+    <picture class="hero-media">
+      <source media="(max-width: 700px)" srcset="assets/photos/hero-pivot-wheat-900.jpg">
+      <img src="assets/photos/hero-pivot-wheat.jpg" alt="" width="1706" height="1280" fetchpriority="high">
+    </picture>
+    <div class="wrap hero-inner">
+      <p class="eyebrow eyebrow-light"><span lang="zh-CN">马拉维 · 规模化种植</span><span lang="en">Malawi · Large-scale farming</span><span lang="fr">Malawi · Agriculture à grande échelle</span><span lang="pt">Malawi · Agricultura em grande escala</span></p>
+      <h1>
+        <span lang="zh-CN">在马拉维，<br>种出好粮食</span>
+        <span lang="en">Growing quality grain in Malawi</span>
+        <span lang="fr">Des céréales de qualité, cultivées au Malawi</span>
+        <span lang="pt">Cereais de qualidade, cultivados no Malawi</span>
+      </h1>
+      <p class="lead">
+        <span lang="zh-CN">Sycamore Agritech 在马拉维经营规模化农场，用中心支轴式喷灌种植小麦和玉米。从播种、田间管理到收获、仓储，每个环节我们都自己把关，为客户稳定供应品质可靠的粮食。</span>
+        <span lang="en">Sycamore Agritech runs large-scale farms in Malawi, growing wheat and maize under centre-pivot irrigation. We manage every stage ourselves, from planting and crop care to harvest and storage, so our customers get a steady supply of dependable grain.</span>
+        <span lang="fr">Sycamore Agritech exploite des fermes à grande échelle au Malawi, où nous cultivons du blé et du maïs sous irrigation à pivot central. Nous maîtrisons chaque étape, du semis et du suivi des cultures jusqu'à la récolte et au stockage, pour garantir à nos clients un approvisionnement régulier en céréales fiables.</span>
+        <span lang="pt">A Sycamore Agritech gere explorações agrícolas de grande escala no Malawi, onde cultivamos trigo e milho com rega por pivô central. Acompanhamos cada etapa, da sementeira e do maneio da cultura à colheita e ao armazenamento, para garantir aos nossos clientes um fornecimento regular de cereais de confiança.</span>
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-gold" href="#farming"><span lang="zh-CN">了解种植业务</span><span lang="en">Explore our farming</span><span lang="fr">Découvrir nos cultures</span><span lang="pt">Conheça a nossa agricultura</span></a>
+        <a class="btn btn-outline-light" href="#contact"><span lang="zh-CN">获取报价</span><span lang="en">Request a quote</span><span lang="fr">Demander un devis</span><span lang="pt">Pedir cotação</span></a>
       </div>
-
-      <div class="hero-art">
-        <svg viewBox="0 0 560 440" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Farmland with a sycamore tree">
-          <defs>
-            <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0" stop-color="#efe3c4"/>
-              <stop offset="1" stop-color="#f8f5ec"/>
-            </linearGradient>
-            <clipPath id="field"><path d="M0 330C160 310 360 318 560 326V440H0Z"/></clipPath>
-          </defs>
-          <rect width="560" height="440" fill="url(#sky)"/>
-          <circle cx="410" cy="118" r="82" fill="#c9a94f" opacity=".18"/>
-          <circle cx="410" cy="118" r="52" fill="#c9a94f" opacity=".85"/>
-          <path d="M292 86q6-6 12 0q6-6 12 0M326 104q4-4 8 0q4-4 8 0" fill="none" stroke="#115729" stroke-width="2" stroke-linecap="round"/>
-          <path d="M0 238C80 205 170 208 250 228S420 200 560 222V440H0Z" fill="#c6d8b9"/>
-          <circle cx="470" cy="199" r="11" fill="#6f9a68"/>
-          <rect x="469" y="205" width="2" height="12" fill="#6f9a68"/>
-          <path d="M0 285C110 250 220 258 320 276S470 262 560 270V440H0Z" fill="#7fa774"/>
-          <ellipse cx="150" cy="264" rx="42" ry="5" fill="#083e1f" opacity=".15"/>
-          <path d="M144 265L146.5 212h4L153 265Z" fill="#083e1f"/>
-          <g fill="#0d4a25">
-            <circle cx="148" cy="188" r="34"/>
-            <circle cx="122" cy="202" r="24"/>
-            <circle cx="174" cy="202" r="24"/>
-            <circle cx="135" cy="168" r="22"/>
-            <circle cx="162" cy="166" r="22"/>
-          </g>
-          <circle cx="136" cy="176" r="15" fill="#115729" opacity=".8"/>
-          <path d="M0 330C160 310 360 318 560 326V440H0Z" fill="#0f4a24"/>
-          <path clip-path="url(#field)" fill="#1d6633" d="M-5.9 318L-3.5 318L-173 440L-187 440ZM22.6 318L25.0 318L-127 440L-141 440ZM51.0 318L53.4 318L-81 440L-95 440ZM79.5 318L81.9 318L-35 440L-49 440ZM108.0 318L110.4 318L11 440L-3 440ZM136.5 318L138.8 318L57 440L43 440ZM164.9 318L167.3 318L103 440L89 440ZM193.4 318L195.8 318L149 440L135 440ZM221.9 318L224.3 318L195 440L181 440ZM250.3 318L252.7 318L241 440L227 440ZM278.8 318L281.2 318L287 440L273 440ZM307.3 318L309.7 318L333 440L319 440ZM335.8 318L338.2 318L379 440L365 440ZM364.2 318L366.6 318L425 440L411 440ZM392.7 318L395.1 318L471 440L457 440ZM421.2 318L423.6 318L517 440L503 440ZM449.7 318L452.1 318L563 440L549 440ZM478.1 318L480.5 318L609 440L595 440ZM506.6 318L509.0 318L655 440L641 440ZM535.1 318L537.5 318L701 440L687 440ZM563.6 318L566.0 318L747 440L733 440Z"/>
-          <path clip-path="url(#field)" fill="#a88a3c" d="M335.8 318L338.2 318L379 440L365 440ZM364.2 318L366.6 318L425 440L411 440Z"/>
-        </svg>
-
-        <div class="hero-card">
-          <p class="hero-card-title"><span lang="zh-CN">全程可追溯</span><span lang="en">Traceable end to end</span></p>
-          <ol class="trace">
-            <li><span lang="zh-CN">产地</span><span lang="en">Origin</span></li>
-            <li><span lang="zh-CN">验货</span><span lang="en">Inspection</span></li>
-            <li><span lang="zh-CN">装运</span><span lang="en">Shipment</span></li>
-            <li><span lang="zh-CN">交付</span><span lang="en">Delivery</span></li>
-          </ol>
-        </div>
-      </div>
+      <ul class="hero-tags">
+        <li><span lang="zh-CN">小麦</span><span lang="en">Wheat</span><span lang="fr">Blé</span><span lang="pt">Trigo</span></li>
+        <li><span lang="zh-CN">玉米</span><span lang="en">Maize</span><span lang="fr">Maïs</span><span lang="pt">Milho</span></li>
+        <li><span lang="zh-CN">中心支轴式喷灌</span><span lang="en">Centre-pivot irrigation</span><span lang="fr">Irrigation à pivot central</span><span lang="pt">Rega por pivô central</span></li>
+      </ul>
     </div>
   </section>
 
@@ -126,248 +107,297 @@
     <div class="wrap">
       <div class="pillar-grid">
         <div class="pillar">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6-5.6-6-11a6 6 0 0 1 12 0c0 5.4-6 11-6 11z"/><circle cx="12" cy="10" r="2.2"/></svg>
-          <h3><span lang="zh-CN">产地直采</span><span lang="en">Direct from origin</span></h3>
-          <p><span lang="zh-CN">与产区种植者和合作社直接合作，减少中间环节。</span><span lang="en">We work directly with growers and cooperatives, cutting out unnecessary middlemen.</span></p>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21v-9"/><path d="M12 12c0-4 3-7 7-7 0 4-3 7-7 7zM12 14.5c0-3-2.5-5.5-6-5.5 0 3 2.5 5.5 6 5.5z"/><path d="M5 21h14"/></svg>
+          <h3><span lang="zh-CN">自有农场</span><span lang="en">Our own farms</span><span lang="fr">Nos propres fermes</span><span lang="pt">Explorações próprias</span></h3>
+          <p><span lang="zh-CN">粮食出自我们自己经营的农场，来源清楚。</span><span lang="en">Our grain comes from farms we run ourselves, so its origin is never in doubt.</span><span lang="fr">Nos céréales proviennent de fermes que nous exploitons nous-mêmes : leur origine est connue.</span><span lang="pt">Os nossos cereais vêm de explorações que nós próprios gerimos, com origem conhecida.</span></p>
+        </div>
+        <div class="pillar">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c3 4 6 7.5 6 11a6 6 0 0 1-12 0c0-3.5 3-7 6-11z"/><path d="M9.5 14.5a2.5 2.5 0 0 0 2.5 2.5"/></svg>
+          <h3><span lang="zh-CN">喷灌种植</span><span lang="en">Irrigated crops</span><span lang="fr">Cultures irriguées</span><span lang="pt">Culturas irrigadas</span></h3>
+          <p><span lang="zh-CN">中心支轴式喷灌按需供水，旱季也能稳定生产。</span><span lang="en">Centre-pivot irrigation delivers water when crops need it, keeping production steady through the dry season.</span><span lang="fr">L'irrigation à pivot central apporte l'eau au bon moment et assure une production régulière, même en saison sèche.</span><span lang="pt">A rega por pivô central fornece água quando a cultura precisa e mantém a produção estável, mesmo na época seca.</span></p>
         </div>
         <div class="pillar">
           <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
-          <h3><span lang="zh-CN">逐批验货</span><span lang="en">Every lot inspected</span></h3>
-          <p><span lang="zh-CN">装运前按合同规格检验，可安排第三方检验。</span><span lang="en">Checked against contract specs before shipping, with third-party inspection on request.</span></p>
-        </div>
-        <div class="pillar">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M10 12h5M10 16h5"/></svg>
-          <h3><span lang="zh-CN">单证齐全</span><span lang="en">Paperwork handled</span></h3>
-          <p><span lang="zh-CN">协助办理检验检疫、原产地等进出口所需单证。</span><span lang="en">We prepare the inspection, phytosanitary and origin documents your shipment needs.</span></p>
+          <h3><span lang="zh-CN">收储质检</span><span lang="en">Storage &amp; inspection</span><span lang="fr">Stockage et contrôle</span><span lang="pt">Armazenamento e controlo</span></h3>
+          <p><span lang="zh-CN">收获后清理、装袋、入库，出库前逐批检验。</span><span lang="en">After harvest, grain is cleaned, bagged and stored, and every lot is checked before dispatch.</span><span lang="fr">Après la récolte, les grains sont nettoyés, ensachés et stockés ; chaque lot est contrôlé avant expédition.</span><span lang="pt">Após a colheita, o grão é limpo, ensacado e armazenado; cada lote é verificado antes da expedição.</span></p>
         </div>
         <div class="pillar">
           <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg>
-          <h3><span lang="zh-CN">稳定交付</span><span lang="en">Reliable delivery</span></h3>
-          <p><span lang="zh-CN">统筹仓储、运输与清关，按约定时间交付。</span><span lang="en">Warehousing, freight and customs coordinated to arrive on the agreed date.</span></p>
+          <h3><span lang="zh-CN">稳定供应</span><span lang="en">Reliable supply</span><span lang="fr">Approvisionnement fiable</span><span lang="pt">Fornecimento fiável</span></h3>
+          <p><span lang="zh-CN">按约定的规格、数量和时间交付。</span><span lang="en">Delivered to the agreed specification, volume and date.</span><span lang="fr">Livraison conforme aux spécifications, quantités et délais convenus.</span><span lang="pt">Entrega conforme a especificação, quantidade e prazo acordados.</span></p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- About -->
-  <section class="section" id="about">
-    <div class="wrap about-grid">
-      <div>
-        <p class="eyebrow"><span lang="zh-CN">关于我们</span><span lang="en">About us</span></p>
-        <h2><span lang="zh-CN">扎根产地，稳健长久</span><span lang="en">Deep roots, steady growth</span></h2>
+  <!-- Farming (core business) -->
+  <section class="section" id="farming">
+    <div class="wrap farm-grid">
+      <div class="farm-copy">
+        <p class="eyebrow"><span lang="zh-CN">种植业务</span><span lang="en">Farming</span><span lang="fr">Agriculture</span><span lang="pt">Agricultura</span></p>
+        <h2>
+          <span lang="zh-CN">我们的核心：规模化粮食种植</span>
+          <span lang="en">At our core: growing grain at scale</span>
+          <span lang="fr">Notre cœur de métier : la culture céréalière à grande échelle</span>
+          <span lang="pt">O nosso núcleo: cultivo de cereais em grande escala</span>
+        </h2>
         <p>
-          <span lang="zh-CN">Sycamore（梧桐）是一种根深叶茂的树。我们以此为名，希望像它一样稳健、长久：与产地建立长期合作，为客户提供值得信赖的货源。</span>
-          <span lang="en">The sycamore is a broad, deep-rooted tree. We took its name because that is the kind of business we want to be: steady and long-lived, built on lasting relationships with growers and dependable supply for our customers.</span>
+          <span lang="zh-CN">种植是 Sycamore Agritech 的核心业务。我们在马拉维的农场以小麦和玉米为主，大面积连片种植，配套中心支轴式喷灌系统，按作物生长阶段精准供水。</span>
+          <span lang="en">Farming is the heart of Sycamore Agritech. Our farms in Malawi focus on wheat and maize, grown in large contiguous fields served by centre-pivot irrigation that waters each crop according to its growth stage.</span>
+          <span lang="fr">L'agriculture est au cœur de Sycamore Agritech. Nos fermes au Malawi sont consacrées principalement au blé et au maïs, cultivés sur de grandes parcelles d'un seul tenant et irrigués par pivot central selon le stade de croissance de chaque culture.</span>
+          <span lang="pt">A agricultura é o centro da atividade da Sycamore Agritech. As nossas explorações no Malawi dedicam-se sobretudo ao trigo e ao milho, cultivados em grandes parcelas contínuas e regados por pivô central de acordo com a fase de crescimento de cada cultura.</span>
         </p>
         <p>
-          <span lang="zh-CN">我们熟悉农产品的种植周期、质量标准与贸易流程。告诉我们您需要的品类、规格、数量和交期，我们会匹配合适的产地与供应商，并全程跟进直至货物交付。</span>
-          <span lang="en">We know crop cycles, quality standards and trade procedures. Tell us the product, specification, volume and timing you need, and we match you with the right origin and supplier, then follow the order all the way to delivery.</span>
+          <span lang="zh-CN">我们的团队全程管理田间作业：整地播种、灌溉施肥、病虫害防治到适时收获，让每一季的产量和品质都有保障。</span>
+          <span lang="en">Our team manages the full field cycle, from land preparation and planting to irrigation, fertilisation, crop protection and timely harvest, to protect both yield and quality every season.</span>
+          <span lang="fr">Notre équipe gère tout le cycle au champ : préparation du sol et semis, irrigation, fertilisation, protection des cultures et récolte au bon moment, afin de garantir rendement et qualité à chaque saison.</span>
+          <span lang="pt">A nossa equipa gere todo o ciclo no campo: preparação do solo e sementeira, rega, fertilização, proteção das culturas e colheita no momento certo, para assegurar produtividade e qualidade em cada campanha.</span>
         </p>
-        <blockquote class="quote">
-          <p lang="zh-CN">“栽下梧桐树，引得凤凰来。”</p>
-          <p lang="en">“Plant a sycamore, and the phoenix will come.”</p>
-          <footer><span lang="zh-CN">做好扎实的事，好的伙伴自然会来。</span><span lang="en">An old Chinese saying: build something worthwhile, and good partners follow.</span></footer>
-        </blockquote>
-      </div>
-      <aside class="about-card">
-        <h3><span lang="zh-CN">我们服务的客户</span><span lang="en">Who we work with</span></h3>
-        <ul class="checks">
-          <li><span lang="zh-CN">食品加工企业</span><span lang="en">Food processors</span></li>
-          <li><span lang="zh-CN">批发商与分销商</span><span lang="en">Wholesalers &amp; distributors</span></li>
-          <li><span lang="zh-CN">进口商与贸易商</span><span lang="en">Importers &amp; traders</span></li>
-          <li><span lang="zh-CN">饲料与养殖企业</span><span lang="en">Feed mills &amp; livestock producers</span></li>
-          <li><span lang="zh-CN">商超与餐饮供应链</span><span lang="en">Retail &amp; food-service supply chains</span></li>
+
+        <ul class="practice-list">
+          <li>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 7h19"/><path d="M5 7l2.5 10L10 7M14 7l2.5 10L19 7"/><circle cx="7.5" cy="18.5" r="1.6"/><circle cx="16.5" cy="18.5" r="1.6"/><path d="M12 7v3"/></svg>
+            <div>
+              <h3><span lang="zh-CN">中心支轴式喷灌</span><span lang="en">Centre-pivot irrigation</span><span lang="fr">Irrigation à pivot central</span><span lang="pt">Rega por pivô central</span></h3>
+              <p><span lang="zh-CN">大型喷灌机绕中心旋转，均匀覆盖整片农田，节水且减少人工。</span><span lang="en">Large pivots rotate around a central point to water entire fields evenly, saving water and labour.</span><span lang="fr">De grands pivots tournent autour d'un point central pour irriguer uniformément toute la parcelle, en économisant l'eau et la main-d'œuvre.</span><span lang="pt">Grandes pivôs giram em torno de um ponto central e regam uniformemente toda a parcela, poupando água e mão de obra.</span></p>
+            </div>
+          </li>
+          <li>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21v-9"/><path d="M12 12c0-4 3-7 7-7 0 4-3 7-7 7zM12 14.5c0-3-2.5-5.5-6-5.5 0 3 2.5 5.5 6 5.5z"/></svg>
+            <div>
+              <h3><span lang="zh-CN">科学田间管理</span><span lang="en">Careful crop management</span><span lang="fr">Conduite rigoureuse des cultures</span><span lang="pt">Maneio cuidadoso das culturas</span></h3>
+              <p><span lang="zh-CN">按生长阶段安排施肥与植保，持续巡田，及时处理问题。</span><span lang="en">Fertiliser and crop protection timed to each growth stage, with regular field scouting to catch problems early.</span><span lang="fr">Fertilisation et protection des cultures adaptées à chaque stade, avec des tournées régulières pour détecter les problèmes tôt.</span><span lang="pt">Fertilização e proteção das culturas ajustadas a cada fase, com visitas regulares ao campo para detetar problemas cedo.</span></p>
+            </div>
+          </li>
+          <li>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V9l9-5 9 5v12"/><path d="M7 21v-7h10v7M7 17.5h10"/></svg>
+            <div>
+              <h3><span lang="zh-CN">适时收获与仓储</span><span lang="en">Timely harvest &amp; storage</span><span lang="fr">Récolte et stockage maîtrisés</span><span lang="pt">Colheita e armazenamento atempados</span></h3>
+              <p><span lang="zh-CN">成熟后及时收获，清理装袋后入库保存，保持粮食干燥洁净。</span><span lang="en">Crops are harvested at maturity, then cleaned, bagged and stored to keep grain dry and clean.</span><span lang="fr">Les cultures sont récoltées à maturité, puis nettoyées, ensachées et stockées pour garder le grain sec et propre.</span><span lang="pt">As culturas são colhidas na maturação, depois limpas, ensacadas e armazenadas para manter o grão seco e limpo.</span></p>
+            </div>
+          </li>
         </ul>
-      </aside>
+      </div>
+
+      <figure class="farm-photo">
+        <img src="assets/photos/farm-wheat-sunrise.jpg" alt="" width="1200" height="900" loading="lazy">
+        <figcaption><span lang="zh-CN">清晨的小麦田，远处是中心支轴式喷灌机</span><span lang="en">Wheat at first light, with a centre pivot on the horizon</span><span lang="fr">Blé au lever du jour, avec un pivot central à l'horizon</span><span lang="pt">Trigo ao amanhecer, com um pivô central no horizonte</span></figcaption>
+      </figure>
     </div>
   </section>
 
-  <!-- Products -->
-  <section class="section section-alt" id="products">
+  <!-- Crops -->
+  <section class="section section-alt" id="crops">
     <div class="wrap">
       <div class="section-head">
-        <p class="eyebrow"><span lang="zh-CN">主营产品</span><span lang="en">Products</span></p>
-        <h2><span lang="zh-CN">我们经营的品类</span><span lang="en">What we trade</span></h2>
-        <p><span lang="zh-CN">以下为我们的主要经营品类。具体品种、规格与产地可按需求定制，其他品类也欢迎询价。</span><span lang="en">Our main product categories are below. Varieties, specs and origins can be tailored to your needs, and we're happy to quote on other products too.</span></p>
+        <p class="eyebrow"><span lang="zh-CN">主要作物</span><span lang="en">Our crops</span><span lang="fr">Nos cultures</span><span lang="pt">As nossas culturas</span></p>
+        <h2><span lang="zh-CN">小麦与玉米</span><span lang="en">Wheat and maize</span><span lang="fr">Blé et maïs</span><span lang="pt">Trigo e milho</span></h2>
+        <p><span lang="zh-CN">这两种作物是我们种植的主力，也是我们向客户供应的主要粮食。</span><span lang="en">These two crops are the mainstay of our farms and the main grains we supply.</span><span lang="fr">Ces deux cultures constituent l'essentiel de nos exploitations et les principales céréales que nous fournissons.</span><span lang="pt">Estas duas culturas são a base das nossas explorações e os principais cereais que fornecemos.</span></p>
       </div>
 
-      <div class="product-grid">
-        <article class="product">
-          <div class="product-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22V7"/><path d="M12 8c-.6-2 0-3.6 0-5 0 1.4.6 3 0 5z"/><path d="M12 12c-2 0-3.6-1-4-3 2 0 3.6 1 4 3zM12 12c2 0 3.6-1 4-3-2 0-3.6 1-4 3zM12 16.5c-2 0-3.6-1-4-3 2 0 3.6 1 4 3zM12 16.5c2 0 3.6-1 4-3-2 0-3.6 1-4 3z"/></svg></div>
-          <h3><span lang="zh-CN">粮谷</span><span lang="en">Grains</span></h3>
-          <p><span lang="zh-CN">小麦、玉米、大米、大麦等</span><span lang="en">Wheat, corn, rice, barley and more</span></p>
-          <a class="product-link" href="#contact" data-product="grains"><span lang="zh-CN">询价</span><span lang="en">Get a quote</span> →</a>
+      <div class="crop-grid">
+        <article class="crop">
+          <img src="assets/photos/crop-wheat.jpg" alt="" width="1000" height="750" loading="lazy">
+          <div class="crop-body">
+            <h3><span lang="zh-CN">小麦</span><span lang="en">Wheat</span><span lang="fr">Blé</span><span lang="pt">Trigo</span></h3>
+            <p><span lang="zh-CN">在喷灌条件下种植，籽粒饱满，适合制粉及食品加工。</span><span lang="en">Grown under irrigation for well-filled grain, suited to milling and food processing.</span><span lang="fr">Cultivé sous irrigation pour un grain bien rempli, adapté à la meunerie et à la transformation alimentaire.</span><span lang="pt">Cultivado sob rega para um grão bem formado, adequado à moagem e à transformação alimentar.</span></p>
+            <ul class="tags">
+              <li><span lang="zh-CN">面粉厂</span><span lang="en">Flour mills</span><span lang="fr">Minoteries</span><span lang="pt">Moageiras</span></li>
+              <li><span lang="zh-CN">食品加工</span><span lang="en">Food processing</span><span lang="fr">Agroalimentaire</span><span lang="pt">Indústria alimentar</span></li>
+            </ul>
+            <a class="crop-link" href="#contact" data-product="wheat"><span lang="zh-CN">小麦询价</span><span lang="en">Get a wheat quote</span><span lang="fr">Devis pour le blé</span><span lang="pt">Cotação de trigo</span> →</a>
+          </div>
         </article>
-        <article class="product">
-          <div class="product-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8.5" cy="9.5" r="3.5"/><circle cx="15.5" cy="9.5" r="3.5"/><circle cx="12" cy="15.5" r="3.5"/></svg></div>
-          <h3><span lang="zh-CN">豆类与油籽</span><span lang="en">Pulses &amp; oilseeds</span></h3>
-          <p><span lang="zh-CN">大豆、花生、芝麻、葵花籽等</span><span lang="en">Soybeans, peanuts, sesame, sunflower seeds and more</span></p>
-          <a class="product-link" href="#contact" data-product="pulses"><span lang="zh-CN">询价</span><span lang="en">Get a quote</span> →</a>
-        </article>
-        <article class="product">
-          <div class="product-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7.5c-1.5-1-5-1.5-6.5 1.5S5 15.5 7 18.5s3.5 3 5 2c1.5 1 3 1 5-2s2.5-6.5 1-9.5S13.5 6.5 12 7.5z"/><path d="M12 7.5c0-2 1-3.5 2.5-4.5"/></svg></div>
-          <h3><span lang="zh-CN">新鲜水果</span><span lang="en">Fresh fruit</span></h3>
-          <p><span lang="zh-CN">柑橘、苹果、葡萄等应季水果</span><span lang="en">Citrus, apples, grapes and other seasonal fruit</span></p>
-          <a class="product-link" href="#contact" data-product="fruit"><span lang="zh-CN">询价</span><span lang="en">Get a quote</span> →</a>
-        </article>
-        <article class="product">
-          <div class="product-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 9c-2-2-5-1-6 1L4 20l10-5c2-1 3-4 1-6z"/><path d="M15 9l1.5-4.5M15 9l4.5-1.5M15 9l3.5-3.5"/></svg></div>
-          <h3><span lang="zh-CN">新鲜蔬菜</span><span lang="en">Fresh vegetables</span></h3>
-          <p><span lang="zh-CN">大蒜、生姜、洋葱、胡萝卜等</span><span lang="en">Garlic, ginger, onions, carrots and more</span></p>
-          <a class="product-link" href="#contact" data-product="vegetables"><span lang="zh-CN">询价</span><span lang="en">Get a quote</span> →</a>
-        </article>
-        <article class="product">
-          <div class="product-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c4 4 6 8 6 11a6 6 0 0 1-12 0c0-3 2-7 6-11z"/><path d="M12 8v11"/></svg></div>
-          <h3><span lang="zh-CN">坚果与干果</span><span lang="en">Nuts &amp; dried fruit</span></h3>
-          <p><span lang="zh-CN">核桃、杏仁、葡萄干、红枣等</span><span lang="en">Walnuts, almonds, raisins, dates and more</span></p>
-          <a class="product-link" href="#contact" data-product="nuts"><span lang="zh-CN">询价</span><span lang="en">Get a quote</span> →</a>
-        </article>
-        <article class="product">
-          <div class="product-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7c-2 3-3 7-3 10a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3c0-3-1-7-3-10"/><path d="M7.5 7h9M9 3.5L10.5 7M15 3.5L13.5 7"/></svg></div>
-          <h3><span lang="zh-CN">饲料原料</span><span lang="en">Feed ingredients</span></h3>
-          <p><span lang="zh-CN">豆粕、玉米副产品等饲料原料</span><span lang="en">Soybean meal, corn by-products and other feed ingredients</span></p>
-          <a class="product-link" href="#contact" data-product="feed"><span lang="zh-CN">询价</span><span lang="en">Get a quote</span> →</a>
+        <article class="crop">
+          <img src="assets/photos/crop-maize.jpg" alt="" width="1000" height="750" loading="lazy">
+          <div class="crop-body">
+            <h3><span lang="zh-CN">玉米</span><span lang="en">Maize</span><span lang="fr">Maïs</span><span lang="pt">Milho</span></h3>
+            <p><span lang="zh-CN">规模化种植的商品玉米，可用于食品、饮料酿造及饲料生产。</span><span lang="en">Commercial maize grown at scale for food, brewing and animal feed.</span><span lang="fr">Maïs commercial cultivé à grande échelle pour l'alimentation, la brasserie et l'alimentation animale.</span><span lang="pt">Milho comercial cultivado em grande escala para alimentação, cervejaria e rações.</span></p>
+            <ul class="tags">
+              <li><span lang="zh-CN">食品</span><span lang="en">Food</span><span lang="fr">Alimentation</span><span lang="pt">Alimentação</span></li>
+              <li><span lang="zh-CN">酿造</span><span lang="en">Brewing</span><span lang="fr">Brasserie</span><span lang="pt">Cervejaria</span></li>
+              <li><span lang="zh-CN">饲料</span><span lang="en">Animal feed</span><span lang="fr">Alimentation animale</span><span lang="pt">Rações</span></li>
+            </ul>
+            <a class="crop-link" href="#contact" data-product="maize"><span lang="zh-CN">玉米询价</span><span lang="en">Get a maize quote</span><span lang="fr">Devis pour le maïs</span><span lang="pt">Cotação de milho</span> →</a>
+          </div>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- Process -->
+  <!-- From field to customer -->
   <section class="section section-dark" id="process">
     <div class="wrap">
       <div class="section-head">
-        <p class="eyebrow"><span lang="zh-CN">合作流程</span><span lang="en">How we work</span></p>
-        <h2><span lang="zh-CN">五步完成一笔订单</span><span lang="en">Five steps from inquiry to delivery</span></h2>
+        <p class="eyebrow"><span lang="zh-CN">从田间到客户</span><span lang="en">From field to customer</span><span lang="fr">Du champ au client</span><span lang="pt">Do campo ao cliente</span></p>
+        <h2><span lang="zh-CN">每一袋粮食的来路</span><span lang="en">Where every bag of grain comes from</span><span lang="fr">Le parcours de chaque sac de grain</span><span lang="pt">O percurso de cada saco de cereal</span></h2>
       </div>
       <ol class="steps">
         <li>
           <span class="step-num">01</span>
-          <h3><span lang="zh-CN">需求沟通</span><span lang="en">Tell us what you need</span></h3>
-          <p><span lang="zh-CN">确认品类、规格、数量、交期与目的地。</span><span lang="en">Product, spec, volume, timing and destination.</span></p>
+          <h3><span lang="zh-CN">播种与管理</span><span lang="en">Planting &amp; care</span><span lang="fr">Semis et suivi</span><span lang="pt">Sementeira e maneio</span></h3>
+          <p><span lang="zh-CN">整地播种，喷灌、施肥与植保全程管理。</span><span lang="en">Land prep and planting, then irrigation, nutrition and crop protection.</span><span lang="fr">Préparation du sol et semis, puis irrigation, fertilisation et protection.</span><span lang="pt">Preparação do solo e sementeira, depois rega, fertilização e proteção.</span></p>
         </li>
         <li>
           <span class="step-num">02</span>
-          <h3><span lang="zh-CN">寻源报价</span><span lang="en">Sourcing &amp; quote</span></h3>
-          <p><span lang="zh-CN">匹配合适的产地与供应商，提供样品与报价。</span><span lang="en">We match origins and suppliers, then send samples and a quote.</span></p>
+          <h3><span lang="zh-CN">收获</span><span lang="en">Harvest</span><span lang="fr">Récolte</span><span lang="pt">Colheita</span></h3>
+          <p><span lang="zh-CN">作物成熟后适时收获。</span><span lang="en">Harvested at the right time, once the crop is mature.</span><span lang="fr">Récolte au bon moment, à maturité.</span><span lang="pt">Colheita no momento certo, na maturação.</span></p>
         </li>
         <li>
           <span class="step-num">03</span>
-          <h3><span lang="zh-CN">验货质检</span><span lang="en">Inspection</span></h3>
-          <p><span lang="zh-CN">装运前检验品质与规格，留存检验记录。</span><span lang="en">Quality and specs are checked before shipment, with records kept.</span></p>
+          <h3><span lang="zh-CN">清理装袋</span><span lang="en">Cleaning &amp; bagging</span><span lang="fr">Nettoyage et ensachage</span><span lang="pt">Limpeza e ensacamento</span></h3>
+          <p><span lang="zh-CN">清除杂质，按规格称重装袋。</span><span lang="en">Impurities removed, then weighed and bagged to spec.</span><span lang="fr">Impuretés retirées, puis pesée et ensachage selon les spécifications.</span><span lang="pt">Impurezas removidas, depois pesagem e ensacamento conforme a especificação.</span></p>
         </li>
         <li>
           <span class="step-num">04</span>
-          <h3><span lang="zh-CN">物流与单证</span><span lang="en">Logistics &amp; documents</span></h3>
-          <p><span lang="zh-CN">安排仓储、运输、报关及相关证书。</span><span lang="en">Warehousing, freight, customs and certificates arranged.</span></p>
+          <h3><span lang="zh-CN">仓储检验</span><span lang="en">Storage &amp; inspection</span><span lang="fr">Stockage et contrôle</span><span lang="pt">Armazenamento e controlo</span></h3>
+          <p><span lang="zh-CN">入库保存，出库前逐批检验。</span><span lang="en">Stored and checked lot by lot before dispatch.</span><span lang="fr">Stocké et contrôlé lot par lot avant expédition.</span><span lang="pt">Armazenado e verificado lote a lote antes da expedição.</span></p>
         </li>
         <li>
           <span class="step-num">05</span>
-          <h3><span lang="zh-CN">交付与跟进</span><span lang="en">Delivery &amp; follow-up</span></h3>
-          <p><span lang="zh-CN">按时交付，并跟进到货反馈。</span><span lang="en">On-time delivery, and we follow up after arrival.</span></p>
+          <h3><span lang="zh-CN">交付客户</span><span lang="en">Delivery</span><span lang="fr">Livraison</span><span lang="pt">Entrega</span></h3>
+          <p><span lang="zh-CN">按约定规格、数量和时间交付。</span><span lang="en">Delivered to the agreed spec, volume and date.</span><span lang="fr">Livré selon les spécifications, quantités et délais convenus.</span><span lang="pt">Entregue conforme a especificação, quantidade e prazo acordados.</span></p>
         </li>
       </ol>
     </div>
   </section>
 
-  <!-- Quality -->
-  <section class="section" id="quality">
-    <div class="wrap quality-grid">
-      <div class="section-head">
-        <p class="eyebrow"><span lang="zh-CN">品质保障</span><span lang="en">Quality</span></p>
-        <h2><span lang="zh-CN">品质与合规，放在首位</span><span lang="en">Quality and compliance come first</span></h2>
-        <p><span lang="zh-CN">农产品贸易中，品质与单证决定了一笔订单能否顺利完成。我们把这两件事放在首位。</span><span lang="en">In agricultural trade, quality and paperwork decide whether an order goes smoothly. We put both first.</span></p>
+  <!-- Grain supply & trade -->
+  <section class="section" id="supply">
+    <div class="wrap supply-grid">
+      <div>
+        <p class="eyebrow"><span lang="zh-CN">粮食供应</span><span lang="en">Grain supply</span><span lang="fr">Approvisionnement</span><span lang="pt">Fornecimento</span></p>
+        <h2><span lang="zh-CN">为企业客户稳定供粮</span><span lang="en">Dependable grain for businesses</span><span lang="fr">Des céréales fiables pour les entreprises</span><span lang="pt">Cereais fiáveis para empresas</span></h2>
+        <p class="muted">
+          <span lang="zh-CN">我们直接向企业客户供应自产的小麦和玉米，按客户要求的规格交付。除自产粮食外，我们也经营豆类、油籽等其他农产品贸易，欢迎询价。</span>
+          <span lang="en">We supply our own wheat and maize directly to business customers, delivered to the specification they require. Alongside our own crops, we also trade other agricultural products such as pulses and oilseeds; ask us for a quote.</span>
+          <span lang="fr">Nous fournissons directement notre blé et notre maïs aux entreprises, selon les spécifications demandées. En plus de nos propres récoltes, nous négocions d'autres produits agricoles, comme les légumineuses et les oléagineux : demandez-nous un devis.</span>
+          <span lang="pt">Fornecemos diretamente o nosso trigo e milho a clientes empresariais, conforme a especificação pedida. Além das nossas culturas, comercializamos outros produtos agrícolas, como leguminosas e oleaginosas; peça-nos uma cotação.</span>
+        </p>
+        <h3 class="list-title"><span lang="zh-CN">我们服务的客户</span><span lang="en">Who we supply</span><span lang="fr">Nos clients</span><span lang="pt">A quem fornecemos</span></h3>
+        <ul class="checks">
+          <li><span lang="zh-CN">面粉厂</span><span lang="en">Flour mills</span><span lang="fr">Minoteries</span><span lang="pt">Moageiras</span></li>
+          <li><span lang="zh-CN">饮料与酿造企业</span><span lang="en">Breweries &amp; beverage makers</span><span lang="fr">Brasseries et fabricants de boissons</span><span lang="pt">Cervejeiras e fabricantes de bebidas</span></li>
+          <li><span lang="zh-CN">饲料厂与养殖企业</span><span lang="en">Feed mills &amp; livestock producers</span><span lang="fr">Fabricants d'aliments pour animaux et éleveurs</span><span lang="pt">Fábricas de rações e produtores pecuários</span></li>
+          <li><span lang="zh-CN">食品加工企业</span><span lang="en">Food processors</span><span lang="fr">Industriels de l'agroalimentaire</span><span lang="pt">Indústria alimentar</span></li>
+          <li><span lang="zh-CN">批发商与贸易商</span><span lang="en">Wholesalers &amp; traders</span><span lang="fr">Grossistes et négociants</span><span lang="pt">Grossistas e comerciantes</span></li>
+        </ul>
       </div>
-      <ul class="quality-list">
-        <li>
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="6" r="2"/><circle cx="19" cy="18" r="2"/><path d="M7 6h8a3 3 0 0 1 0 6H9a3 3 0 0 0 0 6h8"/></svg>
+      <figure class="supply-photo">
+        <img src="assets/photos/warehouse.jpg" alt="" width="1080" height="810" loading="lazy">
+        <figcaption><span lang="zh-CN">仓储与验货</span><span lang="en">Storage and inspection</span><span lang="fr">Stockage et contrôle</span><span lang="pt">Armazenamento e controlo</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section section-alt" id="about">
+    <div class="wrap about-grid">
+      <div>
+        <p class="eyebrow"><span lang="zh-CN">关于我们</span><span lang="en">About us</span><span lang="fr">À propos</span><span lang="pt">Sobre nós</span></p>
+        <h2><span lang="zh-CN">扎根马拉维，稳健长久</span><span lang="en">Rooted in Malawi, built to last</span><span lang="fr">Enracinés au Malawi, bâtis pour durer</span><span lang="pt">Enraizados no Malawi, feitos para durar</span></h2>
+        <p>
+          <span lang="zh-CN">Sycamore Agritech Limited 总部位于马拉维首都利隆圭。Sycamore（梧桐）是一种根深叶茂的树，我们以此为名，希望像它一样扎根土地、稳健生长，与客户建立长期合作。</span>
+          <span lang="en">Sycamore Agritech Limited is based in Lilongwe, Malawi's capital. The sycamore is a broad, deep-rooted tree, and we chose its name because that is how we want to grow: rooted in the land, steady, and in long-term partnership with our customers.</span>
+          <span lang="fr">Sycamore Agritech Limited est basée à Lilongwe, capitale du Malawi. Le sycomore est un arbre large aux racines profondes ; nous avons choisi son nom parce que c'est ainsi que nous voulons grandir : ancrés dans la terre, avec constance, et en partenariat durable avec nos clients.</span>
+          <span lang="pt">A Sycamore Agritech Limited tem sede em Lilongwe, capital do Malawi. O sicómoro é uma árvore frondosa de raízes profundas; escolhemos o seu nome porque é assim que queremos crescer: ligados à terra, de forma estável e em parceria duradoura com os nossos clientes.</span>
+        </p>
+        <blockquote class="quote">
+          <p lang="zh-CN">“栽下梧桐树，引得凤凰来。”</p>
+          <p lang="en">“Plant a sycamore, and the phoenix will come.”</p>
+          <p lang="fr">« Plantez un sycomore, et le phénix viendra. »</p>
+          <p lang="pt">«Plante um sicómoro e a fénix virá.»</p>
+          <footer><span lang="zh-CN">做好扎实的事，好的伙伴自然会来。</span><span lang="en">An old Chinese saying: build something worthwhile, and good partners follow.</span><span lang="fr">Un vieux proverbe chinois : bâtissez quelque chose de solide, et les bons partenaires suivront.</span><span lang="pt">Um velho provérbio chinês: construa algo sólido e os bons parceiros virão.</span></footer>
+        </blockquote>
+      </div>
+      <aside class="about-card">
+        <h3><span lang="zh-CN">公司概况</span><span lang="en">At a glance</span><span lang="fr">En bref</span><span lang="pt">Em resumo</span></h3>
+        <dl class="facts">
           <div>
-            <h3><span lang="zh-CN">来源可追溯</span><span lang="en">Traceable origin</span></h3>
-            <p><span lang="zh-CN">每批货物记录产地、批次与供应商信息。</span><span lang="en">Every lot is recorded with its origin, batch and supplier.</span></p>
+            <dt><span lang="zh-CN">总部</span><span lang="en">Head office</span><span lang="fr">Siège</span><span lang="pt">Sede</span></dt>
+            <dd><span lang="zh-CN">马拉维 利隆圭</span><span lang="en">Lilongwe, Malawi</span><span lang="fr">Lilongwe, Malawi</span><span lang="pt">Lilongwe, Malawi</span></dd>
           </div>
-        </li>
-        <li>
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.3-4.3M8.5 11l2 2 3.5-3.5"/></svg>
           <div>
-            <h3><span lang="zh-CN">检验有据可查</span><span lang="en">Documented inspection</span></h3>
-            <p><span lang="zh-CN">按合同标准检验，可安排独立第三方机构出具报告。</span><span lang="en">Inspected to contract standards, with independent third-party reports available.</span></p>
+            <dt><span lang="zh-CN">核心业务</span><span lang="en">Core business</span><span lang="fr">Activité principale</span><span lang="pt">Atividade principal</span></dt>
+            <dd><span lang="zh-CN">小麦与玉米种植</span><span lang="en">Wheat and maize farming</span><span lang="fr">Culture du blé et du maïs</span><span lang="pt">Cultivo de trigo e milho</span></dd>
           </div>
-        </li>
-        <li>
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4"/><path d="M9.5 14l2 2 3.5-3.5"/></svg>
           <div>
-            <h3><span lang="zh-CN">单证合规</span><span lang="en">Compliant paperwork</span></h3>
-            <p><span lang="zh-CN">协助准备植物检疫证书、原产地证明、质检报告等文件。</span><span lang="en">We help prepare phytosanitary certificates, certificates of origin, quality reports and more.</span></p>
+            <dt><span lang="zh-CN">其他业务</span><span lang="en">Also</span><span lang="fr">Autres activités</span><span lang="pt">Outras atividades</span></dt>
+            <dd><span lang="zh-CN">粮食供应、农产品贸易</span><span lang="en">Grain supply, agricultural trade</span><span lang="fr">Approvisionnement en céréales, négoce agricole</span><span lang="pt">Fornecimento de cereais, comércio agrícola</span></dd>
           </div>
-        </li>
-      </ul>
+          <div>
+            <dt><span lang="zh-CN">语言</span><span lang="en">Languages</span><span lang="fr">Langues</span><span lang="pt">Idiomas</span></dt>
+            <dd>中文 · English · Français · Português</dd>
+          </div>
+        </dl>
+      </aside>
     </div>
   </section>
 
   <!-- Contact -->
-  <section class="section section-alt" id="contact">
+  <section class="section" id="contact">
     <div class="wrap contact-grid">
       <div>
-        <p class="eyebrow"><span lang="zh-CN">联系我们</span><span lang="en">Contact</span></p>
-        <h2><span lang="zh-CN">告诉我们您的需求</span><span lang="en">Tell us what you need</span></h2>
-        <p class="muted"><span lang="zh-CN">留下产品和数量，我们会尽快回复报价。</span><span lang="en">Let us know the product and volume, and we'll get back to you with a quote.</span></p>
+        <p class="eyebrow"><span lang="zh-CN">联系我们</span><span lang="en">Contact</span><span lang="fr">Contact</span><span lang="pt">Contacto</span></p>
+        <h2><span lang="zh-CN">告诉我们您的需求</span><span lang="en">Tell us what you need</span><span lang="fr">Parlez-nous de vos besoins</span><span lang="pt">Diga-nos do que precisa</span></h2>
+        <p class="muted"><span lang="zh-CN">留下产品和数量，我们会尽快回复报价。</span><span lang="en">Let us know the product and volume, and we'll get back to you with a quote.</span><span lang="fr">Indiquez-nous le produit et la quantité, nous vous répondrons rapidement avec un devis.</span><span lang="pt">Indique o produto e a quantidade e responderemos rapidamente com uma cotação.</span></p>
 
         <dl class="contact-list">
           <div>
-            <dt><span lang="zh-CN">邮箱</span><span lang="en">Email</span></dt>
+            <dt><span lang="zh-CN">邮箱</span><span lang="en">Email</span><span lang="fr">E-mail</span><span lang="pt">E-mail</span></dt>
             <dd><a href="mailto:info@sycamoreagritech.com">info@sycamoreagritech.com</a></dd>
           </div>
           <div>
-            <dt><span lang="zh-CN">电话</span><span lang="en">Phone</span></dt>
+            <dt><span lang="zh-CN">电话</span><span lang="en">Phone</span><span lang="fr">Téléphone</span><span lang="pt">Telefone</span></dt>
             <dd class="phones">
               <a href="tel:+265999947228">+265 999 947 228</a>
               <a href="tel:+265999441333">+265 999 441 333</a>
             </dd>
           </div>
           <div>
-            <dt><span lang="zh-CN">地址</span><span lang="en">Address</span></dt>
-            <dd><span lang="zh-CN">马拉维 利隆圭 Chitipi</span><span lang="en">Chitipi, Lilongwe, Malawi</span></dd>
+            <dt><span lang="zh-CN">地址</span><span lang="en">Address</span><span lang="fr">Adresse</span><span lang="pt">Endereço</span></dt>
+            <dd><span lang="zh-CN">马拉维 利隆圭 Chitipi</span><span lang="en">Chitipi, Lilongwe, Malawi</span><span lang="fr">Chitipi, Lilongwe, Malawi</span><span lang="pt">Chitipi, Lilongwe, Malawi</span></dd>
           </div>
         </dl>
       </div>
 
       <form class="inquiry" id="inquiry" novalidate>
         <div class="field">
-          <label for="f-name"><span lang="zh-CN">姓名</span><span lang="en">Name</span> <b>*</b></label>
+          <label for="f-name"><span lang="zh-CN">姓名</span><span lang="en">Name</span><span lang="fr">Nom</span><span lang="pt">Nome</span> <b>*</b></label>
           <input id="f-name" name="fullname" type="text" autocomplete="name" required>
         </div>
         <div class="field">
-          <label for="f-company"><span lang="zh-CN">公司</span><span lang="en">Company</span></label>
+          <label for="f-company"><span lang="zh-CN">公司</span><span lang="en">Company</span><span lang="fr">Entreprise</span><span lang="pt">Empresa</span></label>
           <input id="f-company" name="company" type="text" autocomplete="organization">
         </div>
         <div class="field">
-          <label for="f-email"><span lang="zh-CN">邮箱</span><span lang="en">Email</span> <b>*</b></label>
+          <label for="f-email"><span lang="zh-CN">邮箱</span><span lang="en">Email</span><span lang="fr">E-mail</span><span lang="pt">E-mail</span> <b>*</b></label>
           <input id="f-email" name="email" type="email" autocomplete="email" required>
         </div>
         <div class="field">
-          <label for="f-product"><span lang="zh-CN">产品</span><span lang="en">Product</span></label>
+          <label for="f-product"><span lang="zh-CN">产品</span><span lang="en">Product</span><span lang="fr">Produit</span><span lang="pt">Produto</span></label>
           <select id="f-product" name="product">
-            <option value="grains" data-zh="粮谷" data-en="Grains">粮谷</option>
-            <option value="pulses" data-zh="豆类与油籽" data-en="Pulses & oilseeds">豆类与油籽</option>
-            <option value="fruit" data-zh="新鲜水果" data-en="Fresh fruit">新鲜水果</option>
-            <option value="vegetables" data-zh="新鲜蔬菜" data-en="Fresh vegetables">新鲜蔬菜</option>
-            <option value="nuts" data-zh="坚果与干果" data-en="Nuts & dried fruit">坚果与干果</option>
-            <option value="feed" data-zh="饲料原料" data-en="Feed ingredients">饲料原料</option>
-            <option value="other" data-zh="其他" data-en="Other">其他</option>
+            <option value="wheat" data-zh="小麦" data-en="Wheat" data-fr="Blé" data-pt="Trigo">Wheat</option>
+            <option value="maize" data-zh="玉米" data-en="Maize" data-fr="Maïs" data-pt="Milho">Maize</option>
+            <option value="pulses" data-zh="豆类与油籽" data-en="Pulses &amp; oilseeds" data-fr="Légumineuses et oléagineux" data-pt="Leguminosas e oleaginosas">Pulses &amp; oilseeds</option>
+            <option value="other" data-zh="其他" data-en="Other" data-fr="Autre" data-pt="Outro">Other</option>
           </select>
         </div>
         <div class="field field-wide">
-          <label for="f-qty"><span lang="zh-CN">数量</span><span lang="en">Quantity</span></label>
-          <input id="f-qty" name="quantity" type="text" data-ph-zh="例如：50 吨，或 2 个 20 尺柜" data-ph-en="e.g. 50 tonnes, or 2 × 20ft containers">
+          <label for="f-qty"><span lang="zh-CN">数量</span><span lang="en">Quantity</span><span lang="fr">Quantité</span><span lang="pt">Quantidade</span></label>
+          <input id="f-qty" name="quantity" type="text" data-ph-zh="例如：50 吨" data-ph-en="e.g. 50 tonnes" data-ph-fr="ex. : 50 tonnes" data-ph-pt="ex.: 50 toneladas">
         </div>
         <div class="field field-wide">
-          <label for="f-msg"><span lang="zh-CN">需求说明</span><span lang="en">Details</span></label>
-          <textarea id="f-msg" name="message" rows="4" data-ph-zh="品种、规格、包装、目的地、期望交期等" data-ph-en="Variety, spec, packing, destination, preferred delivery date, etc."></textarea>
+          <label for="f-msg"><span lang="zh-CN">需求说明</span><span lang="en">Details</span><span lang="fr">Détails</span><span lang="pt">Detalhes</span></label>
+          <textarea id="f-msg" name="message" rows="4" data-ph-zh="品种、规格、包装、交货地点、期望交期等" data-ph-en="Variety, spec, packing, delivery location, preferred date, etc." data-ph-fr="Variété, spécifications, conditionnement, lieu et date de livraison souhaités, etc." data-ph-pt="Variedade, especificação, embalagem, local e data de entrega pretendidos, etc."></textarea>
         </div>
         <div class="field-wide form-foot">
-          <button class="btn btn-primary" type="submit"><span lang="zh-CN">发送询价</span><span lang="en">Send inquiry</span></button>
-          <p class="form-note" id="formNote">
+          <button class="btn btn-primary" type="submit"><span lang="zh-CN">发送询价</span><span lang="en">Send inquiry</span><span lang="fr">Envoyer la demande</span><span lang="pt">Enviar pedido</span></button>
+          <p class="form-note">
             <span lang="zh-CN">点击后将打开您的邮件应用，收件人为 info@sycamoreagritech.com。</span>
             <span lang="en">This opens your email app with the message addressed to info@sycamoreagritech.com.</span>
+            <span lang="fr">Votre messagerie s'ouvrira avec un message adressé à info@sycamoreagritech.com.</span>
+            <span lang="pt">A sua aplicação de e-mail abrirá com a mensagem dirigida a info@sycamoreagritech.com.</span>
           </p>
         </div>
       </form>
@@ -386,19 +416,24 @@
           <span class="brand-sub"><span>Agritech Limited</span></span>
         </span>
       </a>
-      <p class="footer-tag"><span lang="zh-CN">农产品采购与贸易</span><span lang="en">Agricultural sourcing &amp; trade</span></p>
+      <p class="footer-tag"><span lang="zh-CN">马拉维小麦与玉米种植</span><span lang="en">Wheat &amp; maize farming in Malawi</span><span lang="fr">Culture de blé et de maïs au Malawi</span><span lang="pt">Cultivo de trigo e milho no Malawi</span></p>
     </div>
     <nav class="footer-nav" aria-label="Footer">
-      <a href="#about"><span lang="zh-CN">关于我们</span><span lang="en">About</span></a>
-      <a href="#products"><span lang="zh-CN">主营产品</span><span lang="en">Products</span></a>
-      <a href="#process"><span lang="zh-CN">合作流程</span><span lang="en">How we work</span></a>
-      <a href="#quality"><span lang="zh-CN">品质保障</span><span lang="en">Quality</span></a>
-      <a href="#contact"><span lang="zh-CN">联系我们</span><span lang="en">Contact</span></a>
+      <a href="#farming"><span lang="zh-CN">种植业务</span><span lang="en">Farming</span><span lang="fr">Agriculture</span><span lang="pt">Agricultura</span></a>
+      <a href="#crops"><span lang="zh-CN">主要作物</span><span lang="en">Crops</span><span lang="fr">Cultures</span><span lang="pt">Culturas</span></a>
+      <a href="#supply"><span lang="zh-CN">粮食供应</span><span lang="en">Grain supply</span><span lang="fr">Approvisionnement</span><span lang="pt">Fornecimento</span></a>
+      <a href="#about"><span lang="zh-CN">关于我们</span><span lang="en">About</span><span lang="fr">À propos</span><span lang="pt">Sobre nós</span></a>
+      <a href="#contact"><span lang="zh-CN">联系我们</span><span lang="en">Contact</span><span lang="fr">Contact</span><span lang="pt">Contacto</span></a>
     </nav>
   </div>
   <div class="wrap footer-bottom">
-    <p>© <span data-year>2026</span> Sycamore Agritech Limited. <span lang="zh-CN">保留所有权利。</span><span lang="en">All rights reserved.</span></p>
-    <p><a href="mailto:info@sycamoreagritech.com">info@sycamoreagritech.com</a></p>
+    <p>© <span data-year>2026</span> Sycamore Agritech Limited. <span lang="zh-CN">保留所有权利。</span><span lang="en">All rights reserved.</span><span lang="fr">Tous droits réservés.</span><span lang="pt">Todos os direitos reservados.</span></p>
+    <p class="footer-langs">
+      <a href="?lang=zh" data-set-lang="zh">中文</a>
+      <a href="?lang=en" data-set-lang="en">English</a>
+      <a href="?lang=fr" data-set-lang="fr">Français</a>
+      <a href="?lang=pt" data-set-lang="pt">Português</a>
+    </p>
   </div>
 </footer>
 
