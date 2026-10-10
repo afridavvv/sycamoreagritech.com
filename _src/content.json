@@ -94,8 +94,9 @@
   "en": "Machinery hire"
  },
  "biz.hire.text": {
-  "zh": "拖拉机及整地、播种、植保、收获、灌溉机械，可安排机手作业。",
-  "en": "Tractors and machinery for land preparation, planting, spraying, harvesting and irrigation, with operators available."
+  "zh": "拖拉机及整地、播种、植保、收获、灌溉机械，由我方机手操作，可到马拉维各地作业。",
+  "en": "Tractors and machinery for land preparation, planting, spraying, harvesting and irrigation, run by our own operators anywhere in Malawi.",
+  "note": "owner-confirmed 2026-10-10: ALL hired machines come with Sycamore's own operators (operated hire, never dry hire); service anywhere in Malawi"
  },
  "biz.hire.more": {
   "zh": "查看机型",
@@ -307,9 +308,9 @@
   "en": "Professional farm machinery, when you need it"
  },
  "hire.lead": {
-  "zh": "盛楷农业科技有限公司自有的成套农业机械覆盖整地、播种、植保、收获和灌溉等环节，同时对外出租。设备保养良好，可配有经验的机手作业，帮助农场、庄园和合作社不误农时。",
-  "en": "Our own fleet of farm machinery is available for hire, covering land preparation, planting, spraying, harvesting and irrigation. The equipment is well maintained and can come with an experienced operator, so farms, estates and cooperatives can get the work done on time.",
-  "note": "zh starts with the Chinese company name; fr/pt may start with \"Sycamore Agritech Limited\" or \"our\" — meaning unchanged"
+  "zh": "盛楷农业科技有限公司自有的成套农业机械覆盖整地、播种、植保、收获和灌溉等环节，同时对外出租。设备保养良好，每台都由我方有经验的机手操作，可派往马拉维任何地区，帮助农场、庄园和合作社不误农时。",
+  "en": "Our own fleet of farm machinery is available for hire, covering land preparation, planting, spraying, harvesting and irrigation. The equipment is well maintained and every machine is run by one of our experienced operators. We work anywhere in Malawi, so farms, estates and cooperatives can get the work done on time.",
+  "note": "zh starts with the Chinese company name; fr/pt may start with \"Sycamore Agritech Limited\" or \"our\" — meaning unchanged. owner-confirmed 2026-10-10: ALL hired machines come with Sycamore's own operators (operated hire, never dry hire); service anywhere in Malawi"
  },
  "hire.p2": {
   "zh": "在马拉维，人工用锄头整地每公顷需要 23–31 个工日，而机械整地（含起垄）每公顷只需约 2–2.5 小时。整地推迟两周，玉米最多可减产 30%。提前预约，以便透雨一到就能及时播种。",
@@ -367,8 +368,9 @@
   "en": "Combine harvesting"
  },
  "svc.harvest.text": {
-  "zh": "自走式联合收割机，一次完成收割和脱粒。",
-  "en": "A self-propelled combine that harvests and threshes in one pass."
+  "zh": "自走式联合收割机，一次完成收割和脱粒，可收获玉米、高粱、小麦、大豆和水稻。",
+  "en": "A self-propelled combine that harvests and threshes in one pass, for maize, sorghum, wheat, soya beans and rice.",
+  "note": "owner-confirmed 2026-10-10: the combine currently harvests maize, sorghum, wheat, soybeans and rice"
  },
  "svc.irri.title": {
   "zh": "移动喷灌",
@@ -479,8 +481,9 @@
   "en": "Combine harvester"
  },
  "fleet.combine.text": {
-  "zh": "自走式谷物联合收割机，图中为玉米割台；可收获的作物和割台配置请咨询。",
-  "en": "A self-propelled grain combine, shown here with a maize header. Ask us which crops it can harvest and which headers are available."
+  "zh": "自走式谷物联合收割机，可收获玉米、高粱、小麦、大豆和水稻，图中为玉米割台。",
+  "en": "A self-propelled grain combine for maize, sorghum, wheat, soya beans and rice, shown here with a maize header.",
+  "note": "owner-confirmed 2026-10-10: the combine currently harvests maize, sorghum, wheat, soybeans and rice"
  },
  "fleet.reel.model": {
   "zh": "VODAR",
@@ -603,8 +606,9 @@
   "en": "Work in the field"
  },
  "hstep3.text": {
-  "zh": "按约定时间进场，可配机手完成作业。",
-  "en": "Our machines arrive on the agreed date, with an operator if you need one."
+  "zh": "按约定时间进场，由我方机手完成作业。",
+  "en": "Our machines and operators arrive on the agreed date and do the work.",
+  "note": "owner-confirmed 2026-10-10: ALL hired machines come with Sycamore's own operators (operated hire, never dry hire); service anywhere in Malawi"
  },
  "hstep4.title": {
   "zh": "完工确认",
@@ -615,8 +619,9 @@
   "en": "We check the finished work with you."
  },
  "hire.terms": {
-  "zh": "租期、计费方式（按面积、按小时或按天）、是否含燃油和运输、是否配机手，均可按需求商定，以报价为准。",
-  "en": "We agree the details case by case: the hire period, how charges are calculated (per hectare/acre, per hour or per day), whether fuel and transport are included, and whether an operator is provided. Everything is confirmed in our quote."
+  "zh": "租期、计费方式（按面积、按小时或按天）以及是否含燃油和运输，均可按需求商定，以报价为准。所有设备均由我方机手操作。",
+  "en": "We agree the details case by case: the hire period, how charges are calculated (per hectare/acre, per hour or per day), and whether fuel and transport are included. Every machine comes with our own operator, and everything is confirmed in our quote.",
+  "note": "owner-confirmed 2026-10-10: ALL hired machines come with Sycamore's own operators (operated hire, never dry hire); service anywhere in Malawi"
  },
  "band.title": {
   "zh": "播种季前，尽早预约",
@@ -1151,9 +1156,9 @@
   "note": "SEO <title> of the machinery-hire page: local terms for tractor / farm machinery hire + Malawi, then the full company name \"Sycamore Agritech Limited\""
  },
  "hp.desc": {
-  "zh": "马拉维农机租赁、拖拉机租赁：盛楷农业科技有限公司立足利隆圭，出租翻耕、深松、播种、植保、收获、灌溉和土方作业机械，可配有经验的机手。播种季前请尽早预约。",
-  "en": "Tractor and farm machinery hire in Malawi, based in Lilongwe: ploughing, ripping, planting, spraying, harvesting, irrigation and earthworks. Operators available.",
-  "note": "SEO meta description of the machinery-hire page: 140–165 characters; local search phrases for tractor / farm machinery hire + Malawi/Lilongwe; \"based in Lilongwe\" (not an areas-served claim)"
+  "zh": "马拉维农机租赁、拖拉机租赁：盛楷农业科技有限公司立足利隆圭，出租翻耕、深松、播种、植保、收获、灌溉和土方作业机械，由我方机手操作，服务马拉维全境。",
+  "en": "Tractor and farm machinery hire across Malawi from Lilongwe: ploughing, ripping, planting, spraying, harvesting, irrigation and earthworks, with our own operators.",
+  "note": "SEO meta description of the machinery-hire page: 140–165 characters; local search phrases for tractor / farm machinery hire + Malawi; owner-confirmed 2026-10-10: ALL hired machines come with Sycamore's own operators (operated hire, never dry hire); service anywhere in Malawi"
  },
  "hp.h1": {
   "zh": "马拉维拖拉机及农机租赁",
@@ -1205,12 +1210,14 @@
   "en": "Tractor and machinery hire: common questions"
  },
  "faq.q1": {
-  "zh": "租用拖拉机可以配机手吗？",
-  "en": "Can I hire a tractor with an operator?"
+  "zh": "租用拖拉机配机手吗？",
+  "en": "Does a hired tractor come with an operator?",
+  "note": "owner-confirmed 2026-10-10: ALL hired machines come with Sycamore's own operators (operated hire, never dry hire); service anywhere in Malawi"
  },
  "faq.a1": {
-  "zh": "可以。我们可以安排有经验的机手随机作业，具体安排在报价中确认。",
-  "en": "Yes. We can provide an experienced operator with the machine; the arrangement is confirmed in our quote."
+  "zh": "是的。我们出租的每台设备都配有我方有经验的机手负责操作，您无需自备驾驶员。",
+  "en": "Yes. Every machine we hire out is run by one of our own experienced operators, so you don't need to provide a driver.",
+  "note": "owner-confirmed 2026-10-10: ALL hired machines come with Sycamore's own operators (operated hire, never dry hire); service anywhere in Malawi"
  },
  "faq.q2": {
   "zh": "农机租金怎么计算？",
@@ -1225,8 +1232,9 @@
   "en": "Which areas of Malawi do you cover?"
  },
  "faq.a3": {
-  "zh": "我们的基地在利隆圭。请告诉我们地块位置，我们会确认能否安排，以及设备如何运到现场。",
-  "en": "We are based in Lilongwe. Tell us where your fields are and we'll confirm availability and how the machines will get there."
+  "zh": "马拉维全境都可以。我们的基地在利隆圭，可将设备和机手派往马拉维任何地区。请告诉我们地块位置，我们会确认排期，并在报价中写明运输安排。",
+  "en": "Anywhere in Malawi. We are based in Lilongwe and can send machines and operators to any part of the country. Tell us where your fields are and we'll confirm the schedule and set out the transport arrangements in our quote.",
+  "note": "owner-confirmed 2026-10-10: ALL hired machines come with Sycamore's own operators (operated hire, never dry hire); service anywhere in Malawi"
  },
  "faq.q4": {
   "zh": "需要提前多久预约？",
@@ -1241,8 +1249,9 @@
   "en": "Which crops can the combine harvester handle?"
  },
  "faq.a5": {
-  "zh": "照片中的联合收割机配的是玉米割台。可收获的作物和可用的割台，请向我们咨询。",
-  "en": "The combine in our photos is fitted with a maize header. Please ask us which crops it can harvest and which headers are available."
+  "zh": "我们的联合收割机目前可收获玉米、高粱、小麦、大豆和水稻。请告诉我们作物、面积和地块位置，我们会确认排期并报价。",
+  "en": "Our combine can currently harvest maize, sorghum, wheat, soya beans and rice. Tell us the crop, the area and where your fields are, and we'll confirm a slot and send a quote.",
+  "note": "owner-confirmed 2026-10-10: the combine currently harvests maize, sorghum, wheat, soybeans and rice"
  },
  "ui.navMain": {
   "zh": "主导航",
@@ -1322,9 +1331,9 @@
   "note": "SEO <title> of the trade page (~60–75 chars); product keywords + Malawi + full company name"
  },
  "tp.desc": {
-  "zh": "马拉维农产品出口：盛楷农业科技有限公司在利隆圭为海内外买家采购供应木豆、花生、芝麻、澳洲坚果（夏威夷果）、大豆、辣椒、咖啡等，负责分级、检验、出口单证和运输。",
-  "en": "Malawi agricultural products for export: Sycamore Agritech Limited sources pigeon peas, groundnuts, sesame, macadamia and more, with export documents handled.",
-  "note": "SEO meta description (140–165 chars)"
+  "zh": "马拉维农产品出口：盛楷农业科技有限公司在利隆圭为海内外买家采购供应木豆、花生、芝麻、澳洲坚果（夏威夷果）、大豆、辣椒、咖啡等，负责分级、SGS 检验、出口单证和运输。",
+  "en": "Malawi agricultural products for export: pigeon peas, groundnuts, sesame, macadamia and more from Sycamore Agritech Limited, with SGS inspection and export papers.",
+  "note": "SEO meta description (140–165 chars). owner-confirmed 2026-10-10: SGS inspection can be arranged; name SGS directly (not 'SGS or similar')"
  },
  "tp.eyebrow": {
   "zh": "农产品贸易",
@@ -1356,9 +1365,9 @@
   "note": "chip"
  },
  "tp.tag2": {
-  "zh": "装运前检验",
-  "en": "Inspected before dispatch",
-  "note": "chip"
+  "zh": "SGS 装运前检验",
+  "en": "SGS pre-shipment inspection",
+  "note": "chip. owner-confirmed 2026-10-10: SGS inspection can be arranged; name SGS directly (not 'SGS or similar')"
  },
  "tp.tag3": {
   "zh": "出口单证齐全",
@@ -1395,8 +1404,9 @@
   "en": "Every lot checked before it ships"
  },
  "tw2.text": {
-  "zh": "按合同规格抽样检验：水分、杂质、粒度分级；花生等产品可提供经认可实验室的黄曲霉毒素检测报告，也可按要求安排 SGS 等第三方装运前检验。",
-  "en": "Lots are sampled and checked against the contract: moisture, foreign matter and grading. For groundnuts and similar products we provide aflatoxin test reports from an accredited laboratory, and third-party pre-shipment inspection (for example SGS) can be arranged on request."
+  "zh": "按合同规格抽样检验：水分、杂质、粒度分级；花生等产品可提供经认可实验室出具的黄曲霉毒素检测报告。我们还可安排 SGS 装运前检验。",
+  "en": "Lots are sampled and checked against the contract: moisture, foreign matter and grading. For groundnuts and similar products we provide aflatoxin test reports from an accredited laboratory. We can also arrange SGS pre-shipment inspection.",
+  "note": "owner-confirmed 2026-10-10: SGS inspection can be arranged; name SGS directly (not 'SGS or similar')"
  },
  "tw3.title": {
   "zh": "出口手续由我们办理",
@@ -1720,8 +1730,9 @@
   "en": "Inspection & documents"
  },
  "tstep5.text": {
-  "zh": "装运前检验，办理出口许可、植物检疫证书、原产地证书和海关手续。",
-  "en": "Pre-shipment inspection, then export licence, phytosanitary certificate, certificate of origin and customs clearance."
+  "zh": "装运前检验（可安排 SGS），办理出口许可、植物检疫证书、原产地证书和海关手续。",
+  "en": "Pre-shipment inspection, by SGS if you wish, then export licence, phytosanitary certificate, certificate of origin and customs clearance.",
+  "note": "owner-confirmed 2026-10-10: SGS inspection can be arranged; name SGS directly (not 'SGS or similar')"
  },
  "tstep6.title": {
   "zh": "发运与跟踪",
@@ -1777,8 +1788,9 @@
   "en": "Inspection"
  },
  "term.inspection.text": {
-  "zh": "可按要求安排 SGS 等第三方装运前检验；水分、杂质和黄曲霉毒素等指标可由经认可的实验室出具报告。",
-  "en": "Third-party pre-shipment inspection (for example SGS) can be arranged on request; moisture, foreign matter and aflatoxin results are reported by an accredited laboratory."
+  "zh": "可安排 SGS 装运前检验和监装；水分、杂质和黄曲霉毒素等指标可由经认可的实验室出具报告。",
+  "en": "We can arrange SGS pre-shipment inspection and loading supervision; moisture, foreign matter and aflatoxin results are reported by an accredited laboratory.",
+  "note": "owner-confirmed 2026-10-10: SGS inspection can be arranged; name SGS directly (not 'SGS or similar')"
  },
  "tp.logEyebrow": {
   "zh": "物流",
@@ -1881,8 +1893,9 @@
   "en": "Quality and test reports"
  },
  "doc.quality.text": {
-  "zh": "等级、水分、杂质和黄曲霉毒素等检测报告，由经认可的实验室或第三方检验机构出具。",
-  "en": "Grade, moisture, foreign-matter and aflatoxin reports from an accredited laboratory or a third-party inspection company."
+  "zh": "等级、水分、杂质和黄曲霉毒素等检测报告，由经认可的实验室或 SGS 出具。",
+  "en": "Grade, moisture, foreign-matter and aflatoxin reports from an accredited laboratory or SGS.",
+  "note": "owner-confirmed 2026-10-10: SGS inspection can be arranged; name SGS directly (not 'SGS or similar')"
  },
  "doc.fumig.title": {
   "zh": "熏蒸证书",
@@ -1977,12 +1990,14 @@
   "en": "It depends on the product, the season and the corridor. Once the deposit or letter of credit is in place we confirm a schedule for sourcing, inspection, documents and inland transport, and every offer states the expected delivery time."
  },
  "tfaq.q5": {
-  "zh": "可以安排第三方检验吗？",
-  "en": "Can you arrange third-party inspection?"
+  "zh": "可以安排 SGS 商检吗？",
+  "en": "Can you arrange SGS inspection?",
+  "note": "owner-confirmed 2026-10-10: SGS inspection can be arranged; name SGS directly (not 'SGS or similar')"
  },
  "tfaq.a5": {
-  "zh": "可以。我们可按要求安排 SGS 等机构进行装运前检验和监装，费用在报价中列明。",
-  "en": "Yes. On request we arrange pre-shipment inspection and loading supervision by SGS or a similar company, with the cost shown in the offer."
+  "zh": "可以。我们可安排 SGS 进行装运前检验和监装，费用在报价中列明。",
+  "en": "Yes. We can arrange pre-shipment inspection and loading supervision by SGS, with the cost shown in the offer.",
+  "note": "owner-confirmed 2026-10-10: SGS inspection can be arranged; name SGS directly (not 'SGS or similar')"
  },
  "tfaq.q6": {
   "zh": "马拉维对农产品出口有限制吗？",
@@ -1999,5 +2014,20 @@
  "tp.band.text": {
   "zh": "留下产品、数量和目的港，我们会尽快回复报价和供货季节。",
   "en": "Send us the product, quantity and destination port, and we will reply with an offer and the supply season."
+ },
+ "tag.sorghum": {
+  "zh": "高粱",
+  "en": "Sorghum",
+  "note": "small tag chip, 1–2 words"
+ },
+ "tag.wheat": {
+  "zh": "小麦",
+  "en": "Wheat",
+  "note": "small tag chip, 1–2 words"
+ },
+ "tag.rice": {
+  "zh": "水稻",
+  "en": "Rice",
+  "note": "small tag chip, 1–2 words; the crop in the field (paddy), not milled rice"
  }
 }
