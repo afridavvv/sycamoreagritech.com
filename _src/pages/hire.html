@@ -1,0 +1,90 @@
+  <!-- Page hero -->
+  <section class="page-hero">
+    <picture class="page-hero-media">
+      <source type="image/webp" srcset="/assets/img/disc-plough-field-sm.webp 800w, /assets/img/disc-plough-field-lg.webp 1600w" sizes="100vw">
+      <img src="/assets/img/disc-plough-field-lg.jpg" alt="{{attr:cap.disc-plough-field}}" width="1600" height="1066" fetchpriority="high">
+    </picture>
+    <div class="wrap page-hero-inner">
+      <nav class="crumbs" aria-label="{{attr:hp.crumbLabel}}">
+        <a href="{{home}}">{{t:hp.crumbHome}}</a><span aria-hidden="true">/</span><span aria-current="page">{{t:nav.hire}}</span>
+      </nav>
+      <p class="eyebrow eyebrow-light">{{t:hire.eyebrow}}</p>
+      <h1>{{t:hp.h1}}</h1>
+      <p class="lead">{{t:hire.lead}}</p>
+      <div class="hero-actions">
+        <a class="btn btn-gold" href="#contact" data-product="hire">{{t:hire.cta1}}</a>
+        <a class="btn btn-outline-light" href="tel:+265999947228">{{t:band.btn2}}</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why mechanise / timing -->
+  <section class="section" id="why-hire">
+    <div class="wrap hire-intro">
+      <div class="section-head">
+        <p class="eyebrow">{{t:hp.whyEyebrow}}</p>
+        <h2>{{t:hire.h2}}</h2>
+        <p>{{t:hire.p2}}</p>
+        <p class="source-note">{{t:hire.source}}</p>
+      </div>
+      <ul class="stat-grid">
+        <li><strong>23–31</strong><span>{{t:hp.stat1}}</span></li>
+        <li><strong>2–2.5 h</strong><span>{{t:hp.stat2}}</span></li>
+        <li><strong>30%</strong><span>{{t:hp.stat3}}</span></li>
+        <li><strong>9</strong><span>{{t:hp.stat4}}</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Services + fleet -->
+  <section class="section section-alt" id="fleet">
+    <div class="wrap">
+{{include:services}}
+      <h2 class="sub-title">{{t:hire.fleetTitle}}</h2>
+      <div class="equip-grid">
+        {{fleet:tractor-lovol-2204|lovol|55% 55%|power,prep,plant}}
+        {{fleet:tractor-tk854|tk|50% 55%|plant,spray,transport}}
+        {{fleet:disc-plough-field|plough|35% 75%|plough,prep}}
+        {{fleet:subsoiler|sub|45% 55%|subsoil,prep}}
+        {{fleet:planter-muken|planter|58% 58%|plant,maize,soy}}
+        {{fleet:boom-sprayers|sprayer|50% 55%|spray,weed}}
+        {{fleet:combine-harvester|combine|45% 45%|harvest,maize}}
+        {{fleet:hose-reel-irrigator|reel|62% 58%|irri}}
+        {{fleet:excavator-maxpower|exc|45% 65%|earth,ditch}}
+      </div>
+
+      <h2 class="sub-title">{{t:hire.stepsTitle}}</h2>
+      <ol class="hire-steps">
+        <li><h3>{{t:hstep1.title}}</h3><p>{{t:hstep1.text}}</p></li>
+        <li><h3>{{t:hstep2.title}}</h3><p>{{t:hstep2.text}}</p></li>
+        <li><h3>{{t:hstep3.title}}</h3><p>{{t:hstep3.text}}</p></li>
+        <li><h3>{{t:hstep4.title}}</h3><p>{{t:hstep4.text}}</p></li>
+      </ol>
+      <p class="hire-terms">{{t:hire.terms}}</p>
+{{include:hireband}}
+    </div>
+  </section>
+
+  <!-- Seasons -->
+  <section class="section" id="seasons">
+    <div class="wrap">
+{{include:season}}
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-alt" id="faq">
+    <div class="wrap faq-wrap">
+      <div class="section-head">
+        <p class="eyebrow">{{t:hp.faqEyebrow}}</p>
+        <h2>{{t:faq.title}}</h2>
+      </div>
+      <div class="faq">
+        <details><summary>{{t:faq.q1}}</summary><p>{{t:faq.a1}}</p></details>
+        <details><summary>{{t:faq.q2}}</summary><p>{{t:faq.a2}}</p></details>
+        <details><summary>{{t:faq.q3}}</summary><p>{{t:faq.a3}}</p></details>
+        <details><summary>{{t:faq.q4}}</summary><p>{{t:faq.a4}}</p></details>
+        <details><summary>{{t:faq.q5}}</summary><p>{{t:faq.a5}}</p></details>
+      </div>
+    </div>
+  </section>

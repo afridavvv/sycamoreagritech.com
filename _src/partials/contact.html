@@ -1,0 +1,70 @@
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="wrap contact-grid">
+      <div>
+        <p class="eyebrow">{{t:contact.eyebrow}}</p>
+        <h2>{{t:contact.h2}}</h2>
+        <p class="muted">{{t:contact.text}}</p>
+
+        <dl class="contact-list">
+          <div><dt>{{t:contact.general}}</dt><dd><a href="mailto:info@sycamoreagritech.com">info@sycamoreagritech.com</a></dd></div>
+          <div><dt>{{t:contact.sales}}</dt><dd><a href="mailto:sales@sycamoreagritech.com">sales@sycamoreagritech.com</a></dd></div>
+          <div><dt>{{t:contact.hire}}</dt><dd><a href="mailto:hire@sycamoreagritech.com">hire@sycamoreagritech.com</a></dd></div>
+          <div>
+            <dt>{{t:contact.phone}}</dt>
+            <dd class="phones"><a href="tel:+265999947228">+265 999 947 228</a><a href="tel:+265999441333">+265 999 441 333</a></dd>
+          </div>
+          <div>
+            <dt>{{t:contact.address}}</dt>
+            <dd>{{t:contact.addressValue}}</dd>
+          </div>
+        </dl>
+        <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Chitipi%2C%20Lilongwe%2C%20Malawi" target="_blank" rel="noopener">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6-5.6-6-11a6 6 0 0 1 12 0c0 5.4-6 11-6 11z"/><circle cx="12" cy="10" r="2.2"/></svg>
+          {{t:contact.map}}
+        </a>
+      </div>
+
+      <form class="inquiry" id="inquiry" novalidate>
+        <div class="field">
+          <label for="f-name">{{t:form.name}} <b>*</b></label>
+          <input id="f-name" name="fullname" type="text" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="f-company">{{t:form.company}}</label>
+          <input id="f-company" name="company" type="text" autocomplete="organization">
+        </div>
+        <div class="field">
+          <label for="f-email">{{t:form.email}} <b>*</b></label>
+          <input id="f-email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="f-phone">{{t:form.phone}}</label>
+          <input id="f-phone" name="phone" type="tel" autocomplete="tel">
+        </div>
+        <div class="field field-wide">
+          <label for="f-product">{{t:form.interest}}</label>
+          <select id="f-product" name="product">
+            <option value="wheat"{{selected:wheat}}>{{t:opt.wheat}}</option>
+            <option value="sorghum"{{selected:sorghum}}>{{t:opt.sorghum}}</option>
+            <option value="seed"{{selected:seed}}>{{t:opt.seed}}</option>
+            <option value="hire"{{selected:hire}}>{{t:opt.hire}}</option>
+            <option value="trade"{{selected:trade}}>{{t:opt.trade}}</option>
+            <option value="other"{{selected:other}}>{{t:opt.other}}</option>
+          </select>
+        </div>
+        <div class="field field-wide">
+          <label for="f-qty">{{t:form.qty}}</label>
+          <input id="f-qty" name="quantity" type="text" placeholder="{{attr:form.qtyPh}}">
+        </div>
+        <div class="field field-wide">
+          <label for="f-msg">{{t:form.msg}}</label>
+          <textarea id="f-msg" name="message" rows="4" placeholder="{{attr:form.msgPh}}"></textarea>
+        </div>
+        <div class="field-wide form-foot">
+          <button class="btn btn-primary" type="submit">{{t:form.submit}}</button>
+          <p class="form-note">{{t:form.note}}</p>
+        </div>
+      </form>
+    </div>
+  </section>

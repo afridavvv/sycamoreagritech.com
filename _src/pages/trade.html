@@ -1,0 +1,204 @@
+  <!-- Page hero -->
+  <section class="page-hero">
+    <picture class="page-hero-media">
+      <source type="image/webp" srcset="/assets/img/warehouse-inspection-sm.webp 800w, /assets/img/warehouse-inspection-lg.webp 1080w" sizes="100vw">
+      <img src="/assets/img/warehouse-inspection-lg.jpg" alt="{{attr:cap.warehouse-inspection}}" width="1080" height="720" fetchpriority="high">
+    </picture>
+    <div class="wrap page-hero-inner">
+      <nav class="crumbs" aria-label="{{attr:hp.crumbLabel}}">
+        <a href="{{home}}">{{t:hp.crumbHome}}</a><span aria-hidden="true">/</span><span aria-current="page">{{t:nav.trade}}</span>
+      </nav>
+      <p class="eyebrow eyebrow-light">{{t:tp.eyebrow}}</p>
+      <h1>{{t:tp.h1}}</h1>
+      <p class="lead">{{t:tp.lead}}</p>
+      <div class="hero-actions">
+        <a class="btn btn-gold" href="#contact" data-product="trade">{{t:tp.cta1}}</a>
+        <a class="btn btn-outline-light" href="mailto:sales@sycamoreagritech.com">{{t:tp.cta2}}</a>
+      </div>
+      <ul class="hero-tags">
+        <li>{{t:tp.tag1}}</li><li>{{t:tp.tag2}}</li><li>{{t:tp.tag3}}</li><li>{{t:tp.tag4}}</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Why buy from us -->
+  <section class="section" id="why-buy">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">{{t:tp.whyEyebrow}}</p>
+        <h2>{{t:tp.whyH2}}</h2>
+        <p>{{t:tp.whyIntro}}</p>
+      </div>
+      <div class="pillar-grid flat">
+        <div class="pillar">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21v-9"/><path d="M12 12c0-4 3-7 7-7 0 4-3 7-7 7zM12 14.5c0-3-2.5-5.5-6-5.5 0 3 2.5 5.5 6 5.5z"/><path d="M5 21h14"/></svg>
+          <h3>{{t:tw1.title}}</h3><p>{{t:tw1.text}}</p>
+        </div>
+        <div class="pillar">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.3-4.3M8.5 11l2 2 3.5-3.5"/></svg>
+          <h3>{{t:tw2.title}}</h3><p>{{t:tw2.text}}</p>
+        </div>
+        <div class="pillar">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4"/><path d="M9.5 14l2 2 3.5-3.5"/></svg>
+          <h3>{{t:tw3.title}}</h3><p>{{t:tw3.text}}</p>
+        </div>
+        <div class="pillar">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg>
+          <h3>{{t:tw4.title}}</h3><p>{{t:tw4.text}}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product catalogue -->
+  <section class="section section-alt" id="products">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">{{t:tp.catEyebrow}}</p>
+        <h2>{{t:tp.catH2}}</h2>
+        <p>{{t:tp.catIntro}}</p>
+      </div>
+      <div class="cat-grid">
+{{catalogue}}
+      </div>
+      <p class="cat-note">{{t:tp.catNote}}</p>
+    </div>
+  </section>
+
+  <!-- Availability calendar -->
+  <section class="section" id="availability">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">{{t:tp.calEyebrow}}</p>
+        <h2>{{t:tp.calH2}}</h2>
+        <p>{{t:tp.calIntro}}</p>
+      </div>
+      <div class="season tradecal">
+        <div class="season-chart">
+          <span></span>
+          <div class="sc-months" id="scMonths" aria-hidden="true"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span></div>
+{{tradecal}}
+        </div>
+        <ul class="cal-legend">
+          <li><i class="sc-bar wheat harvest"></i>{{t:tp.cal.harvest}}</li>
+          <li><i class="sc-bar maize"></i>{{t:tp.cal.supply}}</li>
+        </ul>
+        <p class="season-note">{{t:tp.calNote}}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How we export -->
+  <section class="section section-alt" id="how-we-export">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">{{t:tp.howEyebrow}}</p>
+        <h2>{{t:tp.howH2}}</h2>
+        <p>{{t:tp.howIntro}}</p>
+      </div>
+      <ol class="hire-steps six">
+        <li><h3>{{t:tstep1.title}}</h3><p>{{t:tstep1.text}}</p></li>
+        <li><h3>{{t:tstep2.title}}</h3><p>{{t:tstep2.text}}</p></li>
+        <li><h3>{{t:tstep3.title}}</h3><p>{{t:tstep3.text}}</p></li>
+        <li><h3>{{t:tstep4.title}}</h3><p>{{t:tstep4.text}}</p></li>
+        <li><h3>{{t:tstep5.title}}</h3><p>{{t:tstep5.text}}</p></li>
+        <li><h3>{{t:tstep6.title}}</h3><p>{{t:tstep6.text}}</p></li>
+      </ol>
+
+      <div class="terms-grid">
+        <div class="term"><h3>{{t:term.incoterms.title}}</h3><p>{{t:term.incoterms.text}}</p></div>
+        <div class="term"><h3>{{t:term.payment.title}}</h3><p>{{t:term.payment.text}}</p></div>
+        <div class="term"><h3>{{t:term.packaging.title}}</h3><p>{{t:term.packaging.text}}</p></div>
+        <div class="term"><h3>{{t:term.moq.title}}</h3><p>{{t:term.moq.text}}</p></div>
+        <div class="term"><h3>{{t:term.samples.title}}</h3><p>{{t:term.samples.text}}</p></div>
+        <div class="term"><h3>{{t:term.inspection.title}}</h3><p>{{t:term.inspection.text}}</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Logistics -->
+  <section class="section section-dark" id="logistics">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">{{t:tp.logEyebrow}}</p>
+        <h2>{{t:tp.logH2}}</h2>
+        <p>{{t:tp.logIntro}}</p>
+      </div>
+      <div class="corridor-grid">
+        <div class="corridor"><span class="corr-port">{{t:corr.nacala.port}}</span><h3>{{t:corr.nacala.title}}</h3><p>{{t:corr.nacala.text}}</p></div>
+        <div class="corridor"><span class="corr-port">{{t:corr.beira.port}}</span><h3>{{t:corr.beira.title}}</h3><p>{{t:corr.beira.text}}</p></div>
+        <div class="corridor"><span class="corr-port">{{t:corr.dar.port}}</span><h3>{{t:corr.dar.title}}</h3><p>{{t:corr.dar.text}}</p></div>
+        <div class="corridor"><span class="corr-port">{{t:corr.air.port}}</span><h3>{{t:corr.air.title}}</h3><p>{{t:corr.air.text}}</p></div>
+      </div>
+      <p class="log-note">{{t:tp.logNote}}</p>
+    </div>
+  </section>
+
+  <!-- Documents -->
+  <section class="section" id="documents">
+    <div class="wrap docs-grid">
+      <div class="section-head">
+        <p class="eyebrow">{{t:tp.docsEyebrow}}</p>
+        <h2>{{t:tp.docsH2}}</h2>
+        <p>{{t:tp.docsIntro}}</p>
+      </div>
+      <ul class="checks docs">
+        <li><strong>{{t:doc.phyto.title}}</strong><span>{{t:doc.phyto.text}}</span></li>
+        <li><strong>{{t:doc.origin.title}}</strong><span>{{t:doc.origin.text}}</span></li>
+        <li><strong>{{t:doc.quality.title}}</strong><span>{{t:doc.quality.text}}</span></li>
+        <li><strong>{{t:doc.fumig.title}}</strong><span>{{t:doc.fumig.text}}</span></li>
+        <li><strong>{{t:doc.invoice.title}}</strong><span>{{t:doc.invoice.text}}</span></li>
+        <li><strong>{{t:doc.transport.title}}</strong><span>{{t:doc.transport.text}}</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Who we supply -->
+  <section class="section section-alt" id="buyers">
+    <div class="wrap supply-grid">
+      <div>
+        <p class="eyebrow">{{t:tp.buyersEyebrow}}</p>
+        <h2>{{t:tp.buyersH2}}</h2>
+        <p class="muted">{{t:tp.buyersText}}</p>
+        <ul class="checks">
+          <li>{{t:buyer.importers}}</li>
+          <li>{{t:buyer.processors}}</li>
+          <li>{{t:buyer.feed}}</li>
+          <li>{{t:buyer.traders}}</li>
+          <li>{{t:buyer.regional}}</li>
+        </ul>
+      </div>
+      <figure class="supply-photo">
+        {{pic:sorghum-field|(max-width: 1000px) 100vw, 560px|50% 55%|decor}}
+        <figcaption>{{t:cap.sorghum-field}}</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="wrap faq-wrap">
+      <div class="section-head">
+        <p class="eyebrow">{{t:hp.faqEyebrow}}</p>
+        <h2>{{t:tfaq.title}}</h2>
+      </div>
+      <div class="faq">
+        <details><summary>{{t:tfaq.q1}}</summary><p>{{t:tfaq.a1}}</p></details>
+        <details><summary>{{t:tfaq.q2}}</summary><p>{{t:tfaq.a2}}</p></details>
+        <details><summary>{{t:tfaq.q3}}</summary><p>{{t:tfaq.a3}}</p></details>
+        <details><summary>{{t:tfaq.q4}}</summary><p>{{t:tfaq.a4}}</p></details>
+        <details><summary>{{t:tfaq.q5}}</summary><p>{{t:tfaq.a5}}</p></details>
+        <details><summary>{{t:tfaq.q6}}</summary><p>{{t:tfaq.a6}}</p></details>
+      </div>
+      <div class="hire-cta">
+        <div>
+          <h3>{{t:tp.band.title}}</h3>
+          <p>{{t:tp.band.text}}</p>
+        </div>
+        <div class="hire-cta-actions">
+          <a class="btn btn-gold" href="#contact" data-product="trade">{{t:tp.cta1}}</a>
+          <a class="btn btn-outline-light" href="mailto:sales@sycamoreagritech.com">{{t:tp.cta2}}</a>
+        </div>
+      </div>
+    </div>
+  </section>

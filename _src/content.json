@@ -1,0 +1,2003 @@
+{
+ "meta.title": {
+  "zh": "盛楷农业科技有限公司｜马拉维利隆圭小麦、高粱种植供应与农机租赁",
+  "en": "Sycamore Agritech Limited | Wheat, Sorghum & Machinery Hire, Malawi",
+  "note": "SEO <title> of the home page; start with the full company name \"Sycamore Agritech Limited\"; keep the rest short"
+ },
+ "meta.desc": {
+  "zh": "盛楷农业科技有限公司（Sycamore Agritech Limited）位于马拉维利隆圭：种植灌溉小麦以及高粱和制种玉米，向海内外客户供应马拉维本地农产品，并提供农机租赁服务。",
+  "en": "Sycamore Agritech Limited, Lilongwe, Malawi: wheat under irrigation, sorghum and seed maize; Malawi-grown farm products for buyers abroad; farm machinery hire.",
+  "note": "SEO meta description of the home page: 140–165 characters; full company name; three business lines (farming, Malawi-grown products for buyers abroad, machinery hire); do not imply sorghum is irrigated"
+ },
+ "nav.farming": {
+  "zh": "种植业务",
+  "en": "Farming",
+  "note": "short nav label"
+ },
+ "nav.hire": {
+  "zh": "农机租赁",
+  "en": "Machinery hire",
+  "note": "short nav label — keep as short as possible"
+ },
+ "nav.supply": {
+  "zh": "产品供应",
+  "en": "Supply",
+  "note": "short nav label — keep as short as possible"
+ },
+ "nav.about": {
+  "zh": "关于我们",
+  "en": "About",
+  "note": "short nav label"
+ },
+ "nav.contact": {
+  "zh": "联系我们",
+  "en": "Contact",
+  "note": "short nav label / button"
+ },
+ "hero.eyebrow": {
+  "zh": "马拉维 · 规模化种植 · 农机租赁",
+  "en": "Malawi · Large-scale farming · Machinery hire",
+  "note": "small uppercase line above the headline"
+ },
+ "hero.h1": {
+  "zh": "在马拉维，<br>种好粮食，制好种子",
+  "en": "Growing quality grain and seed in Malawi",
+  "note": "main headline; zh contains a <br> line break — other languages: no <br>"
+ },
+ "hero.lead": {
+  "zh": "盛楷农业科技有限公司（Sycamore Agritech Limited）在马拉维经营规模化农场，采用中心支轴式喷灌种植小麦，同时种植高粱，并按种子生产标准开展玉米制种。我们拥有成套现代农业机械，既用于自有农场作业，也对外提供租赁服务。",
+  "en": "Sycamore Agritech Limited runs large-scale farms in Malawi, growing wheat under centre-pivot irrigation, sorghum, and maize for seed production. We own a complete fleet of modern farm machinery, which we use on our own fields and also hire out.",
+  "note": "Always write the company name in full: \"Sycamore Agritech Limited\" (never drop \"Limited\")."
+ },
+ "hero.cta1": {
+  "zh": "了解种植业务",
+  "en": "Explore our farms",
+  "note": "button"
+ },
+ "hero.cta2": {
+  "zh": "租用农机",
+  "en": "Hire machinery",
+  "note": "button"
+ },
+ "hero.tag.wheat": {
+  "zh": "小麦",
+  "en": "Wheat"
+ },
+ "hero.tag.seed": {
+  "zh": "制种玉米",
+  "en": "Seed maize",
+  "note": "maize grown to produce seed (hybrid seed production), NOT grain/commercial maize"
+ },
+ "hero.tag.pivot": {
+  "zh": "中心支轴式喷灌",
+  "en": "Centre-pivot irrigation"
+ },
+ "hero.tag.hire": {
+  "zh": "农机租赁",
+  "en": "Machinery hire"
+ },
+ "biz.farming.title": {
+  "zh": "种植业务",
+  "en": "Farming"
+ },
+ "biz.farming.text": {
+  "zh": "灌溉小麦以及高粱和制种玉米，从整地到收储全程自主管理。",
+  "en": "Wheat under irrigation, plus sorghum and seed maize, managed in-house from land preparation to storage.",
+  "note": "do not imply sorghum is irrigated"
+ },
+ "biz.farming.more": {
+  "zh": "了解更多",
+  "en": "Learn more"
+ },
+ "biz.hire.title": {
+  "zh": "农机租赁",
+  "en": "Machinery hire"
+ },
+ "biz.hire.text": {
+  "zh": "拖拉机及整地、播种、植保、收获、灌溉机械，可安排机手作业。",
+  "en": "Tractors and machinery for land preparation, planting, spraying, harvesting and irrigation, with operators available."
+ },
+ "biz.hire.more": {
+  "zh": "查看机型",
+  "en": "See the fleet"
+ },
+ "biz.supply.title": {
+  "zh": "小麦与高粱供应",
+  "en": "Wheat & sorghum supply"
+ },
+ "biz.supply.text": {
+  "zh": "为面粉厂、酿造企业等客户稳定供应自产小麦和高粱。",
+  "en": "A steady supply of our own wheat and sorghum for flour mills, breweries and other businesses."
+ },
+ "biz.supply.more": {
+  "zh": "了解更多",
+  "en": "Learn more"
+ },
+ "farming.eyebrow": {
+  "zh": "种植业务",
+  "en": "Farming"
+ },
+ "farming.h2": {
+  "zh": "我们的核心：规模化种植",
+  "en": "At our core: farming at scale"
+ },
+ "farming.p1": {
+  "zh": "种植是盛楷农业科技有限公司的核心业务。我们在马拉维的农场主要种植三种作物：小麦、高粱和制种玉米。小麦在凉爽旱季依靠灌溉种植，制种玉米按种子生产要求管理。农田配备中心支轴式和卷盘式喷灌设备，按作物生长阶段供水。",
+  "en": "Farming is the heart of Sycamore Agritech Limited. Our farms in Malawi grow three main crops: wheat, sorghum and seed maize. The wheat is grown under irrigation through the cool dry season, and the maize is managed to seed-production standards. Our fields are equipped with centre-pivot and hose-reel irrigation, with water applied according to crop growth stage.",
+  "note": "Always write the company name in full: \"Sycamore Agritech Limited\". Do not imply sorghum is irrigated."
+ },
+ "farming.p2": {
+  "zh": "我们的团队全程管理田间作业，从整地、播种、灌溉、施肥、植保到适时收获。主要作业环节由自有机械完成，力求每一季的产量和品质稳定可靠。",
+  "en": "Our team manages the whole field cycle, from land preparation and planting to irrigation, fertilisation, crop protection and timely harvest. Key operations are done with our own machinery, helping to keep yield and quality consistent every season."
+ },
+ "practice.pivot.title": {
+  "zh": "中心支轴式喷灌",
+  "en": "Centre-pivot irrigation"
+ },
+ "practice.pivot.text": {
+  "zh": "大型喷灌机绕中心旋转，均匀覆盖整片农田，节水省工。",
+  "en": "Large pivots rotate around a central point, watering whole fields evenly while saving water and labour."
+ },
+ "practice.care.title": {
+  "zh": "精细田间管理",
+  "en": "Careful crop management"
+ },
+ "practice.care.text": {
+  "zh": "按生长阶段安排施肥与植保，定期巡田，及早发现并处理问题。",
+  "en": "Fertiliser and crop protection timed to each growth stage, with regular field checks to catch problems early."
+ },
+ "practice.mech.title": {
+  "zh": "机械化作业",
+  "en": "Mechanised field work"
+ },
+ "practice.mech.text": {
+  "zh": "从深松、翻耕、精量播种到喷药，主要田间作业均由我们自有的机械完成。",
+  "en": "From ripping and ploughing to precision planting and spraying, the key field operations are done with our own machinery."
+ },
+ "practice.store.title": {
+  "zh": "适时收获与仓储",
+  "en": "Timely harvest & storage"
+ },
+ "practice.store.text": {
+  "zh": "成熟后及时收获，清理、装袋后入库保存，保持干燥洁净。",
+  "en": "Crops are harvested at maturity, then cleaned, bagged and stored in dry, hygienic conditions."
+ },
+ "farming.caption": {
+  "zh": "清晨的小麦田，远处是中心支轴式喷灌机",
+  "en": "Wheat at first light, with a centre pivot on the horizon"
+ },
+ "season.title": {
+  "zh": "马拉维农时",
+  "en": "Malawi's farming calendar"
+ },
+ "season.text": {
+  "zh": "马拉维一年有两个主要种植季：雨季种植以玉米为主的雨养作物，凉爽旱季则依靠灌溉种植小麦等冬季作物。整地要赶在播种之前完成，这也是农机最紧张的时候。",
+  "en": "Malawi has two main cropping seasons: rain-fed crops, mainly maize, in the rainy season, and irrigated winter crops such as wheat in the cool dry season. Land must be prepared before each planting, so that is when demand for machinery peaks."
+ },
+ "season.row.rain": {
+  "zh": "雨季作物",
+  "en": "Rain-fed crops",
+  "note": "row label in a small chart, keep very short (max ~16 chars)"
+ },
+ "season.row.winter": {
+  "zh": "灌溉作物",
+  "en": "Irrigated crops",
+  "note": "row label in a small chart, keep very short"
+ },
+ "season.row.prep": {
+  "zh": "整地高峰",
+  "en": "Land-prep peak",
+  "note": "row label in a small chart, keep very short"
+ },
+ "season.bar.plant": {
+  "zh": "播种",
+  "en": "Planting",
+  "note": "label inside a 2-month-wide bar; very short"
+ },
+ "season.bar.harvest": {
+  "zh": "收获",
+  "en": "Harvest",
+  "note": "label inside a bar; very short"
+ },
+ "season.bar.prep": {
+  "zh": "整地",
+  "en": "Land prep",
+  "note": "label inside a bar; very short"
+ },
+ "season.note": {
+  "zh": "按马拉维一般农时整理，各地区、各年份会有差异。资料来源：FEWS NET、FAO GIEWS、马拉维气候变化与气象服务局。",
+  "en": "A general guide to Malawi's seasons; timing varies by region and year. Sources: FEWS NET, FAO GIEWS, Malawi Department of Climate Change and Meteorological Services.",
+  "note": "keep organisation names; translate the Malawian department name naturally or keep it in English"
+ },
+ "irri.eyebrow": {
+  "zh": "灌溉",
+  "en": "Irrigation"
+ },
+ "irri.h2": {
+  "zh": "有水，才有稳定的收成",
+  "en": "Water makes harvests reliable"
+ },
+ "irri.intro": {
+  "zh": "马拉维的降雨集中在雨季，旱季种植离不开灌溉。我们的农田配备两类喷灌设备。",
+  "en": "Malawi's rain falls mainly in one season, so dry-season farming depends on irrigation. Our fields use two types of sprinkler irrigation."
+ },
+ "irri.pivot.title": {
+  "zh": "中心支轴式喷灌",
+  "en": "Centre-pivot irrigation"
+ },
+ "irri.pivot.text": {
+  "zh": "多跨喷灌机以中心点为轴缓慢旋转，一台设备即可均匀覆盖一大片圆形农田，适合大面积连片种植的小麦。",
+  "en": "A multi-span machine turns slowly around a central point, watering a large circular area evenly. It is well suited to our broad wheat fields."
+ },
+ "irri.reel.title": {
+  "zh": "卷盘式喷灌机",
+  "en": "Hose-reel irrigator"
+ },
+ "irri.reel.text": {
+  "zh": "卷盘回收软管时牵引喷头车在田间行走，逐条完成喷灌；设备可在不同地块间转移，用于补充灌溉，也可对外租赁。",
+  "en": "As the hose winds back onto the reel, it pulls the sprinkler cart across the field, one strip at a time. The machine moves easily between fields for supplementary irrigation and is also available for hire."
+ },
+ "crops.eyebrow": {
+  "zh": "主要作物",
+  "en": "Our crops"
+ },
+ "crops.h2": {
+  "zh": "小麦、高粱与制种玉米",
+  "en": "Wheat, sorghum and seed maize"
+ },
+ "crops.intro": {
+  "zh": "这三种作物是我们农场的主力。",
+  "en": "These three crops are the mainstay of our farms."
+ },
+ "crops.wheat.title": {
+  "zh": "小麦",
+  "en": "Wheat"
+ },
+ "crops.wheat.text": {
+  "zh": "在灌溉条件下种植，用于制粉和食品加工。马拉维所需小麦几乎全部依靠进口，发展本地种植有助于减少进口依赖。",
+  "en": "Grown under irrigation for flour milling and food processing. Malawi imports almost all of its wheat, so growing it locally helps reduce reliance on imports."
+ },
+ "crops.wheat.tag1": {
+  "zh": "灌溉种植",
+  "en": "Irrigated"
+ },
+ "crops.wheat.tag2": {
+  "zh": "面粉厂",
+  "en": "Flour mills"
+ },
+ "crops.wheat.tag3": {
+  "zh": "食品加工",
+  "en": "Food processing"
+ },
+ "crops.wheat.link": {
+  "zh": "小麦询价",
+  "en": "Get a wheat quote"
+ },
+ "crops.seed.title": {
+  "zh": "制种玉米",
+  "en": "Seed maize"
+ },
+ "crops.seed.text": {
+  "zh": "按制种要求种植和管理：隔离种植、及时去雄、田间去杂、单收单储，确保种子纯度和质量。",
+  "en": "Grown to seed-production standards to protect seed purity and quality: isolated fields, timely detasselling, removal of off-type plants (roguing), and separate harvesting and storage.",
+  "note": "technical seed-production terms: detasselling, roguing (removing off-type plants)"
+ },
+ "crops.seed.tag1": {
+  "zh": "杂交玉米制种",
+  "en": "Hybrid seed production"
+ },
+ "crops.seed.tag2": {
+  "zh": "种子企业",
+  "en": "Seed companies"
+ },
+ "crops.seed.tag3": {
+  "zh": "纯度管理",
+  "en": "Purity control"
+ },
+ "crops.seed.link": {
+  "zh": "制种合作咨询",
+  "en": "Discuss seed production"
+ },
+ "hire.eyebrow": {
+  "zh": "农机租赁",
+  "en": "Machinery hire"
+ },
+ "hire.h2": {
+  "zh": "专业农机，按需租用",
+  "en": "Professional farm machinery, when you need it"
+ },
+ "hire.lead": {
+  "zh": "盛楷农业科技有限公司自有的成套农业机械覆盖整地、播种、植保、收获和灌溉等环节，同时对外出租。设备保养良好，可配有经验的机手作业，帮助农场、庄园和合作社不误农时。",
+  "en": "Our own fleet of farm machinery is available for hire, covering land preparation, planting, spraying, harvesting and irrigation. The equipment is well maintained and can come with an experienced operator, so farms, estates and cooperatives can get the work done on time.",
+  "note": "zh starts with the Chinese company name; fr/pt may start with \"Sycamore Agritech Limited\" or \"our\" — meaning unchanged"
+ },
+ "hire.p2": {
+  "zh": "在马拉维，人工用锄头整地每公顷需要 23–31 个工日，而机械整地（含起垄）每公顷只需约 2–2.5 小时。整地推迟两周，玉米最多可减产 30%。提前预约，以便透雨一到就能及时播种。",
+  "en": "In Malawi, preparing one hectare with a hand hoe takes 23–31 person-days; with machinery, including ridging, it takes about 2–2.5 hours. A two-week delay in land preparation can cut maize yields by up to 30%. Book early so your land is ready when the planting rains arrive.",
+  "note": "keep the numbers exactly"
+ },
+ "hire.source": {
+  "zh": "数据来源：整地用时来自马拉维科技大学 / MwAPATA 研究所和 SIMLESA / 国际玉米小麦改良中心（CIMMYT）；减产幅度来自马拉维国家计划委员会与联合国开发计划署《马拉维 2063》政策简报（2022），该简报引用国际食物政策研究所（IFPRI）的研究。",
+  "en": "Sources: land-preparation times from Malawi University of Science and Technology / MwAPATA Institute and SIMLESA/CIMMYT; yield loss from Malawi National Planning Commission and UNDP, Malawi 2063 policy brief (2022), citing IFPRI."
+ },
+ "hire.cta1": {
+  "zh": "预约农机",
+  "en": "Book machinery",
+  "note": "button"
+ },
+ "hire.cta2": {
+  "zh": "电话咨询",
+  "en": "Call us",
+  "note": "button"
+ },
+ "hire.caption": {
+  "zh": "圆盘犁在田间作业，后方是其他农机",
+  "en": "A disc plough at work, with other machines behind"
+ },
+ "hire.svcTitle": {
+  "zh": "服务范围",
+  "en": "What we can do"
+ },
+ "svc.prep.title": {
+  "zh": "耕整地",
+  "en": "Land preparation"
+ },
+ "svc.prep.text": {
+  "zh": "圆盘犁翻耕，深松机打破压实的犁底层。",
+  "en": "Disc ploughing, plus subsoiling to break up compacted layers."
+ },
+ "svc.plant.title": {
+  "zh": "精量播种",
+  "en": "Precision planting"
+ },
+ "svc.plant.text": {
+  "zh": "多行精量播种机，株距均匀、行距一致。",
+  "en": "Multi-row precision planting for even seed and row spacing."
+ },
+ "svc.spray.title": {
+  "zh": "植保喷雾",
+  "en": "Crop spraying"
+ },
+ "svc.spray.text": {
+  "zh": "悬挂式喷杆喷雾机，用于大田除草和病虫害防治。",
+  "en": "Tractor-mounted boom sprayers for weed, pest and disease control."
+ },
+ "svc.harvest.title": {
+  "zh": "联合收获",
+  "en": "Combine harvesting"
+ },
+ "svc.harvest.text": {
+  "zh": "自走式联合收割机，一次完成收割和脱粒。",
+  "en": "A self-propelled combine that harvests and threshes in one pass."
+ },
+ "svc.irri.title": {
+  "zh": "移动喷灌",
+  "en": "Mobile irrigation"
+ },
+ "svc.irri.text": {
+  "zh": "卷盘式喷灌机，可在地块之间转移，进行补充灌溉。",
+  "en": "A hose-reel irrigator that moves between fields for supplementary watering."
+ },
+ "svc.earth.title": {
+  "zh": "开沟与土方",
+  "en": "Ditching & earthworks"
+ },
+ "svc.earth.text": {
+  "zh": "履带式挖掘机，用于开沟、清障和农田基础设施建设。",
+  "en": "A crawler excavator for digging ditches, clearing obstacles and other farm infrastructure work."
+ },
+ "hire.fleetTitle": {
+  "zh": "可租机型",
+  "en": "The fleet"
+ },
+ "fleet.lovol.model": {
+  "zh": "雷沃 LOVOL 2204",
+  "en": "LOVOL 2204",
+  "note": "brand/model — do not translate"
+ },
+ "fleet.lovol.name": {
+  "zh": "大马力拖拉机",
+  "en": "High-horsepower tractor"
+ },
+ "fleet.lovol.text": {
+  "zh": "220 马力级四驱拖拉机，配驾驶室，适合牵引圆盘犁、深松机和大型播种机。",
+  "en": "A 220 hp-class 4WD cab tractor for pulling disc ploughs, subsoilers and large planters.",
+  "note": "fr: 'ch' for horsepower; pt: 'cv'"
+ },
+ "fleet.tk.model": {
+  "zh": "TK854",
+  "en": "TK854",
+  "note": "model — do not translate"
+ },
+ "fleet.tk.name": {
+  "zh": "多用途拖拉机",
+  "en": "Utility tractor"
+ },
+ "fleet.tk.text": {
+  "zh": "带遮阳顶棚的多用途拖拉机，适合播种、喷药、轻型耕作和田间运输。",
+  "en": "A versatile tractor with a sun canopy, for planting, spraying, light tillage and farm transport."
+ },
+ "fleet.plough.model": {
+  "zh": "7 片圆盘",
+  "en": "7-disc",
+  "note": "short spec line"
+ },
+ "fleet.plough.name": {
+  "zh": "重型圆盘犁",
+  "en": "Heavy disc plough"
+ },
+ "fleet.plough.text": {
+  "zh": "配 7 片圆盘，适用于板结、干硬及秸秆较多地块的翻耕。",
+  "en": "A heavy seven-disc plough for primary tillage in hard, dry ground or fields with heavy crop residue."
+ },
+ "fleet.sub.model": {
+  "zh": "多铲式",
+  "en": "Multi-shank",
+  "note": "short spec line"
+ },
+ "fleet.sub.name": {
+  "zh": "深松机",
+  "en": "Subsoiler (ripper)"
+ },
+ "fleet.sub.text": {
+  "zh": "打破耕层下压实的犁底层，改善土壤渗水，促进根系生长。",
+  "en": "Breaks up compacted layers below plough depth, improving water infiltration and root growth."
+ },
+ "fleet.planter.model": {
+  "zh": "MUKEN",
+  "en": "MUKEN",
+  "note": "brand — do not translate"
+ },
+ "fleet.planter.name": {
+  "zh": "精量播种机",
+  "en": "Precision planter"
+ },
+ "fleet.planter.text": {
+  "zh": "多行精量播种机，每个播种单体配独立种箱，适合玉米、大豆等中耕作物。",
+  "en": "A multi-row precision planter with a seed hopper on every row unit, for row crops such as maize and soya beans."
+ },
+ "fleet.sprayer.model": {
+  "zh": "3 台",
+  "en": "3 units",
+  "note": "short spec line"
+ },
+ "fleet.sprayer.name": {
+  "zh": "悬挂式喷杆喷雾机",
+  "en": "Mounted boom sprayers"
+ },
+ "fleet.sprayer.text": {
+  "zh": "液压折叠喷杆，用于喷施除草剂、杀虫剂、杀菌剂和叶面肥。",
+  "en": "Hydraulically folding booms for applying herbicides, insecticides, fungicides and foliar fertiliser."
+ },
+ "fleet.combine.model": {
+  "zh": "丰神 4LZ-13",
+  "en": "Fengshen 4LZ-13",
+  "note": "brand/model; fr/pt use 'Fengshen 4LZ-13'"
+ },
+ "fleet.combine.name": {
+  "zh": "联合收割机",
+  "en": "Combine harvester"
+ },
+ "fleet.combine.text": {
+  "zh": "自走式谷物联合收割机，图中为玉米割台；可收获的作物和割台配置请咨询。",
+  "en": "A self-propelled grain combine, shown here with a maize header. Ask us which crops it can harvest and which headers are available."
+ },
+ "fleet.reel.model": {
+  "zh": "VODAR",
+  "en": "VODAR",
+  "note": "brand — do not translate"
+ },
+ "fleet.reel.name": {
+  "zh": "卷盘式喷灌机",
+  "en": "Hose-reel irrigator"
+ },
+ "fleet.reel.text": {
+  "zh": "移动式喷灌设备，适合小麦、玉米、蔬菜和牧草的补充灌溉。",
+  "en": "A travelling sprinkler for supplementary irrigation of wheat, maize, vegetables and pasture."
+ },
+ "fleet.exc.model": {
+  "zh": "MAXPOWER ME80-9",
+  "en": "MAXPOWER ME80-9",
+  "note": "brand/model — do not translate"
+ },
+ "fleet.exc.name": {
+  "zh": "履带式挖掘机",
+  "en": "Crawler excavator"
+ },
+ "fleet.exc.text": {
+  "zh": "用于开挖灌溉沟渠、清理障碍、修建农场道路等土方工程。",
+  "en": "For digging irrigation channels, clearing obstacles, building farm roads and other earthworks."
+ },
+ "tag.power": {
+  "zh": "牵引动力",
+  "en": "Traction power",
+  "note": "small tag chip, 1–2 words"
+ },
+ "tag.prep": {
+  "zh": "整地",
+  "en": "Land prep",
+  "note": "small tag chip, 1–2 words"
+ },
+ "tag.plant": {
+  "zh": "播种",
+  "en": "Planting",
+  "note": "small tag chip, 1–2 words"
+ },
+ "tag.spray": {
+  "zh": "植保",
+  "en": "Spraying",
+  "note": "small tag chip, 1–2 words"
+ },
+ "tag.transport": {
+  "zh": "运输",
+  "en": "Transport",
+  "note": "small tag chip, 1–2 words"
+ },
+ "tag.plough": {
+  "zh": "翻耕",
+  "en": "Ploughing",
+  "note": "small tag chip, 1–2 words"
+ },
+ "tag.subsoil": {
+  "zh": "深松",
+  "en": "Subsoiling",
+  "note": "small tag chip, 1–2 words"
+ },
+ "tag.maize": {
+  "zh": "玉米",
+  "en": "Maize",
+  "note": "small tag chip, 1–2 words"
+ },
+ "tag.soy": {
+  "zh": "大豆",
+  "en": "Soya",
+  "note": "small tag chip, 1–2 words"
+ },
+ "tag.weed": {
+  "zh": "除草",
+  "en": "Weed control",
+  "note": "small tag chip, 1–2 words"
+ },
+ "tag.harvest": {
+  "zh": "收获",
+  "en": "Harvesting",
+  "note": "small tag chip, 1–2 words"
+ },
+ "tag.irri": {
+  "zh": "灌溉",
+  "en": "Irrigation",
+  "note": "small tag chip, 1–2 words"
+ },
+ "tag.earth": {
+  "zh": "土方",
+  "en": "Earthworks",
+  "note": "small tag chip, 1–2 words"
+ },
+ "tag.ditch": {
+  "zh": "开沟",
+  "en": "Ditching",
+  "note": "small tag chip, 1–2 words"
+ },
+ "hire.stepsTitle": {
+  "zh": "租用流程",
+  "en": "How hiring works"
+ },
+ "hstep1.title": {
+  "zh": "提出需求",
+  "en": "Tell us the job"
+ },
+ "hstep1.text": {
+  "zh": "说明作业类型、地块位置、面积和期望日期。",
+  "en": "The operation, field location, area and preferred dates."
+ },
+ "hstep2.title": {
+  "zh": "确认方案与报价",
+  "en": "Plan and quote"
+ },
+ "hstep2.text": {
+  "zh": "我们推荐合适的机型，确认排期，并给出报价。",
+  "en": "We recommend the right machines, confirm the schedule and send a quote."
+ },
+ "hstep3.title": {
+  "zh": "进场作业",
+  "en": "Work in the field"
+ },
+ "hstep3.text": {
+  "zh": "按约定时间进场，可配机手完成作业。",
+  "en": "Our machines arrive on the agreed date, with an operator if you need one."
+ },
+ "hstep4.title": {
+  "zh": "完工确认",
+  "en": "Final check"
+ },
+ "hstep4.text": {
+  "zh": "作业完成后与您一起验收。",
+  "en": "We check the finished work with you."
+ },
+ "hire.terms": {
+  "zh": "租期、计费方式（按面积、按小时或按天）、是否含燃油和运输、是否配机手，均可按需求商定，以报价为准。",
+  "en": "We agree the details case by case: the hire period, how charges are calculated (per hectare/acre, per hour or per day), whether fuel and transport are included, and whether an operator is provided. Everything is confirmed in our quote."
+ },
+ "band.title": {
+  "zh": "播种季前，尽早预约",
+  "en": "Book before the season starts"
+ },
+ "band.text": {
+  "zh": "整地和播种时节农机最紧张。告诉我们您的作业需求，我们会尽快确认排期。",
+  "en": "Machinery is busiest during land preparation and planting. Tell us what you need and we'll confirm a slot as soon as possible."
+ },
+ "band.btn1": {
+  "zh": "预约农机",
+  "en": "Book machinery",
+  "note": "button"
+ },
+ "band.btn2": {
+  "zh": "致电 +265 999 947 228",
+  "en": "Call +265 999 947 228",
+  "note": "button; keep the phone number exactly"
+ },
+ "process.eyebrow": {
+  "zh": "从田间到客户",
+  "en": "From field to customer"
+ },
+ "process.h2": {
+  "zh": "每一袋粮食和种子从哪里来",
+  "en": "Where every bag of grain and seed comes from"
+ },
+ "pstep1.title": {
+  "zh": "播种与管理",
+  "en": "Planting & care"
+ },
+ "pstep1.text": {
+  "zh": "整地播种，喷灌、施肥与植保全程管理。",
+  "en": "Land preparation and planting, then irrigation, fertilisation and crop protection."
+ },
+ "pstep2.title": {
+  "zh": "收获",
+  "en": "Harvest"
+ },
+ "pstep2.text": {
+  "zh": "作物成熟后适时收获；制种玉米单收单储。",
+  "en": "Harvested at maturity; seed maize is harvested and stored separately."
+ },
+ "pstep3.title": {
+  "zh": "清理装袋",
+  "en": "Cleaning & bagging"
+ },
+ "pstep3.text": {
+  "zh": "清除杂质，按规格称重装袋。",
+  "en": "Cleaned to remove impurities, then weighed and bagged to specification."
+ },
+ "pstep4.title": {
+  "zh": "仓储检验",
+  "en": "Storage & inspection"
+ },
+ "pstep4.text": {
+  "zh": "入库保存，出库前检验。",
+  "en": "Stored, then inspected before dispatch."
+ },
+ "pstep5.title": {
+  "zh": "交付客户",
+  "en": "Delivery"
+ },
+ "pstep5.text": {
+  "zh": "按约定的规格、数量和时间交付。",
+  "en": "Delivered to the agreed specification and volume, on the agreed date."
+ },
+ "supply.eyebrow": {
+  "zh": "小麦与高粱供应",
+  "en": "Wheat & sorghum supply"
+ },
+ "supply.h2": {
+  "zh": "为企业客户稳定供货",
+  "en": "Dependable supply for businesses"
+ },
+ "supply.text": {
+  "zh": "我们直接向企业客户供应自产的小麦和高粱，均按客户要求的规格交付；制种玉米则为种子企业生产。欢迎询价。",
+  "en": "We supply our own wheat and sorghum directly to business customers, to each customer's specification, and grow seed maize for seed companies. Ask us for a quote."
+ },
+ "supply.listTitle": {
+  "zh": "服务对象",
+  "en": "Who we serve"
+ },
+ "cust.mills": {
+  "zh": "面粉厂",
+  "en": "Flour mills"
+ },
+ "cust.seed": {
+  "zh": "种子企业",
+  "en": "Seed companies"
+ },
+ "cust.food": {
+  "zh": "食品加工企业",
+  "en": "Food processors"
+ },
+ "cust.trade": {
+  "zh": "批发商与贸易商",
+  "en": "Wholesalers & traders"
+ },
+ "cust.farms": {
+  "zh": "农场、庄园与合作社（农机租赁）",
+  "en": "Farms, estates & cooperatives (machinery hire)"
+ },
+ "supply.caption": {
+  "zh": "仓储与验货",
+  "en": "Storage and inspection"
+ },
+ "why.eyebrow": {
+  "zh": "为什么选择我们",
+  "en": "Why choose us",
+  "note": "small label; do NOT use a shortened company name here — say \"why choose us\""
+ },
+ "why.h2": {
+  "zh": "种植、农机、供应，尽在一家",
+  "en": "Farming, machinery and supply under one roof"
+ },
+ "why1.title": {
+  "zh": "自有农场",
+  "en": "Our own farms"
+ },
+ "why1.text": {
+  "zh": "我们供应的小麦、高粱和制种玉米出自自己经营的农场，来源清楚。",
+  "en": "The wheat, sorghum and seed maize we supply are grown on farms we run ourselves, so you know where they come from."
+ },
+ "why2.title": {
+  "zh": "灌溉保障",
+  "en": "Reliable irrigation"
+ },
+ "why2.text": {
+  "zh": "中心支轴式和卷盘式喷灌按需供水，旱季也能稳定生产。",
+  "en": "Centre-pivot and hose-reel irrigation deliver water when crops need it, keeping production steady through the dry season."
+ },
+ "why3.title": {
+  "zh": "成套农机",
+  "en": "A complete fleet"
+ },
+ "why3.text": {
+  "zh": "从整地到收获的成套机械，既服务自有农场，也对外租赁。",
+  "en": "A full set of machines from land preparation to harvest, used on our farms and available for hire."
+ },
+ "why4.title": {
+  "zh": "按时履约",
+  "en": "On time, as agreed"
+ },
+ "why4.text": {
+  "zh": "产品按约定的规格、数量和时间交付，农机按约定日期进场。",
+  "en": "Products delivered to the agreed specification and volume, on the agreed date; machinery on site when promised."
+ },
+ "gallery.eyebrow": {
+  "zh": "现场实拍",
+  "en": "On the ground"
+ },
+ "gallery.h2": {
+  "zh": "农场与农机",
+  "en": "Our farms and machinery"
+ },
+ "gallery.intro": {
+  "zh": "均为我们农场、农机和日常运营的实拍照片，点击可放大查看。",
+  "en": "Real photos of our farms, machinery and operations. Click or tap any photo to enlarge it."
+ },
+ "cap.hero-pivot-wheat": {
+  "zh": "中心支轴式喷灌机下的成熟小麦",
+  "en": "Ripe wheat under a centre pivot",
+  "note": "photo caption and alt text; keep brand/model names"
+ },
+ "cap.wheat-field-sky": {
+  "zh": "等待收获的小麦田",
+  "en": "Wheat ready for harvest",
+  "note": "photo caption and alt text; keep brand/model names"
+ },
+ "cap.maize-field": {
+  "zh": "生长中的制种玉米",
+  "en": "Seed maize growing on our farm",
+  "note": "photo caption and alt text; keep brand/model names"
+ },
+ "cap.wheat-sunrise-pivot": {
+  "zh": "清晨的小麦田",
+  "en": "Wheat at first light",
+  "note": "photo caption and alt text; keep brand/model names"
+ },
+ "cap.warehouse-inspection": {
+  "zh": "仓储与验货",
+  "en": "Storage and inspection",
+  "note": "photo caption and alt text; keep brand/model names"
+ },
+ "cap.planter-muken": {
+  "zh": "MUKEN 精量播种机",
+  "en": "MUKEN precision planter",
+  "note": "photo caption and alt text; keep brand/model names"
+ },
+ "cap.combine-harvester": {
+  "zh": "丰神 4LZ-13 联合收割机",
+  "en": "Fengshen 4LZ-13 combine harvester",
+  "note": "photo caption and alt text; keep brand/model names"
+ },
+ "cap.boom-sprayers": {
+  "zh": "悬挂式喷杆喷雾机",
+  "en": "Mounted boom sprayers",
+  "note": "photo caption and alt text; keep brand/model names"
+ },
+ "cap.tractor-lovol-2204": {
+  "zh": "LOVOL 2204 拖拉机",
+  "en": "LOVOL 2204 tractor",
+  "note": "photo caption and alt text; keep brand/model names"
+ },
+ "cap.subsoiler": {
+  "zh": "深松机",
+  "en": "Subsoiler (ripper)",
+  "note": "photo caption and alt text; keep brand/model names"
+ },
+ "cap.tractor-tk854": {
+  "zh": "TK854 拖拉机",
+  "en": "TK854 tractor",
+  "note": "photo caption and alt text; keep brand/model names"
+ },
+ "cap.disc-plough-field": {
+  "zh": "圆盘犁田间作业",
+  "en": "Disc plough at work",
+  "note": "photo caption and alt text; keep brand/model names"
+ },
+ "cap.hose-reel-irrigator": {
+  "zh": "卷盘式喷灌机灌溉小麦",
+  "en": "Hose-reel irrigator watering young wheat",
+  "note": "photo caption and alt text; keep brand/model names"
+ },
+ "cap.excavator-maxpower": {
+  "zh": "MAXPOWER ME80-9 履带式挖掘机",
+  "en": "MAXPOWER ME80-9 crawler excavator",
+  "note": "photo caption and alt text; keep brand/model names"
+ },
+ "about.eyebrow": {
+  "zh": "关于我们",
+  "en": "About us"
+ },
+ "about.h2": {
+  "zh": "扎根马拉维，行稳致远",
+  "en": "Rooted in Malawi, built to last"
+ },
+ "about.p": {
+  "zh": "盛楷农业科技有限公司（Sycamore Agritech Limited）总部位于马拉维首都利隆圭，业务涵盖规模化种植、农业机械租赁、小麦与高粱供应以及农产品贸易。Sycamore（梧桐）是一种根深叶茂的树，我们也希望像它一样扎根土地、稳健生长，与客户建立长期合作。",
+  "en": "Sycamore Agritech Limited is based in Lilongwe, Malawi's capital, and works across large-scale farming, agricultural machinery hire, wheat and sorghum supply, and agricultural products trade. The sycamore is a broad, deep-rooted tree, and that is how we want to grow: rooted in the land, steady, and building long-term partnerships with our customers."
+ },
+ "about.quote": {
+  "zh": "“栽下梧桐树，引得凤凰来。”",
+  "en": "“Plant a sycamore, and the phoenix will come.”",
+  "note": "Chinese proverb; fr use « », pt use « »"
+ },
+ "about.quoteFoot": {
+  "zh": "把事情做扎实，好的合作伙伴自然会来。",
+  "en": "An old Chinese saying: build something worthwhile, and good partners will follow."
+ },
+ "about.glance": {
+  "zh": "公司概况",
+  "en": "At a glance"
+ },
+ "fact.hq.dt": {
+  "zh": "总部",
+  "en": "Head office"
+ },
+ "fact.hq.dd": {
+  "zh": "马拉维利隆圭",
+  "en": "Lilongwe, Malawi"
+ },
+ "fact.core.dt": {
+  "zh": "核心业务",
+  "en": "Core business"
+ },
+ "fact.core.dd": {
+  "zh": "灌溉小麦，以及高粱和制种玉米",
+  "en": "Irrigated wheat, plus sorghum and seed maize",
+  "note": "do not imply sorghum is irrigated"
+ },
+ "fact.also.dt": {
+  "zh": "其他业务",
+  "en": "Other activities"
+ },
+ "fact.also.dd": {
+  "zh": "农机租赁、小麦与高粱供应、农产品贸易",
+  "en": "Machinery hire, wheat and sorghum supply, agricultural products trade"
+ },
+ "fact.lang.dt": {
+  "zh": "语言",
+  "en": "Languages"
+ },
+ "contact.eyebrow": {
+  "zh": "联系我们",
+  "en": "Contact"
+ },
+ "contact.h2": {
+  "zh": "告诉我们您的需求",
+  "en": "Tell us what you need"
+ },
+ "contact.text": {
+  "zh": "采购小麦、高粱或其他马拉维农产品，洽谈制种合作或预约农机，都可以留言或直接致电，我们会尽快回复。",
+  "en": "Whether you're buying wheat, sorghum or other Malawi produce, discussing seed production or booking machinery, send us a message or call us, and we'll get back to you quickly."
+ },
+ "contact.general": {
+  "zh": "综合咨询",
+  "en": "General enquiries"
+ },
+ "contact.sales": {
+  "zh": "产品销售",
+  "en": "Sales"
+ },
+ "contact.hire": {
+  "zh": "农机租赁",
+  "en": "Machinery hire"
+ },
+ "contact.phone": {
+  "zh": "电话",
+  "en": "Phone"
+ },
+ "contact.address": {
+  "zh": "地址",
+  "en": "Address"
+ },
+ "contact.addressValue": {
+  "zh": "马拉维利隆圭 Chitipi",
+  "en": "Chitipi, Lilongwe, Malawi",
+  "note": "fr/pt: 'Chitipi, Lilongwe, Malawi'"
+ },
+ "contact.map": {
+  "zh": "在地图上查看",
+  "en": "View on map"
+ },
+ "form.name": {
+  "zh": "姓名",
+  "en": "Name"
+ },
+ "form.company": {
+  "zh": "公司",
+  "en": "Company"
+ },
+ "form.email": {
+  "zh": "邮箱",
+  "en": "Email"
+ },
+ "form.phone": {
+  "zh": "电话（选填）",
+  "en": "Phone (optional)"
+ },
+ "form.interest": {
+  "zh": "咨询类型",
+  "en": "Enquiry about"
+ },
+ "opt.wheat": {
+  "zh": "小麦",
+  "en": "Wheat",
+  "note": "<option> text"
+ },
+ "opt.seed": {
+  "zh": "制种玉米",
+  "en": "Seed maize",
+  "note": "<option> text"
+ },
+ "opt.hire": {
+  "zh": "农机租赁",
+  "en": "Machinery hire",
+  "note": "<option> text"
+ },
+ "opt.other": {
+  "zh": "其他",
+  "en": "Other",
+  "note": "<option> text"
+ },
+ "form.qty": {
+  "zh": "数量或面积",
+  "en": "Quantity or area"
+ },
+ "form.qtyPh": {
+  "zh": "例如：50 吨或 20 公顷",
+  "en": "e.g. 50 tonnes, or 20 hectares",
+  "note": "input placeholder"
+ },
+ "form.msg": {
+  "zh": "需求说明",
+  "en": "Details"
+ },
+ "form.msgPh": {
+  "zh": "品种/规格、作业类型、地点、期望日期等",
+  "en": "Variety or specification, type of work, location, preferred dates, etc.",
+  "note": "textarea placeholder"
+ },
+ "form.submit": {
+  "zh": "发送",
+  "en": "Send enquiry",
+  "note": "button"
+ },
+ "form.note": {
+  "zh": "点击后将打开您的邮件应用，邮件内容和对应团队的收件地址已自动填好，确认后点击发送即可。",
+  "en": "This opens your email app with your message filled in and addressed to the right team; just press Send."
+ },
+ "footer.tag": {
+  "zh": "马拉维 · 种植 · 农机租赁 · 农产品贸易",
+  "en": "Farming · Machinery hire · Agricultural products trade · Malawi"
+ },
+ "footer.contact": {
+  "zh": "联系方式",
+  "en": "Contact"
+ },
+ "footer.rights": {
+  "zh": "保留所有权利。",
+  "en": "All rights reserved."
+ },
+ "ui.close": {
+  "zh": "关闭",
+  "en": "Close",
+  "note": "aria-label for lightbox button"
+ },
+ "ui.prev": {
+  "zh": "上一张",
+  "en": "Previous photo",
+  "note": "aria-label"
+ },
+ "ui.next": {
+  "zh": "下一张",
+  "en": "Next photo",
+  "note": "aria-label"
+ },
+ "mail.subject": {
+  "zh": "业务咨询",
+  "en": "Enquiry",
+  "note": "label used in the generated email body/subject"
+ },
+ "mail.name": {
+  "zh": "姓名",
+  "en": "Name",
+  "note": "label used in the generated email body/subject"
+ },
+ "mail.company": {
+  "zh": "公司",
+  "en": "Company",
+  "note": "label used in the generated email body/subject"
+ },
+ "mail.email": {
+  "zh": "邮箱",
+  "en": "Email",
+  "note": "label used in the generated email body/subject"
+ },
+ "mail.phone": {
+  "zh": "电话",
+  "en": "Phone",
+  "note": "label used in the generated email body/subject"
+ },
+ "mail.interest": {
+  "zh": "咨询类型",
+  "en": "Enquiry about",
+  "note": "label used in the generated email body/subject"
+ },
+ "mail.qty": {
+  "zh": "数量或面积",
+  "en": "Quantity or area",
+  "note": "label used in the generated email body/subject"
+ },
+ "mail.msg": {
+  "zh": "需求说明",
+  "en": "Details",
+  "note": "label used in the generated email body/subject"
+ },
+ "biz.label": {
+  "zh": "我们的业务",
+  "en": "Our business",
+  "note": "aria-label of the business overview section"
+ },
+ "hero.tag.sorghum": {
+  "zh": "高粱",
+  "en": "Sorghum"
+ },
+ "crops.sorghum.title": {
+  "zh": "高粱",
+  "en": "Sorghum"
+ },
+ "crops.sorghum.text": {
+  "zh": "耐旱、适应性强的谷物，可用于酿造、食品加工和饲料生产，按客户要求的规格供货。",
+  "en": "A hardy, drought-tolerant cereal used for brewing, food processing and animal feed, supplied to each customer's specification."
+ },
+ "crops.sorghum.tag1": {
+  "zh": "耐旱作物",
+  "en": "Drought-tolerant",
+  "note": "small tag chip, 1–2 words"
+ },
+ "crops.sorghum.tag2": {
+  "zh": "酿造",
+  "en": "Brewing",
+  "note": "small tag chip"
+ },
+ "crops.sorghum.tag3": {
+  "zh": "饲料",
+  "en": "Animal feed",
+  "note": "small tag chip"
+ },
+ "crops.sorghum.link": {
+  "zh": "高粱询价",
+  "en": "Get a sorghum quote"
+ },
+ "opt.sorghum": {
+  "zh": "高粱",
+  "en": "Sorghum",
+  "note": "<option> text"
+ },
+ "cust.brew": {
+  "zh": "酿造与饮料企业",
+  "en": "Breweries & beverage makers"
+ },
+ "cust.feed": {
+  "zh": "饲料厂",
+  "en": "Feed mills"
+ },
+ "cap.sorghum-field": {
+  "zh": "成熟的高粱田",
+  "en": "Ripe sorghum ready for harvest",
+  "note": "photo caption and alt text"
+ },
+ "cap.wheat-growing": {
+  "zh": "生长期的小麦",
+  "en": "Wheat in the growing stage",
+  "note": "photo caption and alt text"
+ },
+ "hire.more": {
+  "zh": "查看全部机型与租用详情",
+  "en": "See the fleet and hire details",
+  "note": "button linking to the machinery-hire page"
+ },
+ "hire.fleetAll": {
+  "zh": "查看全部 9 类可租机械",
+  "en": "See all 9 machine types for hire",
+  "note": "tile linking to the fleet; 9 machine TYPES (not 9 machines)"
+ },
+ "hp.title": {
+  "zh": "马拉维农机租赁｜利隆圭拖拉机租赁及农业机械出租｜盛楷农业科技有限公司",
+  "en": "Tractor & Farm Machinery Hire in Malawi | Sycamore Agritech Limited",
+  "note": "SEO <title> of the machinery-hire page: local terms for tractor / farm machinery hire + Malawi, then the full company name \"Sycamore Agritech Limited\""
+ },
+ "hp.desc": {
+  "zh": "马拉维农机租赁、拖拉机租赁：盛楷农业科技有限公司立足利隆圭，出租翻耕、深松、播种、植保、收获、灌溉和土方作业机械，可配有经验的机手。播种季前请尽早预约。",
+  "en": "Tractor and farm machinery hire in Malawi, based in Lilongwe: ploughing, ripping, planting, spraying, harvesting, irrigation and earthworks. Operators available.",
+  "note": "SEO meta description of the machinery-hire page: 140–165 characters; local search phrases for tractor / farm machinery hire + Malawi/Lilongwe; \"based in Lilongwe\" (not an areas-served claim)"
+ },
+ "hp.h1": {
+  "zh": "马拉维拖拉机及农机租赁",
+  "en": "Tractor and farm machinery hire in Malawi",
+  "note": "H1 of the machinery-hire page; most-searched local phrase"
+ },
+ "hp.crumbHome": {
+  "zh": "首页",
+  "en": "Home",
+  "note": "breadcrumb"
+ },
+ "hp.crumbLabel": {
+  "zh": "页面路径",
+  "en": "Breadcrumb",
+  "note": "aria-label"
+ },
+ "hp.whyEyebrow": {
+  "zh": "为什么选择机械作业",
+  "en": "Why mechanise",
+  "note": "small uppercase label"
+ },
+ "hp.stat1": {
+  "zh": "人工用锄头整理 1 公顷土地所需的工日",
+  "en": "person-days to prepare 1 ha by hand hoe",
+  "note": "caption under the big number \"23–31\""
+ },
+ "hp.stat2": {
+  "zh": "机械整理 1 公顷土地（含起垄）所需时间",
+  "en": "to prepare 1 ha by machine, including ridging",
+  "note": "caption under \"2–2.5 h\""
+ },
+ "hp.stat3": {
+  "zh": "整地推迟两周，玉米可能减产的最大幅度",
+  "en": "possible maize yield loss from a two-week delay in land preparation",
+  "note": "caption under \"30%\""
+ },
+ "hp.stat4": {
+  "zh": "类可租用的农业机械",
+  "en": "types of machine available for hire",
+  "note": "caption under the big number \"9\""
+ },
+ "hp.faqEyebrow": {
+  "zh": "常见问题",
+  "en": "FAQ",
+  "note": "small uppercase label"
+ },
+ "faq.title": {
+  "zh": "农机租赁常见问题",
+  "en": "Tractor and machinery hire: common questions"
+ },
+ "faq.q1": {
+  "zh": "租用拖拉机可以配机手吗？",
+  "en": "Can I hire a tractor with an operator?"
+ },
+ "faq.a1": {
+  "zh": "可以。我们可以安排有经验的机手随机作业，具体安排在报价中确认。",
+  "en": "Yes. We can provide an experienced operator with the machine; the arrangement is confirmed in our quote."
+ },
+ "faq.q2": {
+  "zh": "农机租金怎么计算？",
+  "en": "How are machinery hire charges calculated?"
+ },
+ "faq.a2": {
+  "zh": "我们按作业内容、面积和地点报价，可按公顷/英亩、按小时或按天计费，并在报价中写明是否包含燃油和运输。",
+  "en": "We quote according to the job, the area and the location: per hectare/acre, per hour or per day. The quote states clearly whether fuel and transport are included."
+ },
+ "faq.q3": {
+  "zh": "你们可以到马拉维哪些地区作业？",
+  "en": "Which areas of Malawi do you cover?"
+ },
+ "faq.a3": {
+  "zh": "我们的基地在利隆圭。请告诉我们地块位置，我们会确认能否安排，以及设备如何运到现场。",
+  "en": "We are based in Lilongwe. Tell us where your fields are and we'll confirm availability and how the machines will get there."
+ },
+ "faq.q4": {
+  "zh": "需要提前多久预约？",
+  "en": "How far ahead should I book?"
+ },
+ "faq.a4": {
+  "zh": "越早越好。整地和播种时节农机最紧张，建议在雨季开始前尽早预约。",
+  "en": "As early as possible. Land preparation and planting are our busiest times, so we recommend booking well before the rains start."
+ },
+ "faq.q5": {
+  "zh": "联合收割机可以收获哪些作物？",
+  "en": "Which crops can the combine harvester handle?"
+ },
+ "faq.a5": {
+  "zh": "照片中的联合收割机配的是玉米割台。可收获的作物和可用的割台，请向我们咨询。",
+  "en": "The combine in our photos is fitted with a maize header. Please ask us which crops it can harvest and which headers are available."
+ },
+ "ui.navMain": {
+  "zh": "主导航",
+  "en": "Main navigation",
+  "note": "aria-label"
+ },
+ "ui.navFooter": {
+  "zh": "页脚导航",
+  "en": "Footer navigation",
+  "note": "aria-label"
+ },
+ "ui.menu": {
+  "zh": "菜单",
+  "en": "Menu",
+  "note": "aria-label of the mobile menu button"
+ },
+ "ui.langSuggest": {
+  "zh": "本页面有中文版",
+  "en": "This page is also available in English",
+  "note": "shown to visitors whose browser uses THIS language while they read another language version; e.g. fr: \"Cette page existe aussi en français\""
+ },
+ "ui.langGo": {
+  "zh": "查看中文版",
+  "en": "View in English",
+  "note": "link in that bar; e.g. fr: \"Voir en français\""
+ },
+ "brand.name": {
+  "zh": "盛楷农业科技有限公司（Sycamore Agritech Limited）",
+  "en": "Sycamore Agritech Limited",
+  "note": "Company name: fr/pt use exactly \"Sycamore Agritech Limited\" (the Chinese name is only for Chinese pages). Used for aria-labels and og:site_name."
+ },
+ "fact.name.dt": {
+  "zh": "公司名称",
+  "en": "Company name",
+  "note": "label in the \"At a glance\" card"
+ },
+ "fact.name.dd": {
+  "zh": "盛楷农业科技有限公司（Sycamore Agritech Limited）",
+  "en": "Sycamore Agritech Limited",
+  "note": "Company name: fr/pt use exactly \"Sycamore Agritech Limited\" (the Chinese name is only for Chinese pages)."
+ },
+ "footer.company": {
+  "zh": "盛楷农业科技有限公司（Sycamore Agritech Limited）。",
+  "en": "Sycamore Agritech Limited.",
+  "note": "Company name: fr/pt use exactly \"Sycamore Agritech Limited\" (the Chinese name is only for Chinese pages). Followed by \"All rights reserved.\"; keep the final full stop."
+ },
+ "nav.trade": {
+  "zh": "农产品贸易",
+  "en": "Trade",
+  "note": "short nav label for the agricultural-products trade page; keep short (fr e.g. \"Négoce\", pt \"Comércio\")"
+ },
+ "hero.tag.trade": {
+  "zh": "农产品出口",
+  "en": "Products for export",
+  "note": "hero chip"
+ },
+ "biz.trade.title": {
+  "zh": "农产品贸易",
+  "en": "Agricultural products trade"
+ },
+ "biz.trade.text": {
+  "zh": "为海内外买家采购并供应马拉维出产的豆类、油料、坚果、谷物和特色产品。",
+  "en": "Sourcing Malawi-grown pulses, oilseeds, nuts, grains and specialty products for buyers at home and abroad."
+ },
+ "biz.trade.more": {
+  "zh": "查看产品目录",
+  "en": "See the catalogue"
+ },
+ "opt.trade": {
+  "zh": "农产品采购（出口）",
+  "en": "Agricultural products (sourcing & export)",
+  "note": "<option> text"
+ },
+ "tp.title": {
+  "zh": "马拉维农产品出口｜木豆、花生、芝麻、澳洲坚果｜盛楷农业科技有限公司",
+  "en": "Malawi Agricultural Products Export Supplier | Sycamore Agritech Limited",
+  "note": "SEO <title> of the trade page (~60–75 chars); product keywords + Malawi + full company name"
+ },
+ "tp.desc": {
+  "zh": "马拉维农产品出口：盛楷农业科技有限公司在利隆圭为海内外买家采购供应木豆、花生、芝麻、澳洲坚果（夏威夷果）、大豆、辣椒、咖啡等，负责分级、检验、出口单证和运输。",
+  "en": "Malawi agricultural products for export: Sycamore Agritech Limited sources pigeon peas, groundnuts, sesame, macadamia and more, with export documents handled.",
+  "note": "SEO meta description (140–165 chars)"
+ },
+ "tp.eyebrow": {
+  "zh": "农产品贸易",
+  "en": "Agricultural products trade"
+ },
+ "tp.h1": {
+  "zh": "马拉维本地农产品，面向全球买家",
+  "en": "Malawi-grown agricultural products for buyers worldwide",
+  "note": "H1 of the trade page"
+ },
+ "tp.lead": {
+  "zh": "盛楷农业科技有限公司立足马拉维利隆圭，依托自有农场和本地种植者网络，为海内外客户采购并供应马拉维出产的各类农产品：豆类、油料、坚果、谷物、香料和特色产品。从寻源、分级、包装到出口单证和运输，马拉维这一端的工作由我们全程负责。",
+  "en": "Sycamore Agritech Limited is based in Lilongwe, Malawi. Drawing on our own farms and a network of local growers, we source and supply Malawi-grown agricultural products to customers at home and abroad: pulses, oilseeds, nuts, grains, spices and specialty products. From sourcing, grading and packing to export documents and transport, we take care of the Malawi end.",
+  "note": "Company name: zh uses 盛楷农业科技有限公司; fr/pt/en use \"Sycamore Agritech Limited\" in full."
+ },
+ "tp.cta1": {
+  "zh": "索取报价",
+  "en": "Request an offer",
+  "note": "button"
+ },
+ "tp.cta2": {
+  "zh": "发邮件给销售团队",
+  "en": "Email our sales team",
+  "note": "button linking to sales@sycamoreagritech.com"
+ },
+ "tp.tag1": {
+  "zh": "产地直供",
+  "en": "Direct from origin",
+  "note": "chip"
+ },
+ "tp.tag2": {
+  "zh": "装运前检验",
+  "en": "Inspected before dispatch",
+  "note": "chip"
+ },
+ "tp.tag3": {
+  "zh": "出口单证齐全",
+  "en": "Export documents handled",
+  "note": "chip"
+ },
+ "tp.tag4": {
+  "zh": "中英法葡四语服务",
+  "en": "Service in Chinese, English, French and Portuguese",
+  "note": "chip"
+ },
+ "tp.whyEyebrow": {
+  "zh": "为什么从我们这里采购",
+  "en": "Why buy from us"
+ },
+ "tp.whyH2": {
+  "zh": "一个在马拉维当地的可靠伙伴",
+  "en": "A reliable partner on the ground in Malawi"
+ },
+ "tp.whyIntro": {
+  "zh": "隔着万里采购农产品，最怕货不对板、单证缺失、交期拖延。我们就在产地，这些问题由我们来解决。",
+  "en": "Buying farm produce from thousands of kilometres away, the worries are the same everywhere: goods that do not match the sample, missing paperwork and late shipments. We are at the origin, and we solve those problems for you."
+ },
+ "tw1.title": {
+  "zh": "来自马拉维的产地直供",
+  "en": "Grown in Malawi, supplied at origin"
+ },
+ "tw1.text": {
+  "zh": "货源来自我们自有的农场和长期合作的马拉维种植者，每一批货物的产地、批次和供应商都有记录。",
+  "en": "Our supply comes from our own farms and from Malawian growers we work with season after season; every lot is recorded with its origin, batch and supplier."
+ },
+ "tw2.title": {
+  "zh": "装运前逐批检验",
+  "en": "Every lot checked before it ships"
+ },
+ "tw2.text": {
+  "zh": "按合同规格抽样检验：水分、杂质、粒度分级；花生等产品可提供经认可实验室的黄曲霉毒素检测报告，也可按要求安排 SGS 等第三方装运前检验。",
+  "en": "Lots are sampled and checked against the contract: moisture, foreign matter and grading. For groundnuts and similar products we provide aflatoxin test reports from an accredited laboratory, and third-party pre-shipment inspection (for example SGS) can be arranged on request."
+ },
+ "tw3.title": {
+  "zh": "出口手续由我们办理",
+  "en": "Export paperwork done by us"
+ },
+ "tw3.text": {
+  "zh": "出口许可、植物检疫证书、原产地证书、海关申报和马拉维储备银行的出口申报，都在马拉维这一端完成，您收到的是一套完整的单证。",
+  "en": "Export licence, phytosanitary certificate, certificate of origin, customs declaration and the Reserve Bank export declaration are all completed on the Malawi side, so you receive one complete set of documents."
+ },
+ "tw4.title": {
+  "zh": "优惠的市场准入",
+  "en": "Preferential market access"
+ },
+ "tw4.text": {
+  "zh": "马拉维是最不发达国家，马拉维原产的农产品进入中国享受零关税，进入欧盟和英国享受免关税、免配额待遇；在非洲区域内可享受 SADC、COMESA 和 AfCFTA 优惠。",
+  "en": "As goods of Malawian origin from a least-developed country, our products enter China tariff-free and the European Union and United Kingdom duty-free and quota-free, with SADC, COMESA and AfCFTA preferences within Africa.",
+  "note": "keep organisation acronyms (SADC, COMESA, AfCFTA)"
+ },
+ "tp.catEyebrow": {
+  "zh": "产品目录",
+  "en": "Product catalogue"
+ },
+ "tp.catH2": {
+  "zh": "我们可以供应的马拉维农产品",
+  "en": "Malawi agricultural products we can supply"
+ },
+ "tp.catIntro": {
+  "zh": "以下是我们经常采购供应的品类。具体品种、规格、等级、包装和起订量按您的要求报价，目录之外的马拉维农产品也欢迎询价。",
+  "en": "These are the products we regularly source and supply. Varieties, specifications, grades, packing and minimum quantities are quoted to your requirements, and we welcome enquiries for other Malawi-grown products too."
+ },
+ "tp.catNote": {
+  "zh": "各产品标注的月份为新季货源的一般供应期。部分产品（如玉米、大豆、食糖）的出口受马拉维政府许可和季节性管制，我们会在签约前确认当期政策。",
+  "en": "The months shown are the usual supply window for new-crop goods. Exports of some products (for example maize, soybeans and sugar) are subject to Malawi government licensing and seasonal restrictions, which we confirm before any contract is signed."
+ },
+ "cat.pulses": {
+  "zh": "豆类",
+  "en": "Pulses"
+ },
+ "cat.oilseeds": {
+  "zh": "油料与坚果",
+  "en": "Oilseeds & nuts"
+ },
+ "cat.grains": {
+  "zh": "谷物",
+  "en": "Grains"
+ },
+ "cat.specialty": {
+  "zh": "香料与特色产品",
+  "en": "Spices & specialty"
+ },
+ "cat.other": {
+  "zh": "其他产品",
+  "en": "Other products"
+ },
+ "prod.pigeonpea.name": {
+  "zh": "木豆",
+  "en": "Pigeon peas",
+  "note": "product name (see trade terminology sheet)"
+ },
+ "prod.pigeonpea.text": {
+  "zh": "马拉维主要的出口豆类，整粒干木豆，印度和南亚加工商的常规采购品种。",
+  "en": "Malawi's main export pulse: whole dry pigeon peas (tur), bought regularly by processors in India and South Asia."
+ },
+ "prod.groundnut.name": {
+  "zh": "花生",
+  "en": "Groundnuts",
+  "note": "product name (see trade terminology sheet)"
+ },
+ "prod.groundnut.text": {
+  "zh": "CG7、Chalimbana 等品种，脱壳花生仁按客户要求分级，可提供黄曲霉毒素检测报告。",
+  "en": "CG7 and Chalimbana varieties; shelled kernels graded to your specification, with aflatoxin test reports available."
+ },
+ "prod.soybean.name": {
+  "zh": "大豆",
+  "en": "Soybeans",
+  "note": "product name (see trade terminology sheet)"
+ },
+ "prod.soybean.text": {
+  "zh": "非转基因大豆，供榨油、饲料和食品加工；出口需政府许可，接单前确认。",
+  "en": "Non-GMO soybeans for crushing, feed and food processing; exports require a government licence, which we confirm before taking an order."
+ },
+ "prod.beans.name": {
+  "zh": "芸豆",
+  "en": "Dry beans",
+  "note": "product name (see trade terminology sheet)"
+ },
+ "prod.beans.text": {
+  "zh": "红芸豆、糖豆等干豆。",
+  "en": "Red kidney beans, sugar beans and other dry beans."
+ },
+ "prod.cowpea.name": {
+  "zh": "豇豆",
+  "en": "Cowpeas",
+  "note": "product name (see trade terminology sheet)"
+ },
+ "prod.cowpea.text": {
+  "zh": "干豇豆，供应区域及海外食品市场。",
+  "en": "Dried cowpeas for food markets in the region and overseas."
+ },
+ "prod.sesame.name": {
+  "zh": "芝麻",
+  "en": "Sesame seed",
+  "note": "product name (see trade terminology sheet)"
+ },
+ "prod.sesame.text": {
+  "zh": "白芝麻，清选后装袋，适合榨油和食品加工。",
+  "en": "Natural whitish sesame, cleaned and bagged, for oil and food use."
+ },
+ "prod.sunflower.name": {
+  "zh": "葵花籽",
+  "en": "Sunflower seed",
+  "note": "product name (see trade terminology sheet)"
+ },
+ "prod.sunflower.text": {
+  "zh": "油用葵花籽，供榨油。",
+  "en": "Oil-type sunflower seed for crushing."
+ },
+ "prod.macadamia.name": {
+  "zh": "澳洲坚果",
+  "en": "Macadamia nuts",
+  "note": "product name (see trade terminology sheet)"
+ },
+ "prod.macadamia.text": {
+  "zh": "带壳果和果仁，按国际通行的果仁规格分级。",
+  "en": "Nut-in-shell and kernels, graded to the international kernel styles."
+ },
+ "prod.cotton.name": {
+  "zh": "棉花",
+  "en": "Cotton lint",
+  "note": "product name (see trade terminology sheet)"
+ },
+ "prod.cotton.text": {
+  "zh": "轧花后的皮棉，供纺纱厂。",
+  "en": "Ginned cotton lint for spinning mills."
+ },
+ "prod.rice.name": {
+  "zh": "大米",
+  "en": "Rice",
+  "note": "product name (see trade terminology sheet)"
+ },
+ "prod.rice.text": {
+  "zh": "Kilombero 长粒香米等马拉维优质品种。",
+  "en": "Kilombero long-grain aromatic rice and other Malawian varieties."
+ },
+ "prod.sorghum.name": {
+  "zh": "高粱",
+  "en": "Sorghum",
+  "note": "product name (see trade terminology sheet)"
+ },
+ "prod.sorghum.text": {
+  "zh": "来自我们自有农场和合作种植者，供酿造、食品和饲料。",
+  "en": "From our own farms and partner growers, for brewing, food and feed."
+ },
+ "prod.maize.name": {
+  "zh": "玉米",
+  "en": "Maize",
+  "note": "product name (see trade terminology sheet)"
+ },
+ "prod.maize.text": {
+  "zh": "白玉米（非转基因），出口受政府季节性管制，以下单时的政策为准。",
+  "en": "White non-GMO maize; exports depend on seasonal government rules, confirmed at the time of order."
+ },
+ "prod.chilli.name": {
+  "zh": "鸟眼辣椒",
+  "en": "Bird's-eye chillies",
+  "note": "product name (see trade terminology sheet)"
+ },
+ "prod.chilli.text": {
+  "zh": "马拉维著名的干鸟眼椒（peri-peri），辣度高。",
+  "en": "Malawi's well-known dried African bird's-eye (peri-peri) chillies, high in pungency."
+ },
+ "prod.paprika.name": {
+  "zh": "甜椒（paprika）",
+  "en": "Paprika",
+  "note": "product name (see trade terminology sheet)"
+ },
+ "prod.paprika.text": {
+  "zh": "干甜椒荚和甜椒粉，供香料和食品加工。",
+  "en": "Dried paprika pods and powder for spice and food processing."
+ },
+ "prod.coffee.name": {
+  "zh": "咖啡",
+  "en": "Coffee",
+  "note": "product name (see trade terminology sheet)"
+ },
+ "prod.coffee.text": {
+  "zh": "马拉维北部高地的水洗阿拉比卡咖啡生豆。",
+  "en": "Washed Arabica green beans from Malawi's northern highlands."
+ },
+ "prod.tea.name": {
+  "zh": "茶叶",
+  "en": "Tea",
+  "note": "product name (see trade terminology sheet)"
+ },
+ "prod.tea.text": {
+  "zh": "马拉维南部茶区的 CTC 红茶，标准等级。",
+  "en": "CTC black tea from the estates of southern Malawi, in standard grades."
+ },
+ "prod.sugar.name": {
+  "zh": "食糖",
+  "en": "Sugar",
+  "note": "product name (see trade terminology sheet)"
+ },
+ "prod.sugar.text": {
+  "zh": "马拉维蔗糖，受出口许可管理，按可用配额供应。",
+  "en": "Malawian cane sugar, subject to export permits and available allocations."
+ },
+ "prod.honey.name": {
+  "zh": "蜂蜜",
+  "en": "Honey",
+  "note": "product name (see trade terminology sheet)"
+ },
+ "prod.honey.text": {
+  "zh": "米翁博林区的天然蜂蜜，按合同小批量供应。",
+  "en": "Natural honey from the miombo woodlands, in smaller contract lots."
+ },
+ "prod.cassava.name": {
+  "zh": "木薯",
+  "en": "Cassava",
+  "note": "product name (see trade terminology sheet)"
+ },
+ "prod.cassava.text": {
+  "zh": "木薯干和木薯粉。",
+  "en": "Dried cassava chips and cassava flour."
+ },
+ "prod.mango.name": {
+  "zh": "芒果",
+  "en": "Mango",
+  "note": "product name (see trade terminology sheet)"
+ },
+ "prod.mango.text": {
+  "zh": "应季鲜芒果及芒果制品。",
+  "en": "Seasonal fresh mango and mango products."
+ },
+ "prod.vegetables.name": {
+  "zh": "蔬菜",
+  "en": "Vegetables",
+  "note": "product name (see trade terminology sheet)"
+ },
+ "prod.vegetables.text": {
+  "zh": "旱季灌溉蔬菜，主要面向周边市场。",
+  "en": "Dry-season irrigated vegetables, mainly for regional markets."
+ },
+ "tp.calEyebrow": {
+  "zh": "供货季节",
+  "en": "Availability"
+ },
+ "tp.calH2": {
+  "zh": "什么时候有货",
+  "en": "When each product is available"
+ },
+ "tp.calIntro": {
+  "zh": "马拉维雨季作物多在 4–6 月收获，新季货源 6–9 月最充足；多年生作物各有周期。下图为主要产品的收获期和新季供应期。",
+  "en": "Rain-fed crops in Malawi are mostly harvested from April to June, so new-crop supply is at its best from June to September; tree crops follow their own cycles. The chart shows the harvest and new-crop supply periods of our main products."
+ },
+ "tp.cal.harvest": {
+  "zh": "收获期",
+  "en": "Harvest",
+  "note": "legend label"
+ },
+ "tp.cal.supply": {
+  "zh": "新季供应",
+  "en": "New-crop supply",
+  "note": "legend label"
+ },
+ "tp.cal.yearRound": {
+  "zh": "全年",
+  "en": "Year-round",
+  "note": "availability chip"
+ },
+ "tp.calNote": {
+  "zh": "按马拉维一般农时整理，不同年份和产区会有差异。资料来源：FEWS NET、FAO GIEWS 及马拉维行业机构。",
+  "en": "A general guide based on Malawi's usual seasons; timing varies by year and region. Sources: FEWS NET, FAO GIEWS and Malawian industry bodies."
+ },
+ "tp.howEyebrow": {
+  "zh": "合作流程",
+  "en": "How we work"
+ },
+ "tp.howH2": {
+  "zh": "从询价到交货，六个步骤",
+  "en": "From enquiry to delivery in six steps"
+ },
+ "tp.howIntro": {
+  "zh": "我们按国际农产品贸易的通行做法操作，每一步都清楚透明。",
+  "en": "We follow the usual practice of international commodity trade, and keep every step clear."
+ },
+ "tstep1.title": {
+  "zh": "询价",
+  "en": "Enquiry"
+ },
+ "tstep1.text": {
+  "zh": "告诉我们产品、规格、数量、目的港和希望的贸易术语。",
+  "en": "Tell us the product, specification, quantity, destination port and preferred Incoterm."
+ },
+ "tstep2.title": {
+  "zh": "报价与样品",
+  "en": "Offer & samples"
+ },
+ "tstep2.text": {
+  "zh": "我们报价并寄送代表性样品，供您检验。",
+  "en": "We send an offer and a representative sample for your evaluation."
+ },
+ "tstep3.title": {
+  "zh": "合同与付款条款",
+  "en": "Contract & payment"
+ },
+ "tstep3.text": {
+  "zh": "确认规格、包装、交期和付款方式，签订销售合同。",
+  "en": "We agree specification, packing, delivery time and payment terms, and sign the sales contract."
+ },
+ "tstep4.title": {
+  "zh": "组织货源、分级、包装",
+  "en": "Sourcing, grading & packing"
+ },
+ "tstep4.text": {
+  "zh": "在马拉维采购、清选、分级并按合同包装。",
+  "en": "We source, clean, grade and pack the goods in Malawi to the contract."
+ },
+ "tstep5.title": {
+  "zh": "检验与单证",
+  "en": "Inspection & documents"
+ },
+ "tstep5.text": {
+  "zh": "装运前检验，办理出口许可、植物检疫证书、原产地证书和海关手续。",
+  "en": "Pre-shipment inspection, then export licence, phytosanitary certificate, certificate of origin and customs clearance."
+ },
+ "tstep6.title": {
+  "zh": "发运与跟踪",
+  "en": "Shipment & tracking"
+ },
+ "tstep6.text": {
+  "zh": "货物经陆路运至港口装船，我们跟踪到货并发送全套单据。",
+  "en": "Goods travel overland to the port and are shipped; we track the consignment and send you the full document set."
+ },
+ "term.incoterms.title": {
+  "zh": "贸易术语",
+  "en": "Trade terms"
+ },
+ "term.incoterms.text": {
+  "zh": "可按 EXW 利隆圭、FCA/FOB 贝拉或纳卡拉港、CFR/CIF 目的港报价（Incoterms® 2020）。",
+  "en": "We quote EXW Lilongwe, FCA/FOB Beira or Nacala, or CFR/CIF your destination port (Incoterms® 2020).",
+  "note": "keep Incoterm codes"
+ },
+ "term.payment.title": {
+  "zh": "付款方式",
+  "en": "Payment"
+ },
+ "term.payment.text": {
+  "zh": "新客户通常采用不可撤销即期信用证；长期客户可采用电汇预付定金、凭装运单据付余款。具体以合同约定为准。",
+  "en": "For new customers, usually an irrevocable letter of credit at sight; for repeat business, a telegraphic-transfer deposit with the balance against shipping documents. Terms are set in each contract."
+ },
+ "term.packaging.title": {
+  "zh": "包装",
+  "en": "Packing"
+ },
+ "term.packaging.text": {
+  "zh": "25 kg 或 50 kg PP 编织袋、1 吨吨袋；果仁类可按要求真空包装；按 20 英尺集装箱整柜发运。",
+  "en": "25 kg or 50 kg woven PP bags or 1-tonne big bags; vacuum packing for kernels on request; shipped as full 20-foot container loads."
+ },
+ "term.moq.title": {
+  "zh": "起订量",
+  "en": "Minimum order"
+ },
+ "term.moq.text": {
+  "zh": "通常为一个 20 英尺集装箱；部分产品可接受较小的试单。",
+  "en": "Usually one 20-foot container; smaller trial lots are possible for some products."
+ },
+ "term.samples.title": {
+  "zh": "样品",
+  "en": "Samples"
+ },
+ "term.samples.text": {
+  "zh": "签约前可通过快递寄送代表性样品。",
+  "en": "Representative samples can be couriered before you commit to a contract."
+ },
+ "term.inspection.title": {
+  "zh": "检验",
+  "en": "Inspection"
+ },
+ "term.inspection.text": {
+  "zh": "可按要求安排 SGS 等第三方装运前检验；水分、杂质和黄曲霉毒素等指标可由经认可的实验室出具报告。",
+  "en": "Third-party pre-shipment inspection (for example SGS) can be arranged on request; moisture, foreign matter and aflatoxin results are reported by an accredited laboratory."
+ },
+ "tp.logEyebrow": {
+  "zh": "物流",
+  "en": "Logistics"
+ },
+ "tp.logH2": {
+  "zh": "从内陆的马拉维，发往世界各地",
+  "en": "From landlocked Malawi to ports worldwide"
+ },
+ "tp.logIntro": {
+  "zh": "马拉维是内陆国，货物经公路或铁路运到莫桑比克、坦桑尼亚或南非的港口装船。我们根据目的地、季节和货量为您选择最合适的通道。",
+  "en": "Malawi is landlocked: goods travel by road or rail to ports in Mozambique, Tanzania or South Africa. We choose the corridor that suits your destination, the season and the volume."
+ },
+ "corr.nacala.port": {
+  "zh": "莫桑比克 · 纳卡拉港",
+  "en": "Nacala, Mozambique",
+  "note": "small label"
+ },
+ "corr.nacala.title": {
+  "zh": "纳卡拉走廊",
+  "en": "Nacala corridor"
+ },
+ "corr.nacala.text": {
+  "zh": "从利隆圭卡宁戈（Kanengo）货运站有铁路直通纳卡拉深水港，约 1,000 公里，也可走公路。适合整柜大宗货物。",
+  "en": "Rail from the Kanengo railhead in Lilongwe straight to the deep-water port of Nacala, about 1,000 km, with a road alternative. Well suited to full-container bulk cargo."
+ },
+ "corr.beira.port": {
+  "zh": "莫桑比克 · 贝拉港",
+  "en": "Beira, Mozambique",
+  "note": "small label"
+ },
+ "corr.beira.title": {
+  "zh": "贝拉走廊",
+  "en": "Beira corridor"
+ },
+ "corr.beira.text": {
+  "zh": "经德扎（Dedza）—太特（Tete）公路约 950 公里到贝拉港，是马拉维最主要的出海通道之一，有定期航线通往亚洲、中东和欧洲。",
+  "en": "About 950 km by road via Dedza and Tete to the port of Beira, one of Malawi's main gateways, with regular sailings to Asia, the Middle East and Europe."
+ },
+ "corr.dar.port": {
+  "zh": "坦桑尼亚 · 达累斯萨拉姆港",
+  "en": "Dar es Salaam, Tanzania",
+  "note": "small label"
+ },
+ "corr.dar.title": {
+  "zh": "达累斯萨拉姆走廊",
+  "en": "Dar es Salaam corridor"
+ },
+ "corr.dar.text": {
+  "zh": "经松圭（Songwe）口岸北上约 1,700 公里，是通往东亚和海湾地区的另一条通道。",
+  "en": "North through the Songwe border crossing, about 1,700 km, an alternative route for East Asia and the Gulf."
+ },
+ "corr.air.port": {
+  "zh": "利隆圭 · 卡穆祖国际机场",
+  "en": "Lilongwe airport (LLW)",
+  "note": "small label"
+ },
+ "corr.air.title": {
+  "zh": "空运",
+  "en": "Air freight"
+ },
+ "corr.air.text": {
+  "zh": "样品和小批量生鲜产品可从利隆圭卡穆祖国际机场经亚的斯亚贝巴或内罗毕中转空运。",
+  "en": "Samples and small lots of perishable produce fly from Kamuzu International Airport, Lilongwe, with connections via Addis Ababa or Nairobi."
+ },
+ "tp.logNote": {
+  "zh": "运输时间视通道、季节和船期而定，德班港也可作为备选。每份报价都会写明建议路线和预计交期。",
+  "en": "Transit times depend on the corridor, the season and sailing schedules; Durban is a further option. Every offer states the proposed route and the expected delivery time."
+ },
+ "tp.docsEyebrow": {
+  "zh": "出口单证",
+  "en": "Export documents"
+ },
+ "tp.docsH2": {
+  "zh": "单证齐全，清关顺畅",
+  "en": "Complete paperwork for smooth clearance"
+ },
+ "tp.docsIntro": {
+  "zh": "每批货物随附下列单证，按目的国要求和信用证条款准备。",
+  "en": "Every consignment ships with the documents below, prepared to the requirements of the destination country and the letter of credit."
+ },
+ "doc.phyto.title": {
+  "zh": "植物检疫证书",
+  "en": "Phytosanitary certificate"
+ },
+ "doc.phyto.text": {
+  "zh": "由马拉维植物保护主管机构（农业研究服务局 DARS）检验后签发。",
+  "en": "Issued after inspection by Malawi's plant protection authority, the Department of Agricultural Research Services (DARS)."
+ },
+ "doc.origin.title": {
+  "zh": "原产地证书",
+  "en": "Certificate of origin"
+ },
+ "doc.origin.text": {
+  "zh": "由马拉维工商会（MCCCI）签发；SADC、COMESA 优惠原产地证由马拉维税务局签发。",
+  "en": "Issued by the Malawi Confederation of Chambers of Commerce and Industry (MCCCI); SADC and COMESA preferential certificates by the Malawi Revenue Authority."
+ },
+ "doc.quality.title": {
+  "zh": "质量检验报告",
+  "en": "Quality and test reports"
+ },
+ "doc.quality.text": {
+  "zh": "等级、水分、杂质和黄曲霉毒素等检测报告，由经认可的实验室或第三方检验机构出具。",
+  "en": "Grade, moisture, foreign-matter and aflatoxin reports from an accredited laboratory or a third-party inspection company."
+ },
+ "doc.fumig.title": {
+  "zh": "熏蒸证书",
+  "en": "Fumigation certificate"
+ },
+ "doc.fumig.text": {
+  "zh": "按目的国要求对集装箱或货垛熏蒸并出具证书。",
+  "en": "Container or stack fumigation with a certificate, where the destination country requires it."
+ },
+ "doc.invoice.title": {
+  "zh": "商业发票与装箱单",
+  "en": "Commercial invoice and packing list"
+ },
+ "doc.invoice.text": {
+  "zh": "与合同一致，注明 HS 编码、净毛重、袋数和批号。",
+  "en": "Matching the contract, with HS codes, net and gross weights, bag counts and lot numbers."
+ },
+ "doc.transport.title": {
+  "zh": "运输单据",
+  "en": "Transport documents"
+ },
+ "doc.transport.text": {
+  "zh": "海运提单或公路运单；出口许可和海关申报由我们在马拉维办理。",
+  "en": "Ocean bill of lading or road consignment note; the export licence and customs declaration are handled by us in Malawi."
+ },
+ "tp.buyersEyebrow": {
+  "zh": "我们服务的买家",
+  "en": "Who we supply"
+ },
+ "tp.buyersH2": {
+  "zh": "面向进口商、加工商和贸易商",
+  "en": "For importers, processors and traders"
+ },
+ "tp.buyersText": {
+  "zh": "无论您是首次从非洲采购，还是在寻找稳定的第二货源，我们都愿意从一个试单开始。",
+  "en": "Whether you are buying from Africa for the first time or looking for a dependable second source, we are happy to start with a trial order."
+ },
+ "buyer.importers": {
+  "zh": "农产品进口商与分销商",
+  "en": "Agricultural importers and distributors"
+ },
+ "buyer.processors": {
+  "zh": "食品、油脂和坚果加工企业",
+  "en": "Food, oil and nut processors"
+ },
+ "buyer.feed": {
+  "zh": "饲料厂与酿造企业",
+  "en": "Feed mills and breweries"
+ },
+ "buyer.traders": {
+  "zh": "国际贸易公司",
+  "en": "International trading houses"
+ },
+ "buyer.regional": {
+  "zh": "非洲区域市场的批发商",
+  "en": "Wholesalers in regional African markets"
+ },
+ "tfaq.title": {
+  "zh": "从马拉维进口农产品：常见问题",
+  "en": "Importing from Malawi: common questions"
+ },
+ "tfaq.q1": {
+  "zh": "最小起订量（MOQ）是多少？",
+  "en": "What is the minimum order quantity (MOQ)?"
+ },
+ "tfaq.a1": {
+  "zh": "通常为一个 20 英尺集装箱。部分产品可以接受较小的试单，请直接询问。",
+  "en": "Usually one 20-foot container. For some products we accept smaller trial lots; just ask."
+ },
+ "tfaq.q2": {
+  "zh": "可以先寄样品吗？",
+  "en": "Can you send samples first?"
+ },
+ "tfaq.a2": {
+  "zh": "可以。签约前我们可以通过快递寄送代表性样品，正式货物按约定规格供应。",
+  "en": "Yes. Before any contract we can courier a representative sample, and the shipment is supplied to the agreed specification."
+ },
+ "tfaq.q3": {
+  "zh": "接受哪些付款方式？",
+  "en": "Which payment terms do you accept?"
+ },
+ "tfaq.a3": {
+  "zh": "新客户通常采用不可撤销即期信用证；合作稳定后可采用电汇预付定金、凭装运单据付余款。",
+  "en": "New customers usually pay by irrevocable letter of credit at sight; established customers by telegraphic-transfer deposit with the balance against shipping documents."
+ },
+ "tfaq.q4": {
+  "zh": "下单后多久可以发货？",
+  "en": "What is the lead time from order to shipment?"
+ },
+ "tfaq.a4": {
+  "zh": "取决于产品、季节和通道。收到定金或信用证后，我们会确认采购、检验、单证和内陆运输的时间表，并在报价中写明预计交期。",
+  "en": "It depends on the product, the season and the corridor. Once the deposit or letter of credit is in place we confirm a schedule for sourcing, inspection, documents and inland transport, and every offer states the expected delivery time."
+ },
+ "tfaq.q5": {
+  "zh": "可以安排第三方检验吗？",
+  "en": "Can you arrange third-party inspection?"
+ },
+ "tfaq.a5": {
+  "zh": "可以。我们可按要求安排 SGS 等机构进行装运前检验和监装，费用在报价中列明。",
+  "en": "Yes. On request we arrange pre-shipment inspection and loading supervision by SGS or a similar company, with the cost shown in the offer."
+ },
+ "tfaq.q6": {
+  "zh": "马拉维对农产品出口有限制吗？",
+  "en": "Are there export restrictions on agricultural products in Malawi?"
+ },
+ "tfaq.a6": {
+  "zh": "有。玉米、大豆、食糖等部分产品需要政府出口许可，并可能受季节性限制。我们会在签约前确认当期政策，只承诺能够合法出口的货物。",
+  "en": "Yes. Some products, such as maize, soybeans and sugar, need a government export licence and may face seasonal restrictions. We confirm the current rules before signing and only commit to goods that can legally be exported."
+ },
+ "tp.band.title": {
+  "zh": "告诉我们您要采购什么",
+  "en": "Tell us what you want to buy"
+ },
+ "tp.band.text": {
+  "zh": "留下产品、数量和目的港，我们会尽快回复报价和供货季节。",
+  "en": "Send us the product, quantity and destination port, and we will reply with an offer and the supply season."
+ }
+}
