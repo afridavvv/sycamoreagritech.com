@@ -5,7 +5,7 @@
   var header = document.querySelector('.site-header');
   var I18N = window.I18N || {};
   var lang = I18N.lang || 'en';
-  var LANG_TAGS = { zh: 'zh-CN', en: 'en-GB', fr: 'fr', pt: 'pt' };
+  var LANG_TAGS = { zh: 'zh-Hans', en: 'en', fr: 'fr', pt: 'pt' };
 
   // Old links used ?lang=xx on one page; each language now has its own URL.
   var asked = new URLSearchParams(location.search).get('lang');
@@ -20,6 +20,7 @@
     sorghum: 'sales@sycamoreagritech.com',
     seed: 'sales@sycamoreagritech.com',
     hire: 'hire@sycamoreagritech.com',
+    trade: 'sales@sycamoreagritech.com',
     other: 'info@sycamoreagritech.com'
   };
 
@@ -97,7 +98,8 @@
   // ---- Month names on the farming calendar ----
   var months = document.getElementById('scMonths');
   if (months && window.Intl) {
-    var fmt = new Intl.DateTimeFormat(LANG_TAGS[lang], { month: lang === 'zh' ? 'numeric' : 'short' });
+    var narrow = window.matchMedia && window.matchMedia('(max-width: 560px)').matches;
+    var fmt = new Intl.DateTimeFormat(LANG_TAGS[lang], { month: lang === 'zh' ? 'numeric' : (narrow ? 'narrow' : 'short') });
     Array.prototype.forEach.call(months.children, function (el, i) {
       el.textContent = fmt.format(new Date(2026, i, 15)).replace('.', '');
     });
@@ -171,19 +173,20 @@
     if (firstInvalid) { firstInvalid.focus(); return; }
 
     var L = I18N.mail || {};
+    var sep = lang === 'fr' ? '\u00a0: ' : (lang === 'zh' ? '：' : ': ');
     var v = function (name) { return form.elements.namedItem(name).value.trim(); };
     var product = productSelect.options[productSelect.selectedIndex].text;
     var to = EMAILS[productSelect.value] || EMAILS.other;
 
     var lines = [
-      L.name + ': ' + v('fullname'),
-      L.company + ': ' + v('company'),
-      L.email + ': ' + v('email'),
-      L.phone + ': ' + v('phone'),
-      L.interest + ': ' + product,
-      L.qty + ': ' + v('quantity'),
+      L.name + sep + v('fullname'),
+      L.company + sep + v('company'),
+      L.email + sep + v('email'),
+      L.phone + sep + v('phone'),
+      L.interest + sep + product,
+      L.qty + sep + v('quantity'),
       '',
-      L.msg + ':',
+      L.msg + sep.trim(),
       v('message')
     ];
     var subject = L.subject + ' - ' + product + ' - ' + v('fullname');

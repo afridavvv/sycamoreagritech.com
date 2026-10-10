@@ -12,7 +12,7 @@
 <link rel="icon" href="/assets/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Sycamore Agritech Limited">
+<meta property="og:site_name" content="{{attr:brand.name}}">
 <meta property="og:url" content="{{canonical}}">
 <meta property="og:title" content="{{page_title}}">
 <meta property="og:description" content="{{page_desc}}">
@@ -27,7 +27,7 @@
 
 <header class="site-header" id="top">
   <div class="wrap header-inner">
-    <a class="brand" href="{{home}}" aria-label="Sycamore Agritech Limited">
+    <a class="brand" href="{{home}}" aria-label="{{attr:brand.name}}">
       <img class="brand-mark" src="/assets/logo-mark.png" alt="" width="48" height="48">
       <span class="brand-text">
         <img class="brand-word" src="/assets/logo-wordmark.png" alt="Sycamore" width="198" height="20">
@@ -38,7 +38,7 @@
     <nav class="nav" id="nav" aria-label="{{t:ui.navMain}}">
       <a href="{{home}}#farming">{{t:nav.farming}}</a>
       <a href="{{hirepage}}"{{current:hire}}>{{t:nav.hire}}</a>
-      <a href="{{home}}#supply">{{t:nav.supply}}</a>
+      <a href="{{tradepage}}"{{current:trade}}>{{t:nav.trade}}</a>
       <a href="{{home}}#about">{{t:nav.about}}</a>
       <a href="#contact" class="nav-cta">{{t:nav.contact}}</a>
     </nav>
@@ -68,7 +68,7 @@
 <footer class="site-footer">
   <div class="wrap footer-inner">
     <div>
-      <a class="brand brand-light" href="{{home}}" aria-label="Sycamore Agritech Limited">
+      <a class="brand brand-light" href="{{home}}" aria-label="{{attr:brand.name}}">
         <img class="brand-mark" src="/assets/logo-mark-light.png" alt="" width="48" height="48">
         <span class="brand-text">
           <img class="brand-word" src="/assets/logo-wordmark-light.png" alt="Sycamore" width="198" height="20">
@@ -80,6 +80,7 @@
     <nav class="footer-nav" aria-label="{{t:ui.navFooter}}">
       <a href="{{home}}#farming">{{t:nav.farming}}</a>
       <a href="{{hirepage}}">{{t:nav.hire}}</a>
+      <a href="{{tradepage}}">{{t:nav.trade}}</a>
       <a href="{{home}}#supply">{{t:nav.supply}}</a>
       <a href="{{home}}#gallery">{{t:gallery.h2}}</a>
       <a href="{{home}}#about">{{t:nav.about}}</a>
@@ -94,7 +95,7 @@
     </div>
   </div>
   <div class="wrap footer-bottom">
-    <p>© <span data-year>2026</span> Sycamore Agritech Limited. {{t:footer.rights}}</p>
+    <p>© <span data-year>2026</span> {{t:footer.company}} {{t:footer.rights}}</p>
     <p class="footer-langs">{{footerlangs}}</p>
   </div>
 </footer>

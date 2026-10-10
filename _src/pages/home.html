@@ -19,6 +19,7 @@
         <li>{{t:hero.tag.seed}}</li>
         <li>{{t:hero.tag.pivot}}</li>
         <li>{{t:hero.tag.hire}}</li>
+        <li>{{t:hero.tag.trade}}</li>
       </ul>
     </div>
   </section>
@@ -48,6 +49,14 @@
           <h2 class="h3">{{t:biz.supply.title}}</h2>
           <p>{{t:biz.supply.text}}</p>
           <span class="biz-more">{{t:biz.supply.more}} →</span>
+        </div>
+      </a>
+      <a class="biz-card" href="{{tradepage}}">
+        {{pic:planter-muken|(max-width: 1000px) 40vw, 380px|58% 58%|decor}}
+        <div class="biz-body">
+          <h2 class="h3">{{t:biz.trade.title}}</h2>
+          <p>{{t:biz.trade.text}}</p>
+          <span class="biz-more">{{t:biz.trade.more}} →</span>
         </div>
       </a>
     </div>
@@ -217,6 +226,7 @@
           <li>{{t:cust.trade}}</li>
           <li>{{t:cust.farms}}</li>
         </ul>
+        <a class="crop-link" href="{{tradepage}}">{{t:biz.trade.more}} →</a>
       </div>
       <figure class="supply-photo">
         {{pic:warehouse-inspection|(max-width: 1000px) 100vw, 560px|55% 60%}}
@@ -282,6 +292,7 @@
       <aside class="about-card">
         <h3>{{t:about.glance}}</h3>
         <dl class="facts">
+          <div><dt>{{t:fact.name.dt}}</dt><dd>{{t:fact.name.dd}}</dd></div>
           <div><dt>{{t:fact.hq.dt}}</dt><dd>{{t:fact.hq.dd}}</dd></div>
           <div><dt>{{t:fact.core.dt}}</dt><dd>{{t:fact.core.dd}}</dd></div>
           <div><dt>{{t:fact.also.dt}}</dt><dd>{{t:fact.also.dd}}</dd></div>

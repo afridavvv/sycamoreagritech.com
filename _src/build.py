@@ -39,7 +39,10 @@ LANG_SHORT = {"en": "EN", "zh": "中文", "fr": "FR", "pt": "PT"}
 PREFIX = {"en": "", "zh": "zh/", "fr": "fr/", "pt": "pt/"}
 PAGES = [
     {"id": "home", "tpl": "pages/home.html", "slug": "", "title": "meta.title", "desc": "meta.desc", "select": None},
-    {"id": "hire", "tpl": "pages/hire.html", "slug": "machinery-hire/", "title": "hp.title", "desc": "hp.desc", "select": "hire"},
+    {"id": "hire", "tpl": "pages/hire.html", "slug": "machinery-hire/", "title": "hp.title", "desc": "hp.desc", "select": "hire",
+     "h1": "hp.h1", "faq": "faq", "faqCount": 5},
+    {"id": "trade", "tpl": "pages/trade.html", "slug": "agricultural-products/", "title": "tp.title", "desc": "tp.desc", "select": "trade",
+     "h1": "tp.h1", "faq": "tfaq", "faqCount": 6},
 ]
 
 # ---------- copy ----------
@@ -56,10 +59,16 @@ for lang in ("fr", "pt"):
     warnings += [f"{lang}: unknown key '{k}'" for k in data if k not in T]
 
 
+PHONES = ["+265 999 947 228", "+265 999 441 333"]
+
+
 def text(key, lang):
     if key not in T:
         sys.exit(f"Unknown content key: {key}")
-    return T[key][lang]
+    v = T[key][lang]
+    for ph in PHONES:  # keep phone numbers on one line
+        v = v.replace(ph, ph.replace(" ", "\u00a0"))
+    return v
 
 
 def esc(s):
@@ -108,6 +117,8 @@ def org(lang):
         "@type": "LocalBusiness",
         "@id": f"{SITE}/#business",
         "name": "Sycamore Agritech Limited",
+        "alternateName": "盛楷农业科技有限公司",
+        "legalName": "Sycamore Agritech Limited",
         "url": f"{SITE}/",
         "logo": f"{SITE}/assets/apple-touch-icon.png",
         "image": [f"{SITE}/assets/img/hero-pivot-wheat-lg.jpg", f"{SITE}/assets/og-image.jpg"],
@@ -143,12 +154,25 @@ def jsonld(lang, page):
                 {"@type": "Offer", "itemOffered": {"@type": "Service", "name": f'{text(f"fleet.{m}.name", lang)} ({text(f"fleet.{m}.model", lang)})', "description": text(f"fleet.{m}.text", lang)}}
                 for m in machines]},
         })
+    if page["id"] == "trade":
+        products = [prod["id"] for cat in TRADE["categories"] for prod in cat["products"]]
+        graph.append({
+            "@type": "Service", "@id": url(lang, page) + "#service",
+            "name": text("tp.h1", lang), "serviceType": text("biz.trade.title", lang),
+            "description": text("tp.desc", lang), "provider": {"@id": f"{SITE}/#business"},
+            "areaServed": "Worldwide", "url": url(lang, page),
+            "hasOfferCatalog": {"@type": "OfferCatalog", "name": text("tp.catH2", lang), "itemListElement": [
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": text(f"prod.{pid}.name", lang), "description": text(f"prod.{pid}.text", lang),
+                                                   "areaServed": "Worldwide"}}
+                for pid in products]},
+        })
+    if page.get("faq"):
         graph.append({"@type": "FAQPage", "@id": url(lang, page) + "#faq", "mainEntity": [
-            {"@type": "Question", "name": text(f"faq.q{i}", lang), "acceptedAnswer": {"@type": "Answer", "text": text(f"faq.a{i}", lang)}}
-            for i in range(1, 6)]})
+            {"@type": "Question", "name": text(f"{page['faq']}.q{i}", lang), "acceptedAnswer": {"@type": "Answer", "text": text(f"{page['faq']}.a{i}", lang)}}
+            for i in range(1, page["faqCount"] + 1)]})
         graph.append({"@type": "BreadcrumbList", "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": text("hp.crumbHome", lang), "item": url(lang, PAGES[0])},
-            {"@type": "ListItem", "position": 2, "name": text("nav.hire", lang), "item": url(lang, page)}]})
+            {"@type": "ListItem", "position": 2, "name": text("nav." + page["id"], lang), "item": url(lang, page)}]})
     return json.dumps({"@context": "https://schema.org", "@graph": graph}, ensure_ascii=False).replace("</", "<\\/")
 
 
@@ -161,13 +185,68 @@ def i18n(lang, page):
     return json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
 
 
+# ---------- trade page data ----------
+MONTHS = {
+    "en": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+    "fr": ["janv.", "févr.", "mars", "avr.", "mai", "juin", "juil.", "août", "sept.", "oct.", "nov.", "déc."],
+    "pt": ["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"],
+}
+TRADE_PATH = SRC / "trade-data.json"
+TRADE = json.loads(TRADE_PATH.read_text("utf-8")) if TRADE_PATH.exists() else {"categories": [], "calendar": []}
+
+
+def month_range(lang, start, end):
+    """'May–Aug' / '5–8月' for 1-based months (end may wrap past December)."""
+    if lang == "zh":
+        return f"{start}月" if start == end else f"{start}–{end}月"
+    m = MONTHS[lang]
+    return m[start - 1] if start == end else f"{m[start - 1]}–{m[end - 1]}"
+
+
+def bars(cls, start, end, row):
+    """Grid bars for a month range in a given lane; a range that wraps past December is split in two."""
+    if end >= start:
+        return [f'<i class="sc-bar {cls}" style="grid-column: {start} / {end + 1}; grid-row: {row}"></i>']
+    return [f'<i class="sc-bar {cls}" style="grid-column: {start} / 13; grid-row: {row}"></i>',
+            f'<i class="sc-bar {cls}" style="grid-column: 1 / {end + 1}; grid-row: {row}"></i>']
+
+
+def catalogue(lang):
+    out = []
+    for cat in TRADE["categories"]:
+        items = []
+        for prod in cat["products"]:
+            avail = month_range(lang, *prod["supply"]) if prod.get("supply") else esc(text("tp.cal.yearRound", lang))
+            pid = prod["id"]
+            name, desc = esc(text(f"prod.{pid}.name", lang)), esc(text(f"prod.{pid}.text", lang))
+            items.append(f'<li><strong>{name}</strong><span>{desc}</span><span class="avail">{avail}</span></li>')
+        title = esc(text(f"cat.{cat['id']}", lang))
+        out.append(f'        <div class="cat"><div class="cat-head">{cat["icon"]}<h3>{title}</h3></div><ul>{"".join(items)}</ul></div>')
+    return "\n".join(out)
+
+
+def tradecal(lang):
+    rows = []
+    for row in TRADE["calendar"]:
+        b = bars("wheat harvest", *row["harvest"], 1) + (bars("maize", *row["supply"], 2) if row.get("supply") else [])
+        label = esc(text(f"prod.{row['id']}.name", lang))
+        colon, semi = {"fr": ("\u00a0: ", "\u00a0; "), "zh": ("：", "；")}.get(lang, (": ", "; "))
+        spoken = f'{text("tp.cal.harvest", lang)}{colon}{month_range(lang, *row["harvest"])}'
+        if row.get("supply"):
+            spoken += f'{semi}{text("tp.cal.supply", lang)}{colon}{month_range(lang, *row["supply"])}'
+        rows.append(f'          <span class="sc-label">{label}</span>\n          <div class="sc-track"><span class="sr-only">{esc(spoken)}</span>{"".join(b)}</div>')
+    return "\n".join(rows)
+
+
 # ---------- rendering ----------
 def render(tpl, lang, page):
     for _ in range(5):  # resolve includes (they may include other partials)
         tpl = re.sub(r"\{\{include:([\w-]+)\}\}", lambda m: (SRC / "partials" / f"{m.group(1)}.html").read_text("utf-8").rstrip("\n"), tpl)
 
     hirepage = path(lang, PAGES[1])
+    tradepage = path(lang, PAGES[2])
     variables = {
+        "tradepage": tradepage,
         "lang": lang, "lang_tag": LANG_TAG[lang], "og_locale": OG_LOCALE[lang], "lang_short": LANG_SHORT[lang],
         "page_title": esc(text(page["title"], lang)), "page_desc": attr(text(page["desc"], lang)),
         "canonical": url(lang, page), "home": path(lang, PAGES[0]), "hirepage": hirepage,
@@ -179,7 +258,7 @@ def render(tpl, lang, page):
             + (' aria-current="true"' if l == lang else "") + f">{LANG_NAME[l]}</a></li>" for l in ["zh", "en", "fr", "pt"]),
         "footerlangs": " ".join(
             f'<a href="{path(l, page)}" hreflang="{LANG_TAG[l]}" lang="{LANG_TAG[l]}">{LANG_NAME[l]}</a>' for l in ["zh", "en", "fr", "pt"]),
-        "alllangs": "中文 · English · Français · Português",
+        "alllangs": " · ".join(f'<span lang="{LANG_TAG[l]}">{LANG_NAME[l]}</span>' for l in ["zh", "en", "fr", "pt"]),
         "jsonld": jsonld(lang, page), "i18n": i18n(lang, page),
     }
 
@@ -187,6 +266,10 @@ def render(tpl, lang, page):
         kind, arg = m.group(1), m.group(2)
         if kind is None:  # plain variable
             name = m.group(3)
+            if name == "catalogue":
+                return catalogue(lang)
+            if name == "tradecal":
+                return tradecal(lang)
             if name not in variables:
                 sys.exit(f"Unknown variable {{{{{name}}}}}")
             return variables[name]
@@ -217,6 +300,10 @@ def render(tpl, lang, page):
             name, key = arg.split("|")
             return (f'<a class="fleet-thumb" href="{hirepage}#fleet">{picture(name, "240px", "", lang, decor=True)}'
                     f'<span><small>{esc(text(f"fleet.{key}.model", lang))}</small>{esc(text(f"fleet.{key}.name", lang))}</span></a>')
+        if kind == "catalogue":
+            return catalogue(lang)
+        if kind == "tradecal":
+            return tradecal(lang)
         if kind == "gallery":
             out = []
             for item in arg.split(","):
@@ -241,10 +328,15 @@ for page in PAGES:
         dest.parent.mkdir(parents=True, exist_ok=True)
         dest.write_text(out, "utf-8")
         written.append(dest.relative_to(ROOT))
+        # The company name must always be written in full
+        for m in re.finditer(r"Sycamore Agritech(?![\s\u00a0]+Limited)", out):
+            warnings.append(f"{dest.relative_to(ROOT)}: short company name near: …{out[max(0, m.start() - 40):m.end() + 20]!r}…")
 
 # 404 (English, noindex)
 notfound = render(layout.replace("{{body}}", (SRC / "pages" / "404.html").read_text("utf-8").rstrip("\n")), "en", PAGES[0])
 notfound = notfound.replace('<meta name="viewport"', '<meta name="robots" content="noindex">\n<meta name="viewport"', 1)
+notfound = re.sub(r'<link rel="(?:canonical|alternate)"[^>]*>\n?', "", notfound)
+notfound = re.sub(r"<title>[^<]*</title>", "<title>Page not found | Sycamore Agritech Limited</title>", notfound, 1)
 (ROOT / "404.html").write_text(notfound, "utf-8")
 
 # sitemap + robots

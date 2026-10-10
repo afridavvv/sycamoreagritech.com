@@ -10,14 +10,14 @@
 
           <span class="sc-label">{{t:season.row.rain}}</span>
           <div class="sc-track">
-            <i class="sc-bar maize" style="grid-column: 11 / 13">{{t:season.bar.plant}}</i>
-            <i class="sc-bar maize" style="grid-column: 4 / 7; grid-row: 1">{{t:season.bar.harvest}}</i>
+            <i class="sc-bar maize plant" style="grid-column: 11 / 13">{{t:season.bar.plant}}</i>
+            <i class="sc-bar maize harvest" style="grid-column: 4 / 7; grid-row: 1">{{t:season.bar.harvest}}</i>
           </div>
 
           <span class="sc-label">{{t:season.row.winter}}</span>
           <div class="sc-track">
-            <i class="sc-bar wheat" style="grid-column: 4 / 7">{{t:season.bar.plant}}</i>
-            <i class="sc-bar wheat" style="grid-column: 9 / 11; grid-row: 1">{{t:season.bar.harvest}}</i>
+            <i class="sc-bar wheat plant" style="grid-column: 4 / 7">{{t:season.bar.plant}}</i>
+            <i class="sc-bar wheat harvest" style="grid-column: 9 / 11; grid-row: 1">{{t:season.bar.harvest}}</i>
           </div>
 
           <span class="sc-label">{{t:season.row.prep}}</span>
@@ -26,5 +26,10 @@
             <i class="sc-bar rain" style="grid-column: 3 / 5; grid-row: 1">{{t:season.bar.prep}}</i>
           </div>
         </div>
+        <ul class="cal-legend">
+          <li><i class="sc-bar maize plant"></i>{{t:season.bar.plant}}</li>
+          <li><i class="sc-bar maize harvest"></i>{{t:season.bar.harvest}}</li>
+          <li><i class="sc-bar rain"></i>{{t:season.bar.prep}}</li>
+        </ul>
         <p class="season-note">{{t:season.note}}</p>
       </div>
