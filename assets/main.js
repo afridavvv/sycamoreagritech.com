@@ -14,14 +14,14 @@
     return;
   }
 
-  // Enquiries go to the team that handles them
+  // All enquiries go to reception; the enquiry type is in the subject line
   var EMAILS = {
-    wheat: 'sales@sycamoreagritech.com',
-    sorghum: 'sales@sycamoreagritech.com',
-    seed: 'sales@sycamoreagritech.com',
-    hire: 'hire@sycamoreagritech.com',
-    trade: 'sales@sycamoreagritech.com',
-    other: 'info@sycamoreagritech.com'
+    wheat: 'reception@sycamoreagritech.com',
+    sorghum: 'reception@sycamoreagritech.com',
+    seed: 'reception@sycamoreagritech.com',
+    hire: 'reception@sycamoreagritech.com',
+    trade: 'reception@sycamoreagritech.com',
+    other: 'reception@sycamoreagritech.com'
   };
 
   function store(key, value) {

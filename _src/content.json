@@ -1011,8 +1011,8 @@
   "note": "button"
  },
  "form.note": {
-  "zh": "点击后将打开您的邮件应用，邮件内容和对应团队的收件地址已自动填好，确认后点击发送即可。",
-  "en": "This opens your email app with your message filled in and addressed to the right team; just press Send."
+  "zh": "点击后将打开您的邮件应用，邮件内容和我们的收件地址已自动填好，确认后点击发送即可。",
+  "en": "This opens your email app with your message and our address filled in; just press Send."
  },
  "footer.tag": {
   "zh": "马拉维 · 种植 · 农机租赁 · 农产品贸易",
@@ -1355,9 +1355,9 @@
   "note": "button"
  },
  "tp.cta2": {
-  "zh": "发邮件给销售团队",
-  "en": "Email our sales team",
-  "note": "button linking to sales@sycamoreagritech.com"
+  "zh": "发邮件给我们",
+  "en": "Email us",
+  "note": "button linking to reception@sycamoreagritech.com"
  },
  "tp.tag1": {
   "zh": "产地直供",

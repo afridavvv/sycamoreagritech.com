@@ -124,13 +124,13 @@ def org(lang):
         "image": [f"{SITE}/assets/img/hero-pivot-wheat-lg.jpg", f"{SITE}/assets/og-image.jpg"],
         "description": text("meta.desc", lang),
         "telephone": "+265 999 947 228",
-        "email": "info@sycamoreagritech.com",
+        "email": "reception@sycamoreagritech.com",
         "address": {"@type": "PostalAddress", "streetAddress": "Chitipi", "addressLocality": "Lilongwe", "addressCountry": "MW"},
         "areaServed": {"@type": "Country", "name": "Malawi"},
         "knowsLanguage": ["en", "zh", "fr", "pt"],
         "contactPoint": [
-            {"@type": "ContactPoint", "contactType": "customer service", "telephone": "+265 999 947 228", "email": "info@sycamoreagritech.com", "areaServed": "MW", "availableLanguage": ["English", "Chinese", "French", "Portuguese"]},
-            {"@type": "ContactPoint", "contactType": "sales", "telephone": "+265 999 441 333", "email": "sales@sycamoreagritech.com", "areaServed": "MW"},
+            {"@type": "ContactPoint", "contactType": "customer service", "telephone": "+265 999 947 228", "email": "reception@sycamoreagritech.com", "areaServed": "MW", "availableLanguage": ["English", "Chinese", "French", "Portuguese"]},
+            {"@type": "ContactPoint", "contactType": "sales", "telephone": "+265 999 441 333", "email": "reception@sycamoreagritech.com", "areaServed": "MW"},
         ],
     }
 
