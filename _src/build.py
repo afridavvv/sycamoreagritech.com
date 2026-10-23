@@ -30,7 +30,7 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "_src"
-SITE = "https://sycamoreagritech.com"
+SITE = "https://www.sycamoreagritech.com"
 LANGS = ["en", "zh", "fr", "pt"]
 LANG_TAG = {"en": "en", "zh": "zh-Hans", "fr": "fr", "pt": "pt"}
 OG_LOCALE = {"en": "en_GB", "zh": "zh_CN", "fr": "fr_FR", "pt": "pt_PT"}

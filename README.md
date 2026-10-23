@@ -1,4 +1,4 @@
-# sycamoreagritech.com
+# www.sycamoreagritech.com
 
 Sycamore Agritech Limited（盛楷农业科技有限公司）官网。静态网站，托管在 GitHub Pages，域名解析在阿里云。
 
@@ -53,7 +53,7 @@ gh pr create
 
 ## 域名与邮箱（阿里云）
 
-- 网站：A 记录指向 GitHub Pages（185.199.108–111.153），`www` CNAME 指向 `afridavvv.github.io`，已强制 HTTPS。
+- 网站：主网址是 `www.sycamoreagritech.com`（`CNAME` 文件），不带 www 的 `sycamoreagritech.com` 会自动跳转过来。A 记录指向 GitHub Pages（185.199.108–111.153），`www` CNAME 指向 `afridavvv.github.io`，已强制 HTTPS。网页里的网址统一写成 `www.sycamoreagritech.com`；邮箱地址仍是 `@sycamoreagritech.com`，不加 www。
 - 邮箱：阿里邮箱免费版，MX / SPF / DKIM / DMARC 均已配置并验证通过。管理员账号 `postmaster@sycamoreagritech.com`。
 - 网站对外只公布 `reception@sycamoreagritech.com`：页脚、联系方式、贸易页按钮、询价表单和结构化数据都用这个地址。要改联系邮箱，需同时改 `_src/layout.html`、`_src/partials/contact.html`、`_src/pages/trade.html`、`_src/build.py` 和 `assets/main.js`。
 - Google Search Console 通过解析里的 `google-site-verification` TXT 记录验证网域所有权，**不要删除这条记录**。网站地图已提交。
