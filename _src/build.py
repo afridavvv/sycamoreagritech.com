@@ -17,7 +17,7 @@ Placeholders:
   {{pic:name|sizes|focal[|decor]}} <picture> (WebP srcset + JPEG fallback; alt = cap.<name>)
   {{fleet:name|key|focal|tag,tag}} hire card · {{thumb:name|key}} small fleet link
   {{gallery:name|classes,...}} · {{include:partial}} · {{selected:value}} · {{current:page}}
-  plus page variables such as {{home}}, {{hirepage}}, {{canonical}}, {{jsonld}}, {{i18n}}.
+  plus page variables such as {{home}}, {{hirepage}}, {{canonical}}, {{jsonld}}, {{i18n}}, {{analytics}}.
 """
 import datetime
 import html
@@ -31,6 +31,8 @@ from PIL import Image
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "_src"
 SITE = "https://www.sycamoreagritech.com"
+# Cloudflare Web Analytics: public token from the site's JS snippet (empty = no beacon)
+CF_ANALYTICS_TOKEN = "26534ffaa7384bb39af62870fae89516"
 LANGS = ["en", "zh", "fr", "pt"]
 LANG_TAG = {"en": "en", "zh": "zh-Hans", "fr": "fr", "pt": "pt"}
 OG_LOCALE = {"en": "en_GB", "zh": "zh_CN", "fr": "fr_FR", "pt": "pt_PT"}
@@ -260,6 +262,8 @@ def render(tpl, lang, page):
             f'<a href="{path(l, page)}" hreflang="{LANG_TAG[l]}" lang="{LANG_TAG[l]}">{LANG_NAME[l]}</a>' for l in ["zh", "en", "fr", "pt"]),
         "alllangs": " · ".join(f'<span lang="{LANG_TAG[l]}">{LANG_NAME[l]}</span>' for l in ["zh", "en", "fr", "pt"]),
         "jsonld": jsonld(lang, page), "i18n": i18n(lang, page),
+        "analytics": (f'<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon=\'{{"token": "{CF_ANALYTICS_TOKEN}"}}\'></script>'
+                      if CF_ANALYTICS_TOKEN else ""),
     }
 
     def macro(m):
