@@ -61,7 +61,7 @@ for lang in ("fr", "pt"):
     warnings += [f"{lang}: unknown key '{k}'" for k in data if k not in T]
 
 
-PHONES = ["+265 999 947 228", "+265 999 441 333"]
+PHONES = ["+265 999 947 228", "+265 884 821 385"]
 
 
 def text(key, lang):
@@ -132,7 +132,7 @@ def org(lang):
         "knowsLanguage": ["en", "zh", "fr", "pt"],
         "contactPoint": [
             {"@type": "ContactPoint", "contactType": "customer service", "telephone": "+265 999 947 228", "email": "reception@sycamoreagritech.com", "areaServed": "MW", "availableLanguage": ["English", "Chinese", "French", "Portuguese"]},
-            {"@type": "ContactPoint", "contactType": "sales", "telephone": "+265 999 441 333", "email": "reception@sycamoreagritech.com", "areaServed": "MW"},
+            {"@type": "ContactPoint", "contactType": "sales", "telephone": "+265 884 821 385", "email": "reception@sycamoreagritech.com", "areaServed": "MW"},
         ],
     }
 
