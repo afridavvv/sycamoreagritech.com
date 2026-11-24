@@ -1,0 +1,45 @@
+# Rebuild the generated pages on every pull request that changes the site sources,
+# and commit the result back to the pull request branch, so that merging the PR
+# publishes the change. The pages (index.html, zh/, fr/, pt/, machinery-hire/,
+# agricultural-products/, 404.html, sitemap.xml, robots.txt) are produced by
+# _src/build.py and should not be edited by hand.
+name: Build pages on PR
+
+on:
+  pull_request:
+    branches: [main]
+    paths: ["_src/**", "assets/**"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    # Only for branches in this repository (forks cannot be written to).
+    if: github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pillow
+      - name: Build
+        run: python3 _src/build.py
+      - name: Commit the regenerated pages
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add -A
+            git commit -m "Rebuild pages with _src/build.py"
+            git push
+          else
+            echo "Pages already up to date."
+          fi
